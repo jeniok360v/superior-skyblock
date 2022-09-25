@@ -1,0 +1,39 @@
+Settings:
+  #SQLite MySQL
+  storage-type: SQLite
+  #Use connection pool or not
+  #Require 'slf4j' dependencies
+  #At least java version 11 is required
+  usepool: false
+  #Whether to disable saving data asynchronously(SQLite no such setting)
+  disable-async: false
+
+
+#SQLite settings
+SQLite:
+  #Address is the folder path
+  path: Default
+
+
+#MySQL settings
+MySQL:
+  host: localhost
+  port: 3306
+  user: root
+  pass: root
+  database: data
+  #auto add "_", can use %sign% to indicate Server ID (BungeeCord settings)
+  table-suffix: ''
+  property:
+    usessl: false
+    encoding: utf8
+    timezone: ''
+    allowPublicKeyRetrieval: false
+
+
+#Connection pool settings
+Pool-Settings:
+  maximum-pool-size: 10
+  minimum-idle: 10
+  maximum-lifetime: 180000
+  idle-timeout: 60000
