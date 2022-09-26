@@ -33,3 +33,6 @@
 
 
 *.mca
+logs/
+libraries/
+cache/
