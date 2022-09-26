@@ -33,6 +33,14 @@
 
 
 *.mca
+usercache.json
+
+
+plugins/SuperiorSkyblock2/datastore/database.db
 logs/
 libraries/
 cache/
+SuperiorWorld/
+world/
+world_nether/
+world_the_end/
