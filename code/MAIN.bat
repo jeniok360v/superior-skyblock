@@ -3,6 +3,6 @@
 mkdir ..\build
 pushd ..\build
 cd
-cl /Zi ..\code\main.cpp user32.lib
+cl /Zi /std:c++17 ..\code\main.cpp user32.lib
 popd
 
