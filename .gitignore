@@ -37,10 +37,13 @@ usercache.json
 
 
 plugins/SuperiorSkyblock2/datastore/database.db
+plugins/XConomy/playerdata/data.db
 logs/
 libraries/
 cache/
 SuperiorWorld/
+SuperiorWorld_nether/
+SuperiorWorld_the_end/
 world/
 world_nether/
 world_the_end/
