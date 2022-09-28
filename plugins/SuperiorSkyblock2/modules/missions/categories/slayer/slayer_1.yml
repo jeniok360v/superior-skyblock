@@ -14,6 +14,8 @@ auto-reward: true
 # Should block counts of players get reset when completing the mission?
 reset-after-finish: true
 
+island: true
+
 # Rewards given when completing the mission.
 rewards:
   commands:
@@ -30,7 +32,7 @@ required-entities:
       - 'CREEPER'
       - 'ZOMBIE'
       - 'SPIDER'
-    amount: 5
+    amount: 1
 
 # Icons used in the menus.
 icons:

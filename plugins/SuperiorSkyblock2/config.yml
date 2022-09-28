@@ -302,7 +302,7 @@ worlds:
   # Settings related to the nether world.
   nether:
     # Should the nether world be enabled?
-    enabled: false
+    enabled: true
     # Should the nether be unlocked by default to islands?
     unlock: true
     # Custom name for the nether world.
@@ -315,9 +315,9 @@ worlds:
     biome: NETHER_WASTES
   end:
     # Should the end world be enabled?
-    enabled: false
+    enabled: true
     # Should the end be unlocked by default to islands?
-    unlock: false
+    unlock: true
     # Custom name for the end world.
     # When empty, the name will be "<island-world>_the_end"
     name: ''
