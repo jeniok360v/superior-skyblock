@@ -38,6 +38,7 @@ usercache.json
 
 plugins/SuperiorSkyblock2/datastore/database.db
 plugins/XConomy/playerdata/data.db
+plugins_serv/
 logs/
 libraries/
 cache/
