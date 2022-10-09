@@ -2,7 +2,8 @@
 
 !.gitignore
 !plugins\SuperiorSkyblock2\modules\missions
-!code/
+!code/structs.hpp
+!code/README.txt
 
 
 
