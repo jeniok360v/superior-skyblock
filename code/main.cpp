@@ -1,4 +1,4 @@
-#include "../code/farmer.hpp"
+#include "farmer.hpp"
 #include <iostream>
 #include <fstream>
 
@@ -18,11 +18,15 @@ int main()
 	fs::create_directories(missionsDir + "test");
     
     std::ofstream ofs(missionsDir + "test/a.txt");
-    ofs << rew.receivedItems.at(0).itemName << std::endl; 
-    ofs << rew.requiredItems.at(0).itemAmount << std::endl; 
-    ofs << MissionType.at(8) << std::endl; 
+    ofs << mission.reward.receivedItems.at(0).itemName << std::endl; 
+    ofs << mission.reward.receivedItems.at(0).itemAmount << std::endl; 
+    ofs << mission.options["island"] << std::endl; 
+	print_map(ofs, defaultOptions);
+    ofs << MissionType.at(3) << std::endl; 
     // ofs << rew.receivedItems.at(1).itemName; 
     ofs.close();
+	// Missi mis;
+	// mis.print_map(ofs, defaultOptions);
 
 	return 0;
 }

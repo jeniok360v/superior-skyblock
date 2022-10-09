@@ -1,5 +1,5 @@
-#include "../code/structs.hpp"
+#include "structs.hpp"
 
 
-Reward rew {{{"thing", 222}},{{"another_thing", 333}}};
+Mission mission {{{{"thing", 222},{"another_thing", 333}}}, MissionType[3], defaultOptions};
 
