@@ -1,7 +1,6 @@
 *
 
 !.gitignore
-!RUN.bat
 
 !code/
 code/*
