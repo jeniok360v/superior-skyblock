@@ -1,0 +1,92 @@
+# The mission file to use
+mission-file: BrewingMissions
+
+# Whether the mission should be given when completing all requirements.
+auto-reward: false
+
+# Should block counts of players get reset when completing the mission?
+reset-after-finish: true
+
+# Resetting the mission upon island disband.
+disband-reset: true
+
+# Whether or not the mission should only be shown in menus when the required missions & checks are completed.
+only-show-if-required-completed: true
+
+# Whether or not the mission should be an islands mission (mission that is synced with all island members).
+island: true
+
+# Rewards given when completing the mission.
+rewards:
+  commands:
+    - 'eco give %player% 10000'
+    - 'is admin msg %player% &bЗельевар |'
+    - 'is admin msg %player% &bЗельевар | &7Вы успешно завершили миссию &a"Миссия зельевара №2"&r&7!'
+    - 'is admin msg %player% &bЗельевар |'
+    
+# List of required missions that must be completed before completing this one.
+required-missions:
+  - 'potion_master_1'
+  
+# List of all required blocks must be gathered in order to complete the mission.
+required-potions:
+  '1':
+    # Brew 1 potion of Speed II.
+    potions:
+      '1':
+        type: WEAKNESS
+        upgraded: false
+        extended: false
+        splash: false
+    amount: 3
+
+# Icons used in the menus.
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTAzMjdmYjM0MzE5Zjg5YWM1YWI0OGI0ZDc5MjUxZjEzZjA2N2ViZWE3ZGE1Zjg4Yjc1ZjQ3OWE3Mzg5OTI0ZSJ9fX0='
+    name: '&bМиссия зельевара №2'
+    lore:
+      - ' '
+      - '&b * &7Требования (сварить зелья):'
+      - '&b  - &ax6 &7Cтремительность 2'
+      - ' '
+      - '&b * &7Награда:'
+      - '&b  - &a$10,000'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b * &7&nПримечание:&r&7 счётчик зелий не ведется'
+      - ' '
+      - '&c ✘ &7Не завершен'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQyYTI0MTUyYWExM2FjMzE1YjI3MWQ2OThiODJiNGE3YTE3ZjEwZjE3ZjBlOGM0OTVmYjZmOGNiMzljNTU2NCJ9fX0='
+    name: '&bМиссия зельевара №2'
+    lore:
+      - ' '
+      - '&b * &7Требования (сварить зелья):'
+      - '&b  - &ax6 &7Cтремительность 2'
+      - ' '
+      - '&b * &7Награда:'
+      - '&b  - &a$10,000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b * &7&nПримечание:&r&7 счётчик зелий не ведется'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия зельевара №2'
+    lore:
+      - ' '
+      - '&b * &7Требования (сварить зелья):'
+      - '&b  - &ax6 &7Cтремительность 2'
+      - ' '
+      - '&b * &7Награда:'
+      - '&b  - &a$10,000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Сварено зелий: &a6/6'
+      - ' '
+      - '&a ✔ &7Уже выполненно, награда получена.'

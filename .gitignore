@@ -1,12 +1,31 @@
 *
 
 !.gitignore
-!plugins\SuperiorSkyblock2\modules\missions
-!code/structs.hpp
-!code/README.txt
+!RUN.bat
 
+!code/
+code/*
+!code/*
 
+!plugins/
+plugins/*
+!plugins/SuperiorSkyblock2/
+plugins/SuperiorSkyblock2/*
+!plugins/SuperiorSkyblock2/menus
+plugins/SuperiorSkyblock2/menus/*
+!plugins/SuperiorSkyblock2/menus/missions.yml
 
+!plugins/SuperiorSkyblock2/modules/
+plugins/SuperiorSkyblock2/modules/*
+!plugins/SuperiorSkyblock2/modules/missions/
+plugins/SuperiorSkyblock2/modules/missions/*
+!plugins/SuperiorSkyblock2/modules/missions/*
+
+!plugins/SuperiorSkyblock2/modules/missions/categories/
+plugins/SuperiorSkyblock2/modules/missions/categories/*
+!plugins/SuperiorSkyblock2/modules/missions/categories/*/
+plugins/SuperiorSkyblock2/modules/missions/categories/*/*
+!plugins/SuperiorSkyblock2/modules/missions/categories/*/*
 
 
 

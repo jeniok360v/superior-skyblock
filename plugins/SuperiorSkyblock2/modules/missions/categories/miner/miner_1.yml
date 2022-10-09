@@ -1,0 +1,100 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+# The mission file to use
+mission-file: BlocksMissions
+
+# Whether the mission should be given when completing all requirements.
+auto-reward: false
+
+# Should block counts of players get reset when completing the mission?
+reset-after-finish: true
+
+# Resetting the mission upon island disband.
+disband-reset: true
+
+# Whether or not the mission should only be shown in menus when the required missions & checks are completed.
+only-show-if-required-completed: true
+
+# Whether or not the mission should be an islands mission (mission that is synced with all island members).
+island: true
+
+# Rewards given when completing the mission.
+rewards:
+  commands:
+    - 'eco give %player% 1000'
+    - 'is admin msg %player% &bШахтёр |'
+    - 'is admin msg %player% &bШахтёр | &7Вы успешно завершили миссию &a"Миссия шахтёра №1"&r&7!'
+    - 'is admin msg %player% &bШахтёр |'
+
+# List of all required blocks must be gathered in order to complete the mission.
+required-blocks:
+  '1':
+    types:
+      - 'COBBLESTONE'
+    amount: 48
+  '2':
+    types:
+      - 'COAL_ORE'
+    amount: 16
+
+# Icons used in the menus.
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODI1MGIyZmNmZTYwMjhhMmQ0ZTViZDdiZThmOTI3MmEzMzk1ZDA2NGFmYTcxNWM4N2M0ZmY4Y2M2NDMxOWFhIn19fQ=='
+    name: '&bМиссия шахтёра №1'
+    lore:
+      - ' '
+      - '&b * &7Требования (сломать блоки):'
+      - '&b  - &ax48 &7Булыжник'
+      - '&b  - &ax16 &7Угольная руда'
+      - ' '
+      - '&b * &7Награда:'
+      - '&b  - &a$1,000'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Сломано булыжника: &a{value_cobblestone}/48'
+      - '&b  - &7Сломано угольной руды: &a{value_coal_ore}/16'
+      - ' '
+      - '&c ✘ &7Не завершен'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQyYTI0MTUyYWExM2FjMzE1YjI3MWQ2OThiODJiNGE3YTE3ZjEwZjE3ZjBlOGM0OTVmYjZmOGNiMzljNTU2NCJ9fX0='
+    name: '&bМиссия шахтёра №1'
+    lore:
+      - ' '
+      - '&b * &7Требования (сломать блоки):'
+      - '&b  - &ax48 &7Булыжник'
+      - '&b  - &ax16 &7Угольная руда'
+      - ' '
+      - '&b * &7Награда:'
+      - '&b  - &a$1,000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Сломано булыжника: &a{value_cobblestone}/48'
+      - '&b  - &7Сломано угольной руды: &a{value_coal_ore}/16'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия шахтёра №1'
+    lore:
+      - ' '
+      - '&b * &7Требования (сломать блоки):'
+      - '&b  - &ax48 &7Булыжник'
+      - '&b  - &ax16 &7Угольная руда'
+      - ' '
+      - '&b * &7Награда:'
+      - '&b  - &a$1,000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Сломано булыжника: &a48/48'
+      - '&b  - &7Сломано угольной руды: &a16/16'
+      - ' '
+      - '&a ✔ &7Уже выполненно, награда получена.'
