@@ -8,7 +8,7 @@
 #include <map>
 #include <unordered_map>
 
-const std::string missionsDir = "../plugins/SuperiorSkyblock2/modules/missions/categories/";
+const std::string missionsDir = "../plugins/SuperiorSkyblock2/modules/missions/categories/"; //extern
 
 const std::map<std::string, std::string> MissionType
 {
@@ -32,6 +32,14 @@ const std::unordered_map<std::string, std::string> defaultOptions {
     {"island", "true"},
 };
 
+struct MissionAssociations
+{
+    std::string tag;
+    int level;
+    bool previousRequired = true;
+    std::vector<std::string> additionalRequirements;
+};
+
 struct Item
 {
     std::string itemName;
@@ -43,11 +51,13 @@ struct Reward
 {
     std::vector<Item> receivedItems;
     int money = 0;
+    // commands
 };
 
 class Mission
 {
 public:
+    MissionAssociations associations;
     Reward reward;
     std::string missionType;
     std::unordered_map<std::string, std::string> options;

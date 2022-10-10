@@ -1,5 +1,8 @@
 thing
 2222
+packTag
+groupTag
+1
 true
 mission-file: BlocksMissions
 disband-reset: true

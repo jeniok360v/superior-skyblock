@@ -1,5 +1,5 @@
 #include "farmer.hpp"
-#include "structs.hpp"
+#include "MissionPack.hpp"
 #include <iostream>
 #include <fstream>
 #include <map>
@@ -18,11 +18,14 @@ int main()
     
     std::ofstream ofs(missionsDir + "test/a.txt");
     
-    ofs << mission.reward.receivedItems.at(0).itemName << std::endl; 
-    ofs << mission.reward.receivedItems.at(0).itemAmount << std::endl; 
-    ofs << mission.options["island"] << std::endl; 
+    ofs << mission.missionGroups.at(0).missions.at(0).reward.receivedItems.at(0).itemName << std::endl; 
+    ofs << mission.missionGroups.at(0).missions.at(0).reward.receivedItems.at(0).itemAmount << std::endl;
+    ofs << mission.packTag << std::endl;
+    ofs << mission.missionGroups.at(0).groupTag << std::endl;
+    ofs << mission.missionGroups.at(0).missions.at(0).associations.level << std::endl;
+    ofs << mission.missionGroups.at(0).missions.at(0).options["island"] << std::endl; 
     ofs << "mission-file: " << MissionType.at("blocks") << std::endl; 
-    mission.printOptions(ofs, defaultOptions);
+    mission.missionGroups.at(0).missions.at(0).printOptions(ofs, defaultOptions);
     ofs.close();
     // mission.xxx();
 

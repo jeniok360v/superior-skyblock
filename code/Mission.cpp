@@ -1,4 +1,4 @@
-#include "structs.hpp"
+#include "Mission.hpp"
 #include <fstream>
 #include <iostream>
 
