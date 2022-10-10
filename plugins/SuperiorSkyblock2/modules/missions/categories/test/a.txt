@@ -1,7 +1,7 @@
 thing
 2222
 true
-mission-file: EnchantingMissions
+mission-file: BlocksMissions
 disband-reset: true
 
 auto-reward: false

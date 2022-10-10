@@ -10,18 +10,18 @@
 
 const std::string missionsDir = "../plugins/SuperiorSkyblock2/modules/missions/categories/";
 
-const std::vector<std::string> MissionType
+const std::map<std::string, std::string> MissionType
 {
-    "BlocksMissions",       /* 0 */
-    "BrewingMissions",      /* 1 */
-    "CraftingMissions",     /* 2 */
-    "EnchantingMissions",   /* 3 */
-    "FarmingMissions",      /* 4 */
-    "FishingMissions",      /* 5 */
-    "IslandMissions",       /* 6 */
-    "ItemsMissions",        /* 7 */
-    "KillsMissions",        /* 8 */
-    "StatisticsMissions"    /* 9 */
+    {"blocks", "BlocksMissions"},
+    {"brewing", "BrewingMissions"},
+    {"crafting", "CraftingMissions"},
+    {"enchanting", "EnchantingMissions"},
+    {"farming", "FarmingMissions"},
+    {"fishing", "FishingMissions"},
+    {"island", "IslandMissions"},
+    {"obtaining", "ItemsMissions"},
+    {"killing", "KillsMissions"},
+    {"stats", "StatisticsMissions"},
 };
 
 const std::unordered_map<std::string, std::string> defaultOptions {
