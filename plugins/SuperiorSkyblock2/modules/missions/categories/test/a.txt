@@ -1,10 +1,15 @@
 thing
-222
+2222
 true
+mission-file: EnchantingMissions
 disband-reset: true
+
 auto-reward: false
+
 reset-after-finish: true
+
 only-show-if-required-completed: true
+
 island: true
 
-EnchantingMissions
+
