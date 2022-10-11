@@ -16,8 +16,13 @@ int main()
         fs::remove_all(missionsDir + "test");
     }
     fs::create_directories(missionsDir + "test");
-    
     std::ofstream ofs(missionsDir + "test/a.txt");
+    
+    
+    MissionPackager packager;
+    ofs << "mission goal: " << packager.allMissionPacks["farmer"].missionGroups.at(0).missions.at(0).goal.goalStr << std::endl;
+    MissionPack mission {packager.allMissionPacks["farmer"]};
+    
     std::cout << "her";
     ofs << mission.missionGroups.at(0).missions.at(0).reward.receivedItems.at(0).itemName << std::endl; 
     ofs << mission.missionGroups.at(0).missions.at(0).reward.receivedItems.at(0).itemAmount << std::endl;
@@ -28,10 +33,9 @@ int main()
     ofs << mission.missionGroups.at(0).missions.at(0).options["island"] << std::endl; 
     ofs << "mission-file: " << MissionType.at("blocks") << std::endl; 
     mission.missionGroups.at(0).missions.at(0).printOptions(ofs, defaultOptions);
-    ofs.close();
     // mission.xxx();
     
-    MissionPackager packager;
 
+    ofs.close();
     return 0;
 }

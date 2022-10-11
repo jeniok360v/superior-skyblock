@@ -1,17 +1,16 @@
 #include "MissionPack.hpp"
 #include "farmer.hpp"
 
-
 class MissionPackager
 {
 public:
     MissionPackager() 
     {
-        allMissionPacks.push_back(mission);
+        allMissionPacks.insert(std::make_pair("farmer", farmerPack));
     }
-    std::vector<MissionPack> allMissionPacks;
+    std::map<std::string, MissionPack> allMissionPacks;
     
-    printAllMissions();
-    printPack();
+        // printAllMissions();
+        // printPack();
 };
 

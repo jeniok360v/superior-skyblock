@@ -4,7 +4,7 @@
 
 const std::string farmer_head = "";
 
-static MissionPack mission
+static MissionPack farmerPack
 {
     {
         {
