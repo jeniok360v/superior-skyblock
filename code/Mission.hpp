@@ -68,7 +68,17 @@ public:
     Goal goal;
     Reward reward;
 
-    // void xxx();// {std::cout << "HHHHHHHHHHH" <<std::endl;}
+    void printMission(std::ofstream& ofs)
+    {
+        ofs << "# https://wiki.bg-software.com/superiorskyblock/overview/missions" << std::endl << std::endl;
+        ofs << "mission-file: " << missionType << std::endl << std::endl; 
+        printOptions(ofs, options);
+        //printReward
+        //printRequiredMissions
+        //printGoal
+        //printLore
+        
+    }
 
     template<typename K, typename V>
     void printOptions(std::ofstream& missionYml, std::unordered_map<K, V> const &options);
@@ -79,7 +89,7 @@ void Mission::printOptions(std::ofstream& missionYml, std::unordered_map<K, V> c
 {
     for (auto const &option: options)
     {
-        missionYml << option.first << ": " << option.second << std::endl << std::endl;
+        missionYml << option.first << ": " << option.second << std::endl;// << std::endl;
     }
     missionYml << std::endl;
 }

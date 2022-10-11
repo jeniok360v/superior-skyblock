@@ -23,21 +23,11 @@ public:
 
     void printGroup(std::string packTag)
     {
-        int k = 1;
-        for (auto& mission : missions)
+        for (int i = 0; i < missions.size(); i++)
         {
-            std::ofstream ofs(missionsDir + packTag + "/" + groupTag + "_" + std::to_string(k) + ".yml");
-            k++;
-            //missionGroup.printMission();
+            std::ofstream ofs(missionsDir + packTag + "/" + groupTag + "_" + std::to_string(i+1) + ".yml");
+            missions.at(i).printMission(ofs);
+            ofs.close();
         }
     }
-
-    // void printGroup()
-    // {
-        // for (auto& missionGroup : missionGroups)
-        // {
-            // std::ofstream ofs(missionsDir + groupTag + "/" groupTag  "test/a.txt");
-            // missionGroup.printMission();
-        // }
-    // }
 };

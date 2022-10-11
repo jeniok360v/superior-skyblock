@@ -12,8 +12,6 @@ public:
     }
     std::map<std::string, MissionPack> allMissionPacks;
     
-
-    
     void printAllMissions()
     {
         for (auto& [key, pack] : allMissionPacks)
@@ -23,4 +21,3 @@ public:
         }
     }
 };
-

@@ -8,13 +8,8 @@ mission goal: goalStr
 true
 mission-file: BlocksMissions
 disband-reset: true
-
 auto-reward: false
-
 reset-after-finish: true
-
 only-show-if-required-completed: true
-
 island: true
-
 
