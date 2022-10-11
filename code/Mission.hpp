@@ -34,10 +34,10 @@ const std::unordered_map<std::string, std::string> defaultOptions {
 
 struct MissionAssociations
 {
-    std::string tag;
-    int level;
-    bool previousRequired = true;
+    // int level; //?
     std::vector<std::string> additionalRequirements;
+    bool previousRequired = true;
+    
 };
 
 struct Item
@@ -49,21 +49,27 @@ struct Item
 
 struct Reward
 {
-    std::vector<Item> receivedItems;
     int money = 0;
-    // commands
+    std::vector<std::string> commands;
+    std::vector<Item> receivedItems;
+};
+
+struct Goal
+{
+    std::string goalStr;
 };
 
 class Mission
 {
 public:
-    MissionAssociations associations;
-    Reward reward;
     std::string missionType;
     std::unordered_map<std::string, std::string> options;
-    
+    MissionAssociations associations;
+    Goal goal;
+    Reward reward;
+
     // void xxx();// {std::cout << "HHHHHHHHHHH" <<std::endl;}
-    
+
     template<typename K, typename V>
     void printOptions(std::ofstream& missionYml, std::unordered_map<K, V> const &options);
 };

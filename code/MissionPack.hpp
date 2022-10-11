@@ -9,3 +9,4 @@ public:
     std::vector<MissionGroup> missionGroups;
     std::string packTag = "packTag";
 };
+

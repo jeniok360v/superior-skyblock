@@ -5,9 +5,19 @@
 
 class MissionGroup
 {
-public:    
+public:
+    std::string groupTag;// = "groupTag";
+    std::string groupName; //шахтёр
+    std::string groupIcon; //PLAYER_HEAD
+    std::string headTag; // eyJ...
     std::vector<Mission> missions;
-    std::string groupTag = "groupTag";
+    
     //groupDescription
     
+    // void printMissionGroupIcon()
+    // {
+        // ofs << groupIcon
+        // if groupIcon == "PLAYER_HEAD"
+            // print headTag
+    // }
 };

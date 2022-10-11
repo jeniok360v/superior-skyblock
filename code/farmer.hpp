@@ -1,15 +1,25 @@
+#pragma once
+
 #include "MissionPack.hpp"
 
+const std::string farmer_head = "";
 
-MissionPack mission
+static MissionPack mission
 {
     {
         {
+            "farmerTAG", "Фермер", "PLAYER_HEAD", farmer_head,
             {
-                {{"farmer", 1},{{{"thing", 2222},{"another_thing", 333}}}, MissionType.at("blocks"), defaultOptions}
+                {
+                    MissionType.at("blocks"), defaultOptions, {},
+                    {"goalStr"},
+                    {100, {"give", "unlockworld"},
+                    {
+                        {"carrot", 22, "Морковь"}, {"potato", 11, "Картошка"}
+                    }
+                    }
+                } // Mission
             }
-        }
+        } // MissionGroup
     }
-};
-
-// MissinPack farmer {{{{}}}}
+}; // MissionPack
