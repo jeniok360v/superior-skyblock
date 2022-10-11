@@ -23,6 +23,8 @@ int main()
     ofs << "mission goal: " << packager.allMissionPacks["farmer"].missionGroups.at(0).missions.at(0).goal.goalStr << std::endl;
     MissionPack mission {packager.allMissionPacks["farmer"]};
     
+    packager.printAllMissions();
+    
     std::cout << "her";
     ofs << mission.missionGroups.at(0).missions.at(0).reward.receivedItems.at(0).itemName << std::endl; 
     ofs << mission.missionGroups.at(0).missions.at(0).reward.receivedItems.at(0).itemAmount << std::endl;

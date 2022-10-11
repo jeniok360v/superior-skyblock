@@ -1,7 +1,7 @@
 mission goal: goalStr
 carrot
 22
-pack tag: packTag
+pack tag: farmerTest
 group tag: farmerTAG
 previousRequired: 1
 mission goal: goalStr

@@ -2,35 +2,35 @@
 
 #include "MissionPack.hpp"
 
-const std::string farmer_head = "";
+const std::string beginner_head = "";
 
-MissionPack farmerPack
+MissionPack beginnerPack
 {
-    "farmerTest",
+    "beginnerTest",
     {
         {
-            "farmerTAG", "Фермер", "PLAYER_HEAD", farmer_head,
+            "beginTAG", "начало", "PLAYER_HEAD", farmer_head,
             {
                 {
                     MissionType.at("blocks"), defaultOptions, {},
                     {"goalStr"},
                     {100, {"give", "unlockworld"},
                     {
-                        {"carrot", 22, "Морковь"}, {"potato", 11, "Картошка"}
+                        {"beetroots", 32, "Морковь"}, {"potato", 11, "Картошка"}
                     }
                     }
                 }, // Mission
             }
         }, // MissionGroup
         {
-            "wheatTAG", "Фермер", "PLAYER_HEAD", farmer_head,
+            "beginnerTAG", "начальник", "PLAYER_HEAD", farmer_head,
             {
                 {
                     MissionType.at("blocks"), defaultOptions, {},
                     {"goalStr"},
                     {100, {"give", "unlockworld"},
                     {
-                        {"wheat", 10, "Морковь"}, {"potato", 11, "Картошка"}
+                        {"beetroots", 30, "Морковь"}, {"potato", 11, "Картошка"}
                     }
                     }
                 }, // Mission
@@ -39,7 +39,7 @@ MissionPack farmerPack
                     {"goalStr"},
                     {100, {"give", "unlockworld"},
                     {
-                        {"carrot", 11, "Морковь"}, {"potato", 11, "Картошка"}
+                        {"beetroots", 31, "Морковь"}, {"potato", 11, "Картошка"}
                     }
                     }
                 }, // Mission
