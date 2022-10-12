@@ -68,12 +68,67 @@ public:
     Goal goal;
     Reward reward;
 
-    void printMission(std::ofstream& ofs)
+    void printWikiLink(std::ofstream& ofs)
     {
         ofs << "# https://wiki.bg-software.com/superiorskyblock/overview/missions" << std::endl << std::endl;
-        ofs << "mission-file: " << missionType << std::endl << std::endl; 
+    }
+
+    void printMissionType(std::ofstream& ofs)
+    {
+        ofs << "mission-file: " << missionType << std::endl << std::endl;
+    }
+
+    void printReward(std::ofstream& ofs, int missionNumber, std::string groupName)
+    {
+        ofs << "rewards:" << std::endl;
+        printRewardItems(ofs);
+        ofs << "  commands:" << std::endl;
+        printRewardMoney(ofs);
+        printRewardAdditionalCommands(ofs);
+        ofs << "    - 'is admin msg %player% &b" + groupName + " |'" << std::endl;
+        ofs << "    - 'is admin msg %player% &b" + groupName + " | &7Вы успешно завершили миссию &a\"" + groupName + " " + std::to_string(missionNumber) + "\"&r&7!'" << std::endl;
+        ofs << "    - 'is admin msg %player% &b" + groupName + " |'" << std::endl;
+    }
+
+    void printRewardItems(std::ofstream& ofs)
+    {
+        if(!reward.receivedItems.empty())
+        {
+            ofs << "  items:" << std::endl;
+            for (int i = 0; i < reward.receivedItems.size(); i++)
+            {
+                ofs << "    '" + std::to_string(i + 1) + "':" << std::endl;
+                ofs << "      type: " + reward.receivedItems.at(i).itemName << std::endl;
+                ofs << "      amount: " + std::to_string(reward.receivedItems.at(i).itemAmount) << std::endl;
+            }
+        }
+    }
+
+    void printRewardMoney(std::ofstream& ofs)
+    {
+        if(reward.money > 0)
+        {
+            ofs << "    - 'eco give %player% " + std::to_string(reward.money) + "'" << std::endl;
+        }
+    }
+
+    void printRewardAdditionalCommands(std::ofstream& ofs)
+    {
+        if(!reward.commands.empty())
+        {
+            for (int i = 0; i < reward.commands.size(); i++)
+            {
+                ofs << "    - '" + reward.commands.at(i) + "'" << std::endl;
+            }
+        }
+    }
+
+    void printMission(std::ofstream& ofs, int missionNumber, std::string groupName)
+    {
+        printWikiLink(ofs);
+        printMissionType(ofs);
         printOptions(ofs, options);
-        //printReward
+        printReward(ofs, missionNumber, groupName);
         //printRequiredMissions
         //printGoal
         //printLore
