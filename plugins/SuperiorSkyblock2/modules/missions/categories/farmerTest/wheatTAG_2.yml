@@ -8,3 +8,22 @@ reset-after-finish: true
 only-show-if-required-completed: true
 island: true
 
+rewards:
+  items:
+    '1':
+      type: carrot
+      amount: 11
+    '2':
+      type: potato
+      amount: 11
+  commands:
+    - 'eco give %player% 100'
+    - 'give'
+    - 'unlockworld'
+    - 'is admin msg %player% &bФермер |'
+    - 'is admin msg %player% &bФермер | &7Вы успешно завершили миссию &a"Фермер 2"&r&7!'
+    - 'is admin msg %player% &bФермер |'
+
+required-missions:
+  - 'wheatTAG_1'
+

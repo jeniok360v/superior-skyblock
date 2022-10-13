@@ -78,6 +78,9 @@ public:
         ofs << "mission-file: " << missionType << std::endl << std::endl;
     }
 
+    template<typename K, typename V>
+    void printOptions(std::ofstream& missionYml, std::unordered_map<K, V> const &options);
+
     void printReward(std::ofstream& ofs, int missionNumber, std::string groupName)
     {
         ofs << "rewards:" << std::endl;
@@ -87,7 +90,7 @@ public:
         printRewardAdditionalCommands(ofs);
         ofs << "    - 'is admin msg %player% &b" + groupName + " |'" << std::endl;
         ofs << "    - 'is admin msg %player% &b" + groupName + " | &7Вы успешно завершили миссию &a\"" + groupName + " " + std::to_string(missionNumber) + "\"&r&7!'" << std::endl;
-        ofs << "    - 'is admin msg %player% &b" + groupName + " |'" << std::endl;
+        ofs << "    - 'is admin msg %player% &b" + groupName + " |'" << std::endl << std::endl;
     }
 
     void printRewardItems(std::ofstream& ofs)
@@ -123,30 +126,52 @@ public:
         }
     }
 
-    void printMission(std::ofstream& ofs, int missionNumber, std::string groupName)
+    void printRequiredMissions(std::ofstream& ofs, int missionNumber, std::string groupTag)
+    {
+        if((associations.previousRequired && missionNumber > 1) || !associations.additionalRequirements.empty())
+        {
+            ofs << "required-missions:" << std::endl;
+        }
+        
+        if(associations.previousRequired && missionNumber > 1)
+        {
+            for(int i = 1; i < missionNumber; i++)
+            {
+                ofs << "  - '" + groupTag + "_" + std::to_string(i) + "'" << std::endl;
+            }
+        }
+
+        if(!associations.additionalRequirements.empty())
+        {
+            for(auto& requiredMission : associations.additionalRequirements)
+            {
+                ofs << "  - '" + requiredMission + "'" << std::endl;
+            }
+        }
+        ofs << std::endl;
+    }
+
+    void printMission(std::ofstream& ofs, int missionNumber, std::string groupTag, std::string groupName)
     {
         printWikiLink(ofs);
         printMissionType(ofs);
         printOptions(ofs, options);
         printReward(ofs, missionNumber, groupName);
-        //printRequiredMissions
+        printRequiredMissions(ofs, missionNumber, groupTag);
         //printGoal
         //printLore
         
     }
-
-    template<typename K, typename V>
-    void printOptions(std::ofstream& missionYml, std::unordered_map<K, V> const &options);
 };
 
 template<typename K, typename V>
-void Mission::printOptions(std::ofstream& missionYml, std::unordered_map<K, V> const &options)
+void Mission::printOptions(std::ofstream& ofs, std::unordered_map<K, V> const &options)
 {
     for (auto const &option: options)
     {
-        missionYml << option.first << ": " << option.second << std::endl;// << std::endl;
+        ofs << option.first << ": " << option.second << std::endl;// << std::endl;
     }
-    missionYml << std::endl;
+    ofs << std::endl;
 }
 
 

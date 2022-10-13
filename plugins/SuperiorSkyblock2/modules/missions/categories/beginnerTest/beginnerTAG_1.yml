@@ -8,3 +8,20 @@ reset-after-finish: true
 only-show-if-required-completed: true
 island: true
 
+rewards:
+  items:
+    '1':
+      type: beetroots
+      amount: 30
+    '2':
+      type: potato
+      amount: 11
+  commands:
+    - 'eco give %player% 100'
+    - 'give'
+    - 'unlockworld'
+    - 'is admin msg %player% &bначальник |'
+    - 'is admin msg %player% &bначальник | &7Вы успешно завершили миссию &a"начальник 1"&r&7!'
+    - 'is admin msg %player% &bначальник |'
+
+

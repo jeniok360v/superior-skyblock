@@ -12,16 +12,19 @@ rewards:
   items:
     '1':
       type: carrot
-      amount: 22
+      amount: 11
     '2':
       type: potato
       amount: 11
   commands:
     - 'eco give %player% 100'
     - 'give'
-    - 'unlockworld'
     - 'is admin msg %player% &bФермер |'
-    - 'is admin msg %player% &bФермер | &7Вы успешно завершили миссию &a"Фермер 1"&r&7!'
+    - 'is admin msg %player% &bФермер | &7Вы успешно завершили миссию &a"Фермер 4"&r&7!'
     - 'is admin msg %player% &bФермер |'
 
+required-missions:
+  - 'wheatTAG_1'
+  - 'wheatTAG_2'
+  - 'wheatTAG_3'
 

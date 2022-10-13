@@ -42,6 +42,24 @@ MissionPack farmerPack
                         {"carrot", 11, "Морковь"}, {"potato", 11, "Картошка"}
                     }
                     }
+                }, // Mission                
+                {
+                    MissionType.at("blocks"), defaultOptions, {},
+                    {"goalStr"},
+                    {100, {},
+                    {
+                        {"carrot", 11, "Морковь"}, {"potato", 11, "Картошка"}
+                    }
+                    }
+                }, // Mission                
+                {
+                    MissionType.at("blocks"), defaultOptions, {},
+                    {"goalStr"},
+                    {100, {"give"},
+                    {
+                        {"carrot", 11, "Морковь"}, {"potato", 11, "Картошка"}
+                    }
+                    }
                 }, // Mission
             }
         }, // MissionGroup
