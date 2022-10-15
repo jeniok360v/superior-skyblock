@@ -24,5 +24,4 @@ rewards:
     - 'is admin msg %player% &bначальник | &7Вы успешно завершили миссию &a"начальник 1"&r&7!'
     - 'is admin msg %player% &bначальник |'
 
-
-required-plants:
+required-blocks:

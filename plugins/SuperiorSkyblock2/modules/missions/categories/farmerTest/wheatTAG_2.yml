@@ -1,6 +1,6 @@
 # https://wiki.bg-software.com/superiorskyblock/overview/missions
 
-mission-file: BlocksMissions
+mission-file: CraftingMissions
 
 disband-reset: true
 auto-reward: false
@@ -27,4 +27,11 @@ rewards:
 required-missions:
   - 'wheatTAG_1'
 
-required-plants:
+craftings:
+  '1':
+    type: 'CRAFTING_TABLE'
+    amount: 2
+  '2':
+    type: 'CHEST'
+    amount: 3
+

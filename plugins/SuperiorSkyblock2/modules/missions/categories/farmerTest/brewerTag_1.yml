@@ -1,0 +1,44 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: BrewingMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+island: true
+
+rewards:
+  items:
+    '1':
+      type: carrot
+      amount: 121
+    '2':
+      type: potato
+      amount: 112
+  commands:
+    - 'eco give %player% 100'
+    - 'give'
+    - 'unlockworld'
+    - 'is admin msg %player% &bваритель |'
+    - 'is admin msg %player% &bваритель | &7Вы успешно завершили миссию &a"варитель 1"&r&7!'
+    - 'is admin msg %player% &bваритель |'
+
+required-potions:
+  '1':
+    potions:
+      '1':
+        type: SPEED
+        upgraded: true
+        extended: true
+        splash: true
+    amount: 3
+  '2':
+    potions:
+      '1':
+        type: WEAKNESS
+        upgraded: false
+        extended: false
+        splash: false
+    amount: 2
+

@@ -22,6 +22,28 @@ MissionPack farmerPack
                 }, // Mission
             }
         }, // MissionGroup
+// struct Potion
+// {
+    // std::string potionName;
+    // std::string upgraded;
+    // std::string extended;
+    // std::string splash;
+    // int amount;
+// };
+        {
+            "brewerTag", "варитель", "PLAYER_HEAD", farmer_head,
+            {
+                {
+                    "BrewingMissions", defaultOptions, {},
+                    {{},{}, "", {{"speed", "true", "true", "true", 3}, {"weakness", "false", "false", "false", 2}}},
+                    {100, {"give", "unlockworld"},
+                    {
+                        {"carrot", "Морковь", 121, "Вырастить морковки"}, {"potato", "Картошка", 112, "Вырастить картошки"}
+                    }
+                    }
+                }, // Mission
+            }
+        }, // MissionGroup
         {
             "wheatTAG", "Фермер", "PLAYER_HEAD", farmer_head,
             {
@@ -35,8 +57,8 @@ MissionPack farmerPack
                     }
                 }, // Mission
                 {
-                    "BlocksMissions", defaultOptions, {},
-                    {{}},
+                    "CraftingMissions", defaultOptions, {},
+                    {{{"crafting_Table", "верстак", 2, "скрафтить верстак"}, {"chest", "сундук", 3, "скрафтить сундук"}}},
                     {100, {"give", "unlockworld"},
                     {
                         {"carrot", "Морковь", 141, "Вырастить морковки"}, {"potato", "Картошка", 122, "Вырастить картошки"}

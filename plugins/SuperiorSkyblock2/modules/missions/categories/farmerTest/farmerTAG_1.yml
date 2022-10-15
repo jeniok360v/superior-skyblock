@@ -24,5 +24,4 @@ rewards:
     - 'is admin msg %player% &bФермер | &7Вы успешно завершили миссию &a"Фермер 1"&r&7!'
     - 'is admin msg %player% &bФермер |'
 
-
-required-plants:
+required-blocks:

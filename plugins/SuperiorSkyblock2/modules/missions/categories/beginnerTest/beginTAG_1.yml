@@ -24,13 +24,12 @@ rewards:
     - 'is admin msg %player% &bначало | &7Вы успешно завершили миссию &a"начало 1"&r&7!'
     - 'is admin msg %player% &bначало |'
 
-
-required-plants:
+required-blocks:
   '1':
-    types: 
+    types:
       - 'BEETROOTS'
     amount: 3
   '2':
-    types: 
+    types:
       - 'POTATO'
     amount: 2
