@@ -12,11 +12,11 @@ MissionPack farmerPack
             "farmerTAG", "Фермер", "PLAYER_HEAD", farmer_head,
             {
                 {
-                    MissionType.at("blocks"), defaultOptions, {},
-                    {"goalStr"},
+                    "BlocksMissions", defaultOptions, {},
+                    {{}},
                     {100, {"give", "unlockworld"},
                     {
-                        {"carrot", 22, "Морковь"}, {"potato", 11, "Картошка"}
+                        {"carrot", "Морковь", 121, "Вырастить морковки"}, {"potato", "Картошка", 112, "Вырастить картошки"}
                     }
                     }
                 }, // Mission
@@ -26,40 +26,42 @@ MissionPack farmerPack
             "wheatTAG", "Фермер", "PLAYER_HEAD", farmer_head,
             {
                 {
-                    MissionType.at("blocks"), defaultOptions, {},
-                    {"goalStr"},
+                    "BlocksMissions", defaultOptions, {},
+                    {{}},
                     {100, {"give", "unlockworld"},
                     {
-                        {"wheat", 10, "Морковь"}, {"potato", 11, "Картошка"}
+                        {"carrot", "Морковь", 131, "Вырастить морковки"}, {"potato", "Картошка", 121, "Вырастить картошки"}
                     }
                     }
                 }, // Mission
                 {
-                    MissionType.at("blocks"), defaultOptions, {},
-                    {"goalStr"},
+                    "BlocksMissions", defaultOptions, {},
+                    {{}},
                     {100, {"give", "unlockworld"},
                     {
-                        {"carrot", 11, "Морковь"}, {"potato", 11, "Картошка"}
+                        {"carrot", "Морковь", 141, "Вырастить морковки"}, {"potato", "Картошка", 122, "Вырастить картошки"}
                     }
                     }
                 }, // Mission                
                 {
-                    MissionType.at("blocks"), defaultOptions, {},
-                    {"goalStr"},
+                    "BlocksMissions", defaultOptions, {},
+                    {{}},
                     {100, {},
                     {
-                        {"carrot", 11, "Морковь"}, {"potato", 11, "Картошка"}
+                        {"carrot", "Морковь", 115, "Вырастить морковки"}, {"potato", "Картошка", 132, "Вырастить картошки"}
                     }
                     }
                 }, // Mission                
+                // dynamic_cast<FarmerMission*>
                 {
-                    MissionType.at("blocks"), defaultOptions, {},
-                    {"goalStr"},
+                    "BlocksMissions", defaultOptions, {},
+                    {{}},
                     {100, {"give"},
                     {
-                        {"carrot", 11, "Морковь"}, {"potato", 11, "Картошка"}
+                        {"carrot", "Морковь", 111, "Вырастить морковки"}, {"potato", "Картошка", 124, "Вырастить картошки"}
                     }
-                    }
+                    },
+                    // {"sfs", "saf"}
                 }, // Mission
             }
         }, // MissionGroup

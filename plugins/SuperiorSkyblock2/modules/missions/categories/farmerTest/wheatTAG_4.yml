@@ -12,10 +12,10 @@ rewards:
   items:
     '1':
       type: carrot
-      amount: 11
+      amount: 111
     '2':
       type: potato
-      amount: 11
+      amount: 124
   commands:
     - 'eco give %player% 100'
     - 'give'
@@ -28,3 +28,4 @@ required-missions:
   - 'wheatTAG_2'
   - 'wheatTAG_3'
 
+required-plants:

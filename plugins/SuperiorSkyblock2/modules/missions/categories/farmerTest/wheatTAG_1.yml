@@ -11,11 +11,11 @@ island: true
 rewards:
   items:
     '1':
-      type: wheat
-      amount: 10
+      type: carrot
+      amount: 131
     '2':
       type: potato
-      amount: 11
+      amount: 121
   commands:
     - 'eco give %player% 100'
     - 'give'
@@ -25,3 +25,4 @@ rewards:
     - 'is admin msg %player% &bФермер |'
 
 
+required-plants:

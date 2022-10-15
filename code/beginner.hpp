@@ -9,40 +9,40 @@ MissionPack beginnerPack
     "beginnerTest",
     {
         {
-            "beginTAG", "начало", "PLAYER_HEAD", farmer_head,
+            "beginTAG", "начало", "PLAYER_HEAD", beginner_head,
             {
                 {
-                    MissionType.at("blocks"), defaultOptions, {},
-                    {"goalStr"},
+                    "BlocksMissions", defaultOptions, {},
+                    {{{"beetroots", "бурак", 3, "добыть бурак"}, {"potato", "картошка", 2, "собери Картошка"}}, {}, ""},
                     {100, {"give", "unlockworld"},
                     {
-                        {"beetroots", 32, "Морковь"}, {"potato", 11, "Картошка"}
+                        {"beetroots", "бурак", 3, "добыть бурак"}, {"potato", "картошка", 2, "собери Картошка"}
                     }
                     }
                 }, // Mission
             }
         }, // MissionGroup
         {
-            "beginnerTAG", "начальник", "PLAYER_HEAD", farmer_head,
+            "beginnerTAG", "начальник", "PLAYER_HEAD", beginner_head,
             {
                 {
-                    MissionType.at("blocks"), defaultOptions, {},
-                    {"goalStr"},
+                    "BlocksMissions", defaultOptions, {},
+                    {{}},
                     {100, {"give", "unlockworld"},
                     {
-                        {"beetroots", 30, "Морковь"}, {"potato", 11, "Картошка"}
+                        {"beetroots", "бурак", 32, "добыть бурак"}, {"potato", "картошка", 12, "собери Картошка"}
                     }
                     }
                 }, // Mission
                 {
-                    MissionType.at("blocks"), defaultOptions, {},
-                    {"goalStr"},
+                    "BlocksMissions", defaultOptions, {},
+                    {{}},
                     {100, {"give", "unlockworld"},
                     {
-                        {"beetroots", 31, "Морковь"}, {"potato", 11, "Картошка"}
-                    }
+                        {"beetroots", "бурак", 31, "добыть бурак"}, {"potato", "картошка", 11, "собери Картошка"}
                     }
                 }, // Mission
+                    }
             }
         }, // MissionGroup
     }

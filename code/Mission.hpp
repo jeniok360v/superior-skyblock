@@ -10,18 +10,18 @@
 
 const std::string missionsDir = "../plugins/SuperiorSkyblock2/modules/missions/categories/"; //extern
 
-const std::map<std::string, std::string> MissionType
+const std::vector<std::string> MissionType
 {
-    {"blocks", "BlocksMissions"},
-    {"brewing", "BrewingMissions"},
-    {"crafting", "CraftingMissions"},
-    {"enchanting", "EnchantingMissions"},
-    {"farming", "FarmingMissions"},
-    {"fishing", "FishingMissions"},
-    {"island", "IslandMissions"},
-    {"obtaining", "ItemsMissions"},
-    {"killing", "KillsMissions"},
-    {"stats", "StatisticsMissions"},
+    "BlocksMissions",
+    "BrewingMissions",
+    "CraftingMissions",
+    "EnchantingMissions",
+    "FarmingMissions",
+    "FishingMissions",
+    "IslandMissions",
+    "ItemsMissions",
+    "KillsMissions",
+    "StatisticsMissions",
 };
 
 const std::unordered_map<std::string, std::string> defaultOptions {
@@ -43,8 +43,16 @@ struct MissionAssociations
 struct Item
 {
     std::string itemName;
+    std::string russianItemName;
     int itemAmount;
     std::string itemDescription;
+};
+
+struct Goal
+{
+    std::vector<Item> requiredItems;
+    std::vector<std::string> events;
+    std::string check;
 };
 
 struct Reward
@@ -54,10 +62,10 @@ struct Reward
     std::vector<Item> receivedItems;
 };
 
-struct Goal
-{
-    std::string goalStr;
-};
+// struct Goal
+// {
+    // std::string goalStr;
+// };
 
 class Mission
 {
@@ -151,6 +159,23 @@ public:
         ofs << std::endl;
     }
 
+    // template<class T> 
+    // T& get() const;
+
+    void printGoal(std::ofstream& ofs)
+    {
+        ofs << "required-plants:" << std::endl;
+        for(int i = 0; i < goal.requiredItems.size(); i++)//  auto& item : goal.requiredItems)
+        {
+            std::string itemPrint = goal.requiredItems.at(i).itemName;
+            std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
+            ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
+            ofs << "    types:" << std::endl;
+            ofs << "      - '" + itemPrint + "'" << std::endl;
+            ofs << "    amount: " + std::to_string(goal.requiredItems.at(i).itemAmount) << std::endl;
+        }
+    }
+
     void printMission(std::ofstream& ofs, int missionNumber, std::string groupTag, std::string groupName)
     {
         printWikiLink(ofs);
@@ -158,7 +183,7 @@ public:
         printOptions(ofs, options);
         printReward(ofs, missionNumber, groupName);
         printRequiredMissions(ofs, missionNumber, groupTag);
-        //printGoal
+        printGoal(ofs);
         //printLore
         
     }

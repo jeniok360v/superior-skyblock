@@ -1,10 +1,8 @@
-mission goal: goalStr
 carrot
-22
+121
 pack tag: farmerTest
 group tag: farmerTAG
 previousRequired: 1
-mission goal: goalStr
 true
 mission-file: BlocksMissions
 disband-reset: true

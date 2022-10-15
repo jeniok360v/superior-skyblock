@@ -12,10 +12,10 @@ rewards:
   items:
     '1':
       type: beetroots
-      amount: 32
+      amount: 3
     '2':
       type: potato
-      amount: 11
+      amount: 2
   commands:
     - 'eco give %player% 100'
     - 'give'
@@ -25,3 +25,12 @@ rewards:
     - 'is admin msg %player% &bначало |'
 
 
+required-plants:
+  '1':
+    types: 
+      - 'BEETROOTS'
+    amount: 3
+  '2':
+    types: 
+      - 'POTATO'
+    amount: 2

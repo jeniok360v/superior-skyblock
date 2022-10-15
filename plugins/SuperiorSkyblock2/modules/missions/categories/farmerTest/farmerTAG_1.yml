@@ -12,10 +12,10 @@ rewards:
   items:
     '1':
       type: carrot
-      amount: 22
+      amount: 121
     '2':
       type: potato
-      amount: 11
+      amount: 112
   commands:
     - 'eco give %player% 100'
     - 'give'
@@ -25,3 +25,4 @@ rewards:
     - 'is admin msg %player% &bФермер |'
 
 
+required-plants:
