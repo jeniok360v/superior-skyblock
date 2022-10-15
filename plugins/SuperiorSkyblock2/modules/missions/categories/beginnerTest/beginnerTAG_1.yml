@@ -25,3 +25,15 @@ rewards:
     - 'is admin msg %player% &bначальник |'
 
 required-blocks:
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: skull
+    name: '&bМиссия "начальник 1"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - ' '
+  can-complete:
+  completed:

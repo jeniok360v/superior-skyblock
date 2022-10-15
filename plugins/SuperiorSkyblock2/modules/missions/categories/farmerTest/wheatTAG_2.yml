@@ -35,3 +35,16 @@ craftings:
     type: 'CHEST'
     amount: 3
 
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: skull
+    name: '&bМиссия "Фермер 2"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax2 &7верстак'
+      - '&b  - &ax3 &7сундук'
+      - ' '
+  can-complete:
+  completed:

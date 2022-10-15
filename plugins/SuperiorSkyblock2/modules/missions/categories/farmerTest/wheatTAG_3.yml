@@ -27,3 +27,15 @@ required-missions:
   - 'wheatTAG_2'
 
 required-blocks:
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: skull
+    name: '&bМиссия "Фермер 3"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - ' '
+  can-complete:
+  completed:

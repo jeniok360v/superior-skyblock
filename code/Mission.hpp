@@ -37,7 +37,6 @@ struct MissionAssociations
     // int level; //?
     std::vector<std::string> additionalRequirements;
     bool previousRequired = true;
-    
 };
 
 struct Item
@@ -51,17 +50,26 @@ struct Item
 struct Potion
 {
     std::string potionName;
+    std::string russianItemName;
     std::string upgraded;
     std::string extended;
     std::string splash;
     int amount;
+    std::string descriptions;
+};
+
+struct Event
+{
+    std::string russianItemName;
+    std::string event;
+    std::string successCheck;
+    std::string description;
 };
 
 struct Goal
 {
     std::vector<Item> requiredItems;
-    std::vector<std::string> events;
-    std::string check;
+    std::vector<Event> events;
     std::vector<Potion> potions;
 };
 
@@ -75,6 +83,7 @@ struct Reward
 class Mission
 {
 public:
+    std::vector<std::string> missionDescription;
     std::string missionType;
     std::unordered_map<std::string, std::string> options;
     MissionAssociations associations;
@@ -104,7 +113,12 @@ public:
     void printGoalKillsMissions(std::ofstream& ofs);
     void printGoalStatisticsMissions(std::ofstream& ofs);
 
-    void printMission(std::ofstream& ofs, int missionNumber, std::string groupTag, std::string groupName)
+    void printLore(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull);
+    void printLoreSegment(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull);
+    void printLoreHeader(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull);
+    void printLoreRequirements(std::ofstream& ofs);
+
+    void printMission(std::ofstream& ofs, int missionNumber, std::string groupTag, std::string groupName, std::string icon, std::string skull)
     {
         printWikiLink(ofs);
         printMissionType(ofs);
@@ -112,8 +126,7 @@ public:
         printReward(ofs, missionNumber, groupName);
         printRequiredMissions(ofs, missionNumber, groupTag);
         printGoal(ofs);
-        //printLore
-        
+        printLore(ofs, missionNumber, groupName, icon, skull);
     }
 };
 

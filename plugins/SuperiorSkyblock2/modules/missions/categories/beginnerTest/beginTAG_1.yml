@@ -33,3 +33,19 @@ required-blocks:
     types:
       - 'POTATO'
     amount: 2
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: skull
+    name: '&bМиссия "начало 1"'
+    lore:
+      - ' '
+      - '&b * &7default mission description'
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax3 &7бурак'
+      - '&b  - &ax2 &7картошка'
+      - ' '
+  can-complete:
+  completed:

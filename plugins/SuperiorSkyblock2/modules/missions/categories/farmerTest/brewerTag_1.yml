@@ -42,3 +42,16 @@ required-potions:
         splash: false
     amount: 2
 
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: skull
+    name: '&bМиссия "варитель 1"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax3 &7скорость 2'
+      - '&b  - &ax2 &7слабость 2'
+      - ' '
+  can-complete:
+  completed:

@@ -12,8 +12,9 @@ MissionPack beginnerPack
             "beginTAG", "начало", "PLAYER_HEAD", beginner_head,
             {
                 {
+                    {"default mission description"},
                     "BlocksMissions", defaultOptions, {},
-                    {{{"beetroots", "бурак", 3, "добыть бурак"}, {"potato", "картошка", 2, "собери Картошка"}}, {}, ""},
+                    {{{"beetroots", "бурак", 3, "добыть бурак"}, {"potato", "картошка", 2, "собери Картошка"}}, {}, {}},
                     {100, {"give", "unlockworld"},
                     {
                         {"beetroots", "бурак", 3, "добыть бурак"}, {"potato", "картошка", 2, "собери Картошка"}
@@ -26,6 +27,7 @@ MissionPack beginnerPack
             "beginnerTAG", "начальник", "PLAYER_HEAD", beginner_head,
             {
                 {
+                    {},
                     "BlocksMissions", defaultOptions, {},
                     {{}},
                     {100, {"give", "unlockworld"},
@@ -35,6 +37,7 @@ MissionPack beginnerPack
                     }
                 }, // Mission
                 {
+                    {},
                     "BlocksMissions", defaultOptions, {},
                     {{}},
                     {100, {"give", "unlockworld"},

@@ -25,3 +25,15 @@ rewards:
     - 'is admin msg %player% &bФермер |'
 
 required-blocks:
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: skull
+    name: '&bМиссия "Фермер 1"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - ' '
+  can-complete:
+  completed:
