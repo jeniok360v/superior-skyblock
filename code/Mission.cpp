@@ -14,6 +14,15 @@ void Mission::printMissionType(std::ofstream& ofs)
     ofs << "mission-file: " << missionType << std::endl << std::endl;
 }
 
+void Mission::printOptions(std::ofstream& ofs, std::unordered_map<std::string, std::string> const &options)
+{
+    for (auto const &option: options)
+    {
+        ofs << option.first << ": " << option.second << std::endl;
+    }
+    ofs << std::endl;
+}
+
 void Mission::printReward(std::ofstream& ofs, int missionNumber, std::string groupName)
 {
     ofs << "rewards:" << std::endl;

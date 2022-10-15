@@ -83,9 +83,7 @@ public:
 
     void printWikiLink(std::ofstream& ofs);
     void printMissionType(std::ofstream& ofs);
-
-    template<typename K, typename V>
-    void printOptions(std::ofstream& ofs, std::unordered_map<K, V> const &options);
+    void printOptions(std::ofstream& ofs, std::unordered_map<std::string, std::string> const &options);
 
     void printReward(std::ofstream& ofs, int missionNumber, std::string groupName);
     void printRewardItems(std::ofstream& ofs);
@@ -118,16 +116,6 @@ public:
         
     }
 };
-
-template<typename K, typename V>
-void Mission::printOptions(std::ofstream& ofs, std::unordered_map<K, V> const &options)
-{
-    for (auto const &option: options)
-    {
-        ofs << option.first << ": " << option.second << std::endl;// << std::endl;
-    }
-    ofs << std::endl;
-}
 
 
 

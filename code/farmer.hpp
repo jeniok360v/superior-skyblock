@@ -22,14 +22,6 @@ MissionPack farmerPack
                 }, // Mission
             }
         }, // MissionGroup
-// struct Potion
-// {
-    // std::string potionName;
-    // std::string upgraded;
-    // std::string extended;
-    // std::string splash;
-    // int amount;
-// };
         {
             "brewerTag", "варитель", "PLAYER_HEAD", farmer_head,
             {
