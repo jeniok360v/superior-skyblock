@@ -63,7 +63,7 @@ void Mission::printRewardAdditionalCommands(std::ofstream& ofs)
     {
         for (int i = 0; i < reward.commands.size(); i++)
         {
-            ofs << "    - '" + reward.commands.at(i) + "'" << std::endl;
+            ofs << "    - '" + reward.commands.at(i).command + "'" << std::endl;
         }
     }
 }
@@ -226,20 +226,20 @@ void Mission::printLore(std::ofstream& ofs, int missionNumber, std::string group
 {
     ofs << "icons:" << std::endl;
     ofs << "  not-completed:" << std::endl;
-    printLoreSegment(ofs, missionNumber, groupName, icon, skull);
+    printLoreSegment(ofs, missionNumber, groupName, icon, skull, "not completed");
     ofs << "  can-complete:" << std::endl;
-    // printLoreSegment()
+    printLoreSegment(ofs, missionNumber, groupName, icon, skull, "can complete");
     ofs << "  completed:" << std::endl;
-    // printLoreSegment()
+    printLoreSegment(ofs, missionNumber, groupName, icon, skull, "completed");
     
 }
 
-void Mission::printLoreSegment(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull)
+void Mission::printLoreSegment(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, std::string completness)
 {
     printLoreHeader(ofs, missionNumber, groupName, icon, skull);
     printLoreRequirements(ofs);
-    // printLoreReward()
-    // printLoreProgress()
+    printLoreReward(ofs);
+    printLoreProgress(ofs, completness);
 }
 
 void Mission::printLoreHeader(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull)
@@ -280,17 +280,75 @@ void Mission::printLoreRequirements(std::ofstream& ofs)
     ofs << "      - ' '" << std::endl;
 }
 
+void Mission::printLoreReward(std::ofstream& ofs)
+{
+    ofs << "      - '&b * &7Награды:'" << std::endl;
+    for(auto& item : reward.receivedItems)
+    {
+        ofs << "      - '&b  - &ax" + std::to_string(item.itemAmount) + " &7" + item.itemName + "'" << std::endl;
+    }
+    for(auto& command : reward.commands)
+    {
+        ofs << "      - '&b  - &7" + command.description + "'" << std::endl;
+    }
+    if(reward.money > 0)
+    {
+        ofs << "      - '&b  - &a$" + std::to_string(reward.money) + "'" << std::endl;
+    }
+    ofs << "      - ' '" << std::endl;
+}
+
+void Mission::printLoreProgress(std::ofstream& ofs, std::string completness)
+{
+    if(completness == "not completed")
+    {
+        ofs << "      - '&b * &7Прогресс: &a{0}%'" << std::endl;
+    }
+    else
+    {
+        ofs << "      - '&b * &7Прогресс: &a100%'" << std::endl;
+    }
+
+    if(completness == "completed")
+    {
+        for(auto& item : goal.requiredItems)
+        {
+            ofs << "      - '&b  - &7" + item.itemDescription + ": &a" + std::to_string(item.itemAmount) + "/" + std::to_string(item.itemAmount) + "'" << std::endl;
+        }
+    }
+    else
+    {
+        for(auto& item : goal.requiredItems)
+        {
+            ofs << "      - '&b  - &7" + item.itemDescription + ": &a{value_" + item.itemName + "}/" + std::to_string(item.itemAmount) + "'" << std::endl;
+        }
+    }
+
+    for(auto& event : goal.events)
+    {
+        ofs << "      - '&b  - &7" + event.description + "'" << std::endl;
+    }
+    if(!goal.potions.empty())
+    {
+        ofs << "      - '&b * &7&nПримечание:&r&7 счётчик зелий не ведется'" << std::endl;
+    }
+    ofs << "      - ' '" << std::endl;
+    
+    if(completness == "not completed")
+    {
+        ofs << "      - '&c ✘ &7Миссия не завершена'" << std::endl;
+    }
+    else if(completness == "can complete")
+    {
+        ofs << "      - '&8 ✔ &7Нажмите, чтобы получить награду.'" << std::endl;
+    }
+    else if(completness == "completed")
+    {
+        ofs << "      - '&a ✔ &7Миссия выполнена, награда получена.'" << std::endl;
+    }
+}
+
 /*
-void Mission::printLoreReward()
-{
-    
-}
-
-void Mission::printLoreProgress()
-{
-    
-}
-
 # Icons used in the menus.
 icons:
   not-completed:

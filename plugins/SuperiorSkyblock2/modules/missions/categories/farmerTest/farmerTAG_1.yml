@@ -18,7 +18,6 @@ rewards:
       amount: 112
   commands:
     - 'eco give %player% 100'
-    - 'give'
     - 'unlockworld'
     - 'is admin msg %player% &bФермер |'
     - 'is admin msg %player% &bФермер | &7Вы успешно завершили миссию &a"Фермер 1"&r&7!'
@@ -35,5 +34,46 @@ icons:
       - ' '
       - '&b * &7Требования:'
       - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax121 &7carrot'
+      - '&b  - &ax112 &7potato'
+      - '&b  - &7open world'
+      - '&b  - &a$100'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
   can-complete:
+    type: PLAYER_HEAD
+    skull: skull
+    name: '&bМиссия "Фермер 1"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax121 &7carrot'
+      - '&b  - &ax112 &7potato'
+      - '&b  - &7open world'
+      - '&b  - &a$100'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
   completed:
+    type: PLAYER_HEAD
+    skull: skull
+    name: '&bМиссия "Фермер 1"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax121 &7carrot'
+      - '&b  - &ax112 &7potato'
+      - '&b  - &7open world'
+      - '&b  - &a$100'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

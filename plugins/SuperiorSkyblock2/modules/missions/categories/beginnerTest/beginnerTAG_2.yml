@@ -18,7 +18,6 @@ rewards:
       amount: 11
   commands:
     - 'eco give %player% 100'
-    - 'give'
     - 'unlockworld'
     - 'is admin msg %player% &bначальник |'
     - 'is admin msg %player% &bначальник | &7Вы успешно завершили миссию &a"начальник 2"&r&7!'
@@ -38,5 +37,46 @@ icons:
       - ' '
       - '&b * &7Требования:'
       - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax31 &7beetroots'
+      - '&b  - &ax11 &7potato'
+      - '&b  - &7open world'
+      - '&b  - &a$100'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
   can-complete:
+    type: PLAYER_HEAD
+    skull: skull
+    name: '&bМиссия "начальник 2"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax31 &7beetroots'
+      - '&b  - &ax11 &7potato'
+      - '&b  - &7open world'
+      - '&b  - &a$100'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
   completed:
+    type: PLAYER_HEAD
+    skull: skull
+    name: '&bМиссия "начальник 2"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax31 &7beetroots'
+      - '&b  - &ax11 &7potato'
+      - '&b  - &7open world'
+      - '&b  - &a$100'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

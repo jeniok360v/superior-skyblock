@@ -73,10 +73,16 @@ struct Goal
     std::vector<Potion> potions;
 };
 
+struct Command
+{
+    std::string command; //line?
+    std::string description;
+};
+
 struct Reward
 {
     int money = 0;
-    std::vector<std::string> commands;
+    std::vector<Command> commands;
     std::vector<Item> receivedItems;
 };
 
@@ -114,9 +120,11 @@ public:
     void printGoalStatisticsMissions(std::ofstream& ofs);
 
     void printLore(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull);
-    void printLoreSegment(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull);
+    void printLoreSegment(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, std::string completness);
     void printLoreHeader(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull);
     void printLoreRequirements(std::ofstream& ofs);
+    void printLoreReward(std::ofstream& ofs);
+    void printLoreProgress(std::ofstream& ofs, std::string completness);
 
     void printMission(std::ofstream& ofs, int missionNumber, std::string groupTag, std::string groupName, std::string icon, std::string skull)
     {
