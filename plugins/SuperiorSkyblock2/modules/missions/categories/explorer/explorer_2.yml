@@ -14,29 +14,19 @@ auto-reward: false
 # Should block counts of players get reset when completing the mission?
 reset-after-finish: true
 
-# Resetting the mission upon island disband.
-disband-reset: true
-
-# Whether or not the mission should only be shown in menus when the required missions & checks are completed.
-only-show-if-required-completed: true
-
-# Whether or not the mission should be an islands mission (mission that is synced with all island members).
-island: true
-
 # Rewards given when completing the mission.
 rewards:
   commands:
     - 'eco give %player% 150000'
-    - 'is admin msg %player% &bИсследователь |'
-    - 'is admin msg %player% &bИсследователь | &7Вы успешно завершили миссию &a"Исследователь Края"&r&7!'
-    - 'is admin msg %player% &bИсследователь |'
+    - 'is admin msg %player% &e&lExplorer | &7Successfully finished the mission The-End Explorer!'
+    - 'is admin msg %player% &e&lExplorer | &7&oYou explored every single world on the server!'
 
 # List of events that will trigger the mission.
 events:
   - IslandSchematicPasteEvent
 
 # Requirement of the event to complete the mission.
-success-check: 'event.getSchematic().endsWith("_the_end")'
+success-check: 'event.getSchematic().endsWith("_nether")'
 
 # List of required missions that must be completed before completing this one.
 required-missions:
@@ -45,38 +35,36 @@ required-missions:
 # Icons used in the menus.
 icons:
   not-completed:
-    type: PLAYER_HEAD
-    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ4MDAwZDU0MTk4NjBmZjNkZTUzYmE1NTliOWVjZTc5ZmIxYjY0OGUwOTlmMDIzYmE0ODA4NGNkY2VmOGIwYyJ9fX0='
-    name: '&bИсследователь Края'
+    type: PAPER
+    name: '&aThe-End Explorer'
     lore:
-      - ' '
-      - '&b * &7Отправляйтесь в мир Края.'
-      - ' '
-      - '&b * &7Награда:'
-      - '&b  - &a$150,000'
-      - ' '
-      - '&c ✘ &7Не завершен'
+      - '&7Go to The-End.'
+      - ''
+      - '&6Rewards:'
+      - '&8 - &7$150,000'
+      - ''
+      - '&c&l ✘ &7Not Completed'
   can-complete:
-    type: PLAYER_HEAD
-    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQyYTI0MTUyYWExM2FjMzE1YjI3MWQ2OThiODJiNGE3YTE3ZjEwZjE3ZjBlOGM0OTVmYjZmOGNiMzljNTU2NCJ9fX0='
-    name: '&bИсследователь Края'
+    type: PAPER
+    name: '&aThe-End Explorer'
     lore:
-      - ' '
-      - '&b * &7Отправляйтесь в мир Края.'
-      - ' '
-      - '&b * &7Награда:'
-      - '&b  - &a$150,000'
-      - ' '
-      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+      - '&7Go to The-End.'
+      - ''
+      - '&6Rewards:'
+      - '&8 - &7$150,000'
+      - ''
+      - '&a&l ✔ &7Click to redeem your reward.'
+    enchants:
+      DURABILITY: 1
+    flags:
+      - HIDE_ENCHANTS
   completed:
-    type: PLAYER_HEAD
-    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
-    name: '&bИсследователь Края'
+    type: MAP
+    name: '&aThe-End Explorer'
     lore:
-      - ' '
-      - '&b * &7Отправляйтесь в мир Края.'
-      - ' '
-      - '&b * &7Награда:'
-      - '&b  - &a$150,000'
-      - ' '
-      - '&a ✔ &7Уже выполненно, награда получена.'
+      - '&7Go to The-End.'
+      - ''
+      - '&6Rewards:'
+      - '&8 - &7$150,000'
+      - ''
+      - '&a&l ✔ &7Already Claimed.'

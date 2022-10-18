@@ -9,27 +9,18 @@
 mission-file: IslandMissions
 
 # Whether the mission should be given when completing all requirements.
-auto-reward: false
+auto-reward: fasle
 
 # Should block counts of players get reset when completing the mission?
 reset-after-finish: true
-
-# Resetting the mission upon island disband.
-disband-reset: true
-
-# Whether or not the mission should only be shown in menus when the required missions & checks are completed.
-only-show-if-required-completed: true
-
-# Whether or not the mission should be an islands mission (mission that is synced with all island members).
-island: true
 
 # Rewards given when completing the mission.
 rewards:
   commands:
     - 'eco give %player% 25000'
-    - 'is admin msg %player% &bИсследователь |'
-    - 'is admin msg %player% &bИсследователь | &7Вы успешно завершили миссию &a"Исследователь Пустоты"&r&7!'
-    - 'is admin msg %player% &bИсследователь |'
+    - 'is admin msg %player% &e&lExplorer | &7Successfully finished the mission Nether Explorer!'
+    - 'is admin msg %player% &e&lExplorer | &7Are you ready for the real challenge?'
+    - 'is admin msg %player% &e&lExplorer | &7&oFor more information about the next mission, checkout /is missions'
 
 # List of events that will trigger the mission.
 events:
@@ -41,38 +32,36 @@ success-check: 'event.getSchematic().endsWith("_nether")'
 # Icons used in the menus.
 icons:
   not-completed:
-    type: PLAYER_HEAD
-    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7ImlkIjoiMTkwM2NhNWE3MjgzNDExODk5NjMwYTY5OTM3MTY3NmMiLCJ0eXBlIjoiU0tJTiIsInVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmM5MTVkYjNmYzQwYTc5YjYzYzJjNDUzZjBjNDkwOTgxZTUyMjdjNTAyNzUwMTI4MzI3MjEzODUzM2RlYTUxOSIsInByb2ZpbGVJZCI6IjgwMThhYjAwYjJhZTQ0Y2FhYzliZjYwZWY5MGY0NWU1IiwidGV4dHVyZUlkIjoiMmM5MTVkYjNmYzQwYTc5YjYzYzJjNDUzZjBjNDkwOTgxZTUyMjdjNTAyNzUwMTI4MzI3MjEzODUzM2RlYTUxOSJ9fSwic2tpbiI6eyJpZCI6IjE5MDNjYTVhNzI4MzQxMTg5OTYzMGE2OTkzNzE2NzZjIiwidHlwZSI6IlNLSU4iLCJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzJjOTE1ZGIzZmM0MGE3OWI2M2MyYzQ1M2YwYzQ5MDk4MWU1MjI3YzUwMjc1MDEyODMyNzIxMzg1MzNkZWE1MTkiLCJwcm9maWxlSWQiOiI4MDE4YWIwMGIyYWU0NGNhYWM5YmY2MGVmOTBmNDVlNSIsInRleHR1cmVJZCI6IjJjOTE1ZGIzZmM0MGE3OWI2M2MyYzQ1M2YwYzQ5MDk4MWU1MjI3YzUwMjc1MDEyODMyNzIxMzg1MzNkZWE1MTkifSwiY2FwZSI6bnVsbH0='
-    name: '&bИсследователь Пустоты'
+    type: PAPER
+    name: '&aNether Explorer'
     lore:
-      - ' '
-      - '&b * &7Отправляйтесь в Нижний мир.'
-      - ' '
-      - '&b * &7Награда:'
-      - '&b  - &a$25,000'
-      - ' '
-      - '&c ✘ &7Не завершен'
+      - '&7Go to the Nether.'
+      - ''
+      - '&6Rewards:'
+      - '&8 - &7$25,000'
+      - ''
+      - '&c&l ✘ &7Not Completed'
   can-complete:
-    type: PLAYER_HEAD
-    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQyYTI0MTUyYWExM2FjMzE1YjI3MWQ2OThiODJiNGE3YTE3ZjEwZjE3ZjBlOGM0OTVmYjZmOGNiMzljNTU2NCJ9fX0='
-    name: '&bИсследователь Пустоты'
+    type: PAPER
+    name: '&aNether Explorer'
     lore:
-      - ' '
-      - '&b * &7Отправляйтесь в Нижний мир.'
-      - ' '
-      - '&b * &7Награда:'
-      - '&b  - &a$25,000'
-      - ' '
-      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+      - '&7Go to the Nether.'
+      - ''
+      - '&6Rewards:'
+      - '&8 - &7$25,000'
+      - ''
+      - '&a&l ✔ &7Click to redeem your reward.'
+    enchants:
+      DURABILITY: 1
+    flags:
+      - HIDE_ENCHANTS
   completed:
-    type: PLAYER_HEAD
-    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
-    name: '&bИсследователь Пустоты'
+    type: MAP
+    name: '&aNether Explorer'
     lore:
-      - ' '
-      - '&b * &7Отправляйтесь в Нижний мир.'
-      - ' '
-      - '&b * &7Награда:'
-      - '&b  - &a$25,000'
-      - ' '
-      - '&a ✔ &7Уже выполненно, награда получена.'
+      - '&7Go to the Nether.'
+      - ''
+      - '&6Rewards:'
+      - '&8 - &7$25,000'
+      - ''
+      - '&a&l ✔ &7Already Claimed.'

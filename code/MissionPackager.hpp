@@ -1,6 +1,6 @@
 #include "MissionPack.hpp"
-#include "beginner.hpp"
-#include "farmer.hpp"
+#include "missionpacks/beginner.hpp"
+#include "missionpacks/farmer.hpp"
 
 class MissionPackager
 {

@@ -17,7 +17,7 @@ public:
         for (int i = 0; i < missions.size(); i++)
         {
             std::ofstream ofs(missionsDir + packTag + "/" + groupTag + "_" + std::to_string(i+1) + ".yml");
-            missions.at(i).printMission(ofs, i+1, groupTag, groupName, "PLAYER_HEAD", "skull");
+            missions.at(i).printMission(ofs, i+1, groupTag, groupName, groupIcon, headTag);
             ofs.close();
         }
     }

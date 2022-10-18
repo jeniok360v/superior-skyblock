@@ -18,20 +18,16 @@ categories:
 
   slayer:
     name: 'Slayer'
-    slot: 13
+    slot: 21
 
-  farmer:
-    name: 'Farmer'
+  beginner:
+    name: 'Beginner'
     slot: 22
 
   fisherman:
     name: 'Fisherman'
     slot: 23
 
-  explorer:
-    name: 'Explorer'
+  farmer:
+    name: 'Farmer'
     slot: 24
-
-  potion:
-    name: 'Confier'
-    slot: 25

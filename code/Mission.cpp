@@ -2,8 +2,6 @@
 #include <fstream>
 #include <iostream>
 
-// void Mission::xxx() {std::cout << "HHHHHHHHHHH" <<std::endl;}
-
 void Mission::printWikiLink(std::ofstream& ofs)
 {
     ofs << "# https://wiki.bg-software.com/superiorskyblock/overview/missions" << std::endl << std::endl;
@@ -42,8 +40,10 @@ void Mission::printRewardItems(std::ofstream& ofs)
         ofs << "  items:" << std::endl;
         for (int i = 0; i < reward.receivedItems.size(); i++)
         {
+            std::string itemPrint = reward.receivedItems.at(i).itemName;
+            std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
             ofs << "    '" + std::to_string(i + 1) + "':" << std::endl;
-            ofs << "      type: " + reward.receivedItems.at(i).itemName << std::endl;
+            ofs << "      type: " + itemPrint << std::endl;
             ofs << "      amount: " + std::to_string(reward.receivedItems.at(i).itemAmount) << std::endl;
         }
     }
@@ -84,7 +84,7 @@ void Mission::printRequiredMissions(std::ofstream& ofs, int missionNumber, std::
         {
             for(auto& requiredMission : associations.additionalRequirements)
             {
-                ofs << "  - '" + requiredMission + "'" << std::endl;
+                ofs << "  - '" + requiredMission.first + "'" << std::endl;
             }
         }
         ofs << std::endl;
@@ -228,9 +228,9 @@ void Mission::printLore(std::ofstream& ofs, int missionNumber, std::string group
     ofs << "  not-completed:" << std::endl;
     printLoreSegment(ofs, missionNumber, groupName, icon, skull, "not completed");
     ofs << "  can-complete:" << std::endl;
-    printLoreSegment(ofs, missionNumber, groupName, icon, skull, "can complete");
+    printLoreSegment(ofs, missionNumber, groupName, icon, headChest, "can complete");
     ofs << "  completed:" << std::endl;
-    printLoreSegment(ofs, missionNumber, groupName, icon, skull, "completed");
+    printLoreSegment(ofs, missionNumber, groupName, icon, headCompleted, "completed");
     
 }
 
@@ -240,6 +240,8 @@ void Mission::printLoreSegment(std::ofstream& ofs, int missionNumber, std::strin
     printLoreRequirements(ofs);
     printLoreReward(ofs);
     printLoreProgress(ofs, completness);
+    printLorePrerequisite(ofs);
+    printLoreFooter(ofs, completness);
 }
 
 void Mission::printLoreHeader(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull)
@@ -247,7 +249,7 @@ void Mission::printLoreHeader(std::ofstream& ofs, int missionNumber, std::string
     ofs << "    type: " + icon << std::endl;
     if(icon == "PLAYER_HEAD")
     {
-        ofs << "    skull: " + skull << std::endl;
+        ofs << "    skull: '" + skull + "'" << std::endl;
     }
     ofs << "    name: '&bМиссия \"" + groupName + " " + std::to_string(missionNumber) + "\"'" << std::endl;
     ofs << "    lore:" << std::endl;
@@ -333,7 +335,23 @@ void Mission::printLoreProgress(std::ofstream& ofs, std::string completness)
         ofs << "      - '&b * &7&nПримечание:&r&7 счётчик зелий не ведется'" << std::endl;
     }
     ofs << "      - ' '" << std::endl;
-    
+}
+
+void Mission::printLorePrerequisite(std::ofstream& ofs)
+{
+    if(!associations.additionalRequirements.empty())
+    {
+        ofs << "      - '&b * &7&nВыполните условия, чтобы открыть миссию:'" << std::endl;
+        for(auto& requiredMission : associations.additionalRequirements)
+        {
+            ofs << "      - '&b  - &7Пройдите миссию: &a\"" + requiredMission.second + "\"'" << std::endl;
+        }
+        ofs << "      - ' '" << std::endl;
+    }
+}
+
+void Mission::printLoreFooter(std::ofstream& ofs, std::string completness)
+{
     if(completness == "not completed")
     {
         ofs << "      - '&c ✘ &7Миссия не завершена'" << std::endl;
@@ -346,7 +364,10 @@ void Mission::printLoreProgress(std::ofstream& ofs, std::string completness)
     {
         ofs << "      - '&a ✔ &7Миссия выполнена, награда получена.'" << std::endl;
     }
+
+    // ofs << "      - ' '" << std::endl;
 }
+
 
 /*
 # Icons used in the menus.

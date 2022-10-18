@@ -1,0 +1,77 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: FarmingMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+island: true
+
+rewards:
+  commands:
+    - 'eco give %player% 200'
+    - 'is admin msg %player% &bКартошка |'
+    - 'is admin msg %player% &bКартошка | &7Вы успешно завершили миссию &a"Картошка 4"&r&7!'
+    - 'is admin msg %player% &bКартошка |'
+
+required-missions:
+  - 'potatoes_1'
+  - 'potatoes_2'
+  - 'potatoes_3'
+
+required-plants:
+  '1':
+    types:
+      - 'POTATOES'
+    amount: 4
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmNhZTVkMDM3OWZlNzNiOTQwNDIxNzhkODdkOTgyOThkM2NkZTdkYTEyNmIxOGRjY2U0YTNhNmM2NjNmYWZiNyJ9fX0='
+    name: '&bМиссия "Картошка 4"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax4 &7Картошка'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$200'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Вырастить картошки: &a{value_potatoes}/4'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
+    name: '&bМиссия "Картошка 4"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax4 &7Картошка'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$200'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Вырастить картошки: &a{value_potatoes}/4'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Картошка 4"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax4 &7Картошка'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$200'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Вырастить картошки: &a4/4'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

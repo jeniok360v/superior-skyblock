@@ -10,8 +10,8 @@ previous-menu: true
 
 pattern:
   - '$ $ $ $ $ $ $ $ $'
-  - '$ * * * @ * * * $'
-  - '$ * # * % ^ & H $'
+  - '$ * * * * * * * $'
+  - '$ * # @ % ^ & * $'
   - '$ * * * * * * * $'
   - '$ $ $ $ $ $ $ $ $'
 
@@ -42,11 +42,6 @@ items:
     lore:
       - '&7Click to start your adventure as a Fisherman.'
   '&':
-    type: MAP
-    name: '&eExplorer Missions'
-    lore:
-      - '&7Click to start your adventure as an Explorer.'
-  'H':
     type: MAP
     name: '&eExplorer Missions'
     lore:
