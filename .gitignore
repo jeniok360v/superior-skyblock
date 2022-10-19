@@ -6,6 +6,11 @@
 code/*
 !code/*
 
+!code/missionpacks/
+code/missionpacks/*
+!code/missionpacks/*
+# add code/missionpacks
+
 !plugins/
 plugins/*
 !plugins/SuperiorSkyblock2/
