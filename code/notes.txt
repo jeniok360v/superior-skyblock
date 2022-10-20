@@ -4,11 +4,16 @@
 
 убить x эндерменов, награда рамка портала
 
+Постучать х раз в колокол
+
 повторяемые миссии
 
+\superior-skyblock\plugins\SuperiorSkyblock2\menus\missions-category.yml
 
+https://minecraft.fandom.com/wiki/Statistics
 
-
+raid_win
+traded_with_villager
 
 
 

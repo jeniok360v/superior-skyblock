@@ -13,7 +13,8 @@ const std::string melon1 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0
 const std::string melon2 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDc5YjdiMjU1ZmM0YzRhMDE1YTIwYWJhZDg3Y2YyYzc0MWViZDYyYzA2MGU4M2E4MWM5OGFkZWYyZWU2NDg5NCJ9fX0=";
 const std::string melon3 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzUxODgzZDZiN2ZhNDJkZDBjZjBkOWNkOTk5NjE1YTg1NDBiYzA3YzZmY2Q1YmU1ZGJlYTU2MTdmZDEzOWZkNCJ9fX0=";
 const std::string melon4 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmY4MjdiNWYxMjZjZjU4OGY5MzU1Njc4Y2FlZTMwNTQ0MjZkYTBmYTcxNmRmYTVmMmFlNzk5YmJiMjdiODMifX19";
-// const std::string melon1 = "";
+const std::string pumpkin1 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzcyNjhiMzdjOWJhZDUyMTVhNjljYzlmYmZhZDc2ZDAyZWVkMTg2YzQ3MWI5ZmY3ZTMxMGQ4MWI1NTRhMTk0ZCJ9fX0=";
+// const std::string pumpkin1 = "";
 
 
 
@@ -36,7 +37,7 @@ MissionPack farmerPack
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"carrots", "Морковь", /*20*/1, "Вырастить морковки"}}, {}, {}},
+                    {{{"carrots", "Морковь", 20, "Вырастить морковки"}}, {}, {}},
                     {200, {},
                     {}
                     }
@@ -44,32 +45,32 @@ MissionPack farmerPack
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"carrots", "Морковь", /*20*/2, "Вырастить морковки"}}, {}, {}},
-                    {200, {},
+                    {{{"carrots", "Морковь", 100, "Вырастить морковки"}}, {}, {}},
+                    {500, {},
                     {}
                     }
                 }, // Mission
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"carrots", "Морковь", /*20*/3, "Вырастить морковки"}}, {}, {}},
-                    {200, {},
+                    {{{"carrots", "Морковь", 200, "Вырастить морковки"}}, {}, {}},
+                    {800, {},
                     {}
                     }
                 }, // Mission
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"carrots", "Морковь", /*20*/4, "Вырастить морковки"}}, {}, {}},
-                    {200, {},
+                    {{{"carrots", "Морковь", 400, "Вырастить морковки"}}, {}, {}},
+                    {1000, {},
                     {}
                     }
                 }, // Mission
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"carrots", "Морковь", /*20*/5, "Вырастить морковки"}}, {}, {}},
-                    {200, {},
+                    {{{"carrots", "Морковь", 1000, "Вырастить морковки"}}, {}, {}},
+                    {2000, {},
                     {}
                     }
                 }, // Mission
@@ -81,7 +82,7 @@ MissionPack farmerPack
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"wheat", "Пшеница", /*20*/1, "Вырастить пшеницы"}}, {}, {}},
+                    {{{"wheat", "Пшеница", 10, "Вырастить пшеницы"}}, {}, {}},
                     {200, {},
                     {}
                     }
@@ -89,32 +90,32 @@ MissionPack farmerPack
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"wheat", "Пшеница", /*20*/2, "Вырастить пшеницы"}}, {}, {}},
-                    {200, {},
+                    {{{"wheat", "Пшеница", 50, "Вырастить пшеницы"}}, {}, {}},
+                    {500, {},
                     {}
                     }
                 }, // Mission
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"wheat", "Пшеница", /*20*/3, "Вырастить пшеницы"}}, {}, {}},
-                    {200, {},
+                    {{{"wheat", "Пшеница", 100, "Вырастить пшеницы"}}, {}, {}},
+                    {800, {},
                     {}
                     }
                 }, // Mission
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"wheat", "Пшеница", /*20*/4, "Вырастить пшеницы"}}, {}, {}},
-                    {200, {},
+                    {{{"wheat", "Пшеница", 250, "Вырастить пшеницы"}}, {}, {}},
+                    {1000, {},
                     {}
                     }
                 }, // Mission
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"wheat", "Пшеница", /*20*/5, "Вырастить пшеницы"}}, {}, {}},
-                    {200, {},
+                    {{{"wheat", "Пшеница", 600, "Вырастить пшеницы"}}, {}, {}},
+                    {2000, {},
                     {}
                     }
                 }, // Mission
@@ -126,7 +127,7 @@ MissionPack farmerPack
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"potatoes", "Картошка", /*20*/1, "Вырастить картошки"}}, {}, {}},
+                    {{{"potatoes", "Картошка", 20, "Вырастить картошки"}}, {}, {}},
                     {200, {},
                     {}
                     }
@@ -134,32 +135,32 @@ MissionPack farmerPack
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"potatoes", "Картошка", /*20*/2, "Вырастить картошки"}}, {}, {}},
-                    {200, {},
+                    {{{"potatoes", "Картошка", 100, "Вырастить картошки"}}, {}, {}},
+                    {500, {},
                     {}
                     }
                 }, // Mission
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"potatoes", "Картошка", /*20*/3, "Вырастить картошки"}}, {}, {}},
-                    {200, {},
+                    {{{"potatoes", "Картошка", 200, "Вырастить картошки"}}, {}, {}},
+                    {800, {},
                     {}
                     }
                 }, // Mission
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"potatoes", "Картошка", /*20*/4, "Вырастить картошки"}}, {}, {}},
-                    {200, {},
+                    {{{"potatoes", "Картошка", 400, "Вырастить картошки"}}, {}, {}},
+                    {1000, {},
                     {}
                     }
                 }, // Mission
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"potatoes", "Картошка", /*20*/5, "Вырастить картошки"}}, {}, {}},
-                    {200, {},
+                    {{{"potatoes", "Картошка", 1000, "Вырастить картошки"}}, {}, {}},
+                    {2000, {},
                     {}
                     }
                 }, // Mission
@@ -182,25 +183,85 @@ MissionPack farmerPack
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"melon", "Арбузы", /*20*/1, "Вырастить арбузы"}}, {}, {}},
-                    {200, {},
+                    {{{"melon", "Арбузы", 20, "Вырастить арбузы"}}, {}, {}},
+                    {300, {},
+                    {
+                        {"pumpkin_seeds", "Тыквенные семечки", 10, "Получено семечек"},
+                    }
+                    }
+                }, // Mission
+                {
+                    {},
+                    "FarmingMissions", defaultOptions, {},
+                    {{{"melon", "Арбузы", 80, "Вырастить арбузы"}}, {}, {}},
+                    {600, {},
                     {}
                     }
                 }, // Mission
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"melon", "Арбузы", /*20*/2, "Вырастить арбузы"}}, {}, {}},
-                    {200, {},
+                    {{{"melon", "Арбузы", 240, "Вырастить арбузы"}}, {}, {}},
+                    {1500, {},
                     {}
                     }
                 }, // Mission
                 {
                     {},
                     "FarmingMissions", defaultOptions, {},
-                    {{{"melon", "Арбузы", /*20*/3, "Вырастить арбузы"}}, {}, {}},
-                    {200, {},
+                    {{{"melon", "Арбузы", 600, "Вырастить арбузы"}}, {}, {}},
+                    {3000, {},
                     {}
+                    }
+                }, // Mission
+            }
+        }, // MissionGroup
+        {
+            "pumpkin", "Тыквы", "PLAYER_HEAD", pumpkin1,
+            {
+                {
+                    {},
+                    "FarmingMissions", defaultVisibleOptions,
+                    {},
+                    {{{"pumpkin", "Тыква", 10, "Выращено тыкв"}}, {}, {}},
+                    {200, {},
+                    {},
+                    }
+                }, // Mission
+                {
+                    {},
+                    "FarmingMissions", defaultOptions,
+                    {},
+                    {{{"pumpkin", "Тыква", 40, "Выращено тыкв"}}, {}, {}},
+                    {300, {},
+                    {},
+                    }
+                }, // Mission
+                {
+                    {},
+                    "FarmingMissions", defaultOptions,
+                    {},
+                    {{{"pumpkin", "Тыква", 80, "Выращено тыкв"}}, {}, {}},
+                    {600, {},
+                    {},
+                    }
+                }, // Mission
+                {
+                    {},
+                    "FarmingMissions", defaultOptions,
+                    {},
+                    {{{"pumpkin", "Тыква", 240, "Выращено тыкв"}}, {}, {}},
+                    {1500, {},
+                    {},
+                    }
+                }, // Mission
+                {
+                    {},
+                    "FarmingMissions", defaultOptions,
+                    {},
+                    {{{"pumpkin", "Тыква", 600, "Выращено тыкв"}}, {}, {}},
+                    {3000, {},
+                    {},
                     }
                 }, // Mission
             }
