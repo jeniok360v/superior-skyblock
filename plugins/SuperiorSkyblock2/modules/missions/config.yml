@@ -24,8 +24,8 @@ categories:
     name: 'Beginner'
     slot: 22
 
-  fisherman:
-    name: 'Fisherman'
+  nether:
+    name: 'Миссии ада'
     slot: 23
 
   farmer:

@@ -1,0 +1,84 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: KillsMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: false
+island: true
+
+rewards:
+  commands:
+    - 'eco give %player% 450'
+    - 'is admin msg %player% &bГасты |'
+    - 'is admin msg %player% &bГасты | &7Вы успешно завершили миссию &a"Гасты 1"&r&7!'
+    - 'is admin msg %player% &bГасты |'
+
+required-missions:
+  - 'nether_1'
+
+required-entities:
+  '1':
+    types:
+      - 'GHAST'
+    amount: 3
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWVkODBiZjk5ZGZiMDc1MTkyYjAyYTVkZDZiZjkxZWRkZDRjYjFmNDgxODkyMzIxMjExZmUyMTQyZDlkZjIyYyJ9fX0='
+    name: '&bМиссия "Гасты 1"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax3 &7Гаст'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$450'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Убито гастов: &a{value_ghast}/3'
+      - ' '
+      - '&b * &7&nВыполните условия, чтобы открыть миссию:'
+      - '&b  - &7Пройдите миссию: &a"Ад 1"'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
+    name: '&bМиссия "Гасты 1"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax3 &7Гаст'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$450'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Убито гастов: &a3/3'
+      - ' '
+      - '&b * &7&nВыполните условия, чтобы открыть миссию:'
+      - '&b  - &7Пройдите миссию: &a"Ад 1"'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Гасты 1"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax3 &7Гаст'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$450'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Убито гастов: &a3/3'
+      - ' '
+      - '&b * &7&nВыполните условия, чтобы открыть миссию:'
+      - '&b  - &7Пройдите миссию: &a"Ад 1"'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

@@ -209,12 +209,30 @@ void Mission::printGoalIslandMissions(std::ofstream& ofs)
 
 void Mission::printGoalItemsMissions(std::ofstream& ofs)
 {
-    
+    ofs << "required-items:" << std::endl;
+    for(int i = 0; i < goal.requiredItems.size(); i++)//  auto& item : goal.requiredItems)
+    {
+        std::string itemPrint = goal.requiredItems.at(i).itemName;
+        std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
+        ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
+        ofs << "    types:" << std::endl;
+        ofs << "      - '" + itemPrint + "'" << std::endl;
+        ofs << "    amount: " + std::to_string(goal.requiredItems.at(i).itemAmount) << std::endl;
+    } 
 }
 
 void Mission::printGoalKillsMissions(std::ofstream& ofs)
 {
-    
+    ofs << "required-entities:" << std::endl;
+    for(int i = 0; i < goal.requiredItems.size(); i++)//  auto& item : goal.requiredItems)
+    {
+        std::string itemPrint = goal.requiredItems.at(i).itemName;
+        std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
+        ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
+        ofs << "    types:" << std::endl;
+        ofs << "      - '" + itemPrint + "'" << std::endl;
+        ofs << "    amount: " + std::to_string(goal.requiredItems.at(i).itemAmount) << std::endl;
+    } 
 }
 
 void Mission::printGoalStatisticsMissions(std::ofstream& ofs)
@@ -311,18 +329,32 @@ void Mission::printLoreProgress(std::ofstream& ofs, std::string completness)
         ofs << "      - '&b * &7Прогресс: &a100%'" << std::endl;
     }
 
-    if(completness == "completed")
+    if(completness == "not completed")
     {
-        for(auto& item : goal.requiredItems)
+        if(missionType == "ItemsMissions")
         {
-            ofs << "      - '&b  - &7" + item.itemDescription + ": &a" + std::to_string(item.itemAmount) + "/" + std::to_string(item.itemAmount) + "'" << std::endl;
+            ofs << "      - '&b * &7&nПримечание:&r&7 предметы должны быть в инвентаре'" << std::endl;
+        }
+        else
+        {
+            for(auto& item : goal.requiredItems)
+            {
+                ofs << "      - '&b  - &7" + item.itemDescription + ": &a{value_" + item.itemName + "}/" + std::to_string(item.itemAmount) + "'" << std::endl;
+            }
         }
     }
     else
     {
-        for(auto& item : goal.requiredItems)
+        // if(missionType == "ItemsMissions")
+        // {
+            
+        // }
+        // else
         {
-            ofs << "      - '&b  - &7" + item.itemDescription + ": &a{value_" + item.itemName + "}/" + std::to_string(item.itemAmount) + "'" << std::endl;
+            for(auto& item : goal.requiredItems)
+            {
+                ofs << "      - '&b  - &7" + item.itemDescription + ": &a" + std::to_string(item.itemAmount) + "/" + std::to_string(item.itemAmount) + "'" << std::endl;
+            }
         }
     }
 

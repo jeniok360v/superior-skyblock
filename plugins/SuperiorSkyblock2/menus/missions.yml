@@ -37,8 +37,8 @@ items:
     lore:
       - '&7Click to start your adventure as a Farmer.'
   '^':
-    type: FISHING_ROD
-    name: '&eFisherman Missions'
+    type: NETHERRACK
+    name: '&eМиссии ада'
     lore:
       - '&7Click to start your adventure as a Fisherman.'
   '&':

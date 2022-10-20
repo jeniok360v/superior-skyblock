@@ -1,6 +1,6 @@
 # https://wiki.bg-software.com/superiorskyblock/overview/missions
 
-mission-file: FarmingMissions
+mission-file: KillsMissions
 
 disband-reset: true
 auto-reward: false
@@ -9,70 +9,74 @@ only-show-if-required-completed: true
 island: true
 
 rewards:
+  items:
+    '1':
+      type: BLAZE_ROD
+      amount: 1
   commands:
-    - 'eco give %player% 200'
-    - 'is admin msg %player% &bМорковь |'
-    - 'is admin msg %player% &bМорковь | &7Вы успешно завершили миссию &a"Морковь 5"&r&7!'
-    - 'is admin msg %player% &bМорковь |'
+    - 'eco give %player% 1500'
+    - 'is admin msg %player% &bГасты |'
+    - 'is admin msg %player% &bГасты | &7Вы успешно завершили миссию &a"Гасты 2"&r&7!'
+    - 'is admin msg %player% &bГасты |'
 
 required-missions:
-  - 'carrots_1'
-  - 'carrots_2'
-  - 'carrots_3'
-  - 'carrots_4'
+  - 'ghast_1'
 
-required-plants:
+required-entities:
   '1':
     types:
-      - 'CARROTS'
-    amount: 5
+      - 'GHAST'
+    amount: 13
 
 icons:
   not-completed:
     type: PLAYER_HEAD
-    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGEzODkwYWE4Yzc2ZjE3N2NiYWU3ZGMwOTY2MTQ5YTJlMGZiMWMxZWZlYjI4M2RlYjdkZWFhMDlmZDBmYjYifX19'
-    name: '&bМиссия "Морковь 5"'
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWVkODBiZjk5ZGZiMDc1MTkyYjAyYTVkZDZiZjkxZWRkZDRjYjFmNDgxODkyMzIxMjExZmUyMTQyZDlkZjIyYyJ9fX0='
+    name: '&bМиссия "Гасты 2"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax5 &7Морковь'
+      - '&b  - &ax13 &7Гаст'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &a$200'
+      - '&b  - &ax1 &7blaze_rod'
+      - '&b  - &a$1500'
       - ' '
       - '&b * &7Прогресс: &a{0}%'
-      - '&b  - &7Вырастить морковки: &a{value_carrots}/5'
+      - '&b  - &7Убито гастов: &a{value_ghast}/13'
       - ' '
       - '&c ✘ &7Миссия не завершена'
   can-complete:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
-    name: '&bМиссия "Морковь 5"'
+    name: '&bМиссия "Гасты 2"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax5 &7Морковь'
+      - '&b  - &ax13 &7Гаст'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &a$200'
+      - '&b  - &ax1 &7blaze_rod'
+      - '&b  - &a$1500'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Вырастить морковки: &a5/5'
+      - '&b  - &7Убито гастов: &a13/13'
       - ' '
       - '&8 ✔ &7Нажмите, чтобы получить награду.'
   completed:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
-    name: '&bМиссия "Морковь 5"'
+    name: '&bМиссия "Гасты 2"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax5 &7Морковь'
+      - '&b  - &ax13 &7Гаст'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &a$200'
+      - '&b  - &ax1 &7blaze_rod'
+      - '&b  - &a$1500'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Вырастить морковки: &a5/5'
+      - '&b  - &7Убито гастов: &a13/13'
       - ' '
       - '&a ✔ &7Миссия выполнена, награда получена.'
