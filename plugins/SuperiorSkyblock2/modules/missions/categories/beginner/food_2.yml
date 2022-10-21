@@ -12,7 +12,7 @@ rewards:
   items:
     '1':
       type: BEETROOT_SEEDS
-      amount: 20
+      amount: 15
   commands:
     - 'eco give %player% 500'
     - 'is admin msg %player% &bПора подумать о еде |'
@@ -40,7 +40,7 @@ icons:
       - '&b  - &ax15 &7Хлеб'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &ax20 &7beetroot_seeds'
+      - '&b  - &ax15 &7beetroot_seeds'
       - '&b  - &a$500'
       - ' '
       - '&b * &7Прогресс: &a{0}%'
@@ -59,7 +59,7 @@ icons:
       - '&b  - &ax15 &7Хлеб'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &ax20 &7beetroot_seeds'
+      - '&b  - &ax15 &7beetroot_seeds'
       - '&b  - &a$500'
       - ' '
       - '&b * &7Прогресс: &a100%'
@@ -78,7 +78,7 @@ icons:
       - '&b  - &ax15 &7Хлеб'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &ax20 &7beetroot_seeds'
+      - '&b  - &ax15 &7beetroot_seeds'
       - '&b  - &a$500'
       - ' '
       - '&b * &7Прогресс: &a100%'

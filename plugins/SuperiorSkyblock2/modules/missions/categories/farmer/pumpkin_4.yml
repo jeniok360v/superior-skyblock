@@ -10,63 +10,68 @@ island: true
 
 rewards:
   commands:
-    - 'eco give %player% 200'
-    - 'is admin msg %player% &bПшеница |'
-    - 'is admin msg %player% &bПшеница | &7Вы успешно завершили миссию &a"Пшеница 1"&r&7!'
-    - 'is admin msg %player% &bПшеница |'
+    - 'eco give %player% 1500'
+    - 'is admin msg %player% &bТыквы |'
+    - 'is admin msg %player% &bТыквы | &7Вы успешно завершили миссию &a"Тыквы 4"&r&7!'
+    - 'is admin msg %player% &bТыквы |'
+
+required-missions:
+  - 'pumpkin_1'
+  - 'pumpkin_2'
+  - 'pumpkin_3'
 
 required-plants:
   '1':
     types:
-      - 'WHEAT'
-    amount: 10
+      - 'PUMPKIN'
+    amount: 240
 
 icons:
   not-completed:
     type: PLAYER_HEAD
-    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGM4NTZiZDViMGY1ZmQyMDU2M2JmNjhiMWZlM2E1ODcyM2QzYWY5Y2FlZjg1OTIyMWM3ZWNmYTk2NDJmZjE5YiJ9fX0='
-    name: '&bМиссия "Пшеница 1"'
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzcyNjhiMzdjOWJhZDUyMTVhNjljYzlmYmZhZDc2ZDAyZWVkMTg2YzQ3MWI5ZmY3ZTMxMGQ4MWI1NTRhMTk0ZCJ9fX0='
+    name: '&bМиссия "Тыквы 4"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax10 &7Пшеница'
+      - '&b  - &ax240 &7Тыква'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &a$200'
+      - '&b  - &a$1500'
       - ' '
       - '&b * &7Прогресс: &a{0}%'
-      - '&b  - &7Вырастить пшеницы: &a{value_wheat}/10'
+      - '&b  - &7Выращено тыкв: &a{value_pumpkin}/240'
       - ' '
       - '&c ✘ &7Миссия не завершена'
   can-complete:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
-    name: '&bМиссия "Пшеница 1"'
+    name: '&bМиссия "Тыквы 4"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax10 &7Пшеница'
+      - '&b  - &ax240 &7Тыква'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &a$200'
+      - '&b  - &a$1500'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Вырастить пшеницы: &a10/10'
+      - '&b  - &7Выращено тыкв: &a240/240'
       - ' '
       - '&8 ✔ &7Нажмите, чтобы получить награду.'
   completed:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
-    name: '&bМиссия "Пшеница 1"'
+    name: '&bМиссия "Тыквы 4"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax10 &7Пшеница'
+      - '&b  - &ax240 &7Тыква'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &a$200'
+      - '&b  - &a$1500'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Вырастить пшеницы: &a10/10'
+      - '&b  - &7Выращено тыкв: &a240/240'
       - ' '
       - '&a ✔ &7Миссия выполнена, награда получена.'

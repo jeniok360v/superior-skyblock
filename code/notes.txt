@@ -8,6 +8,8 @@
 
 повторяемые миссии
 
+Sweet Berry Bush - beginner
+
 \superior-skyblock\plugins\SuperiorSkyblock2\menus\missions-category.yml
 
 https://minecraft.fandom.com/wiki/Statistics
