@@ -1,0 +1,92 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: KillsMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+island: true
+
+rewards:
+  items:
+    '1':
+      type: BLAZE_ROD
+      amount: 3
+  commands:
+    - 'eco give %player% 5000'
+    - 'is admin msg %player% &bАд |'
+    - 'is admin msg %player% &bАд | &7Вы успешно завершили миссию &a"Ад 8"&r&7!'
+    - 'is admin msg %player% &bАд |'
+
+required-missions:
+  - 'nether_7'
+
+required-entities:
+  '1':
+    types:
+      - 'ZOMBIFIED_PIGLIN'
+    amount: 750
+  '2':
+    types:
+      - 'PIGLIN'
+    amount: 400
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWVkODBiZjk5ZGZiMDc1MTkyYjAyYTVkZDZiZjkxZWRkZDRjYjFmNDgxODkyMzIxMjExZmUyMTQyZDlkZjIyYyJ9fX0='
+    name: '&bМиссия "Ад 8"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax750 &7Свинозомби'
+      - '&b  - &ax400 &7Пиглин'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax3 &7blaze_rod'
+      - '&b  - &a$5000'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Убито свинозомби: &a{value_zombified_piglin}/750'
+      - '&b  - &7Убито пиглинов: &a{value_piglin}/400'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
+    name: '&bМиссия "Ад 8"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax750 &7Свинозомби'
+      - '&b  - &ax400 &7Пиглин'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax3 &7blaze_rod'
+      - '&b  - &a$5000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Убито свинозомби: &a750/750'
+      - '&b  - &7Убито пиглинов: &a400/400'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Ад 8"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax750 &7Свинозомби'
+      - '&b  - &ax400 &7Пиглин'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax3 &7blaze_rod'
+      - '&b  - &a$5000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Убито свинозомби: &a750/750'
+      - '&b  - &7Убито пиглинов: &a400/400'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

@@ -70,7 +70,7 @@ MissionPack beginnerPack
                     {},
                     "BlocksMissions", defaultNaturalBlocksOptions, {},
                     {{{"birch_log", "Берёзовые брёвна", 15, "Срублено берёзы"}}},
-                    {1000, {},
+                    {600, {},
                     {
                         {"birch_sapling", "Саженцы берёзы", 2, "Получено саженцев берёзы"}
                     }

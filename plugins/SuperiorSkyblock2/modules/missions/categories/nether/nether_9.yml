@@ -1,6 +1,6 @@
 # https://wiki.bg-software.com/superiorskyblock/overview/missions
 
-mission-file: FarmingMissions
+mission-file: KillsMissions
 
 disband-reset: true
 auto-reward: false
@@ -9,67 +9,74 @@ only-show-if-required-completed: true
 island: true
 
 rewards:
+  items:
+    '1':
+      type: BLAZE_ROD
+      amount: 3
   commands:
-    - 'eco give %player% 200'
-    - 'is admin msg %player% &bФермер |'
-    - 'is admin msg %player% &bФермер | &7Вы успешно завершили миссию &a"Фермер 13"&r&7!'
-    - 'is admin msg %player% &bФермер |'
+    - 'eco give %player% 6900'
+    - 'is admin msg %player% &bАд |'
+    - 'is admin msg %player% &bАд | &7Вы успешно завершили миссию &a"Ад 9"&r&7!'
+    - 'is admin msg %player% &bАд |'
 
 required-missions:
-  - 'farmer_12'
+  - 'nether_8'
 
-required-plants:
+required-entities:
   '1':
     types:
-      - 'PUMPKIN'
-    amount: 10
+      - 'GHAST'
+    amount: 69
 
 icons:
   not-completed:
     type: PLAYER_HEAD
-    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGEzODkwYWE4Yzc2ZjE3N2NiYWU3ZGMwOTY2MTQ5YTJlMGZiMWMxZWZlYjI4M2RlYjdkZWFhMDlmZDBmYjYifX19'
-    name: '&bМиссия "Фермер 13"'
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWVkODBiZjk5ZGZiMDc1MTkyYjAyYTVkZDZiZjkxZWRkZDRjYjFmNDgxODkyMzIxMjExZmUyMTQyZDlkZjIyYyJ9fX0='
+    name: '&bМиссия "Ад 9"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax10 &7Тыква'
+      - '&b  - &ax69 &7Гаст'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &a$200'
+      - '&b  - &ax3 &7blaze_rod'
+      - '&b  - &a$6900'
       - ' '
       - '&b * &7Прогресс: &a{0}%'
-      - '&b  - &7Выращено тыкв: &a{value_pumpkin}/10'
+      - '&b  - &7Убито гастов: &a{value_ghast}/69'
       - ' '
       - '&c ✘ &7Миссия не завершена'
   can-complete:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
-    name: '&bМиссия "Фермер 13"'
+    name: '&bМиссия "Ад 9"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax10 &7Тыква'
+      - '&b  - &ax69 &7Гаст'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &a$200'
+      - '&b  - &ax3 &7blaze_rod'
+      - '&b  - &a$6900'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Выращено тыкв: &a10/10'
+      - '&b  - &7Убито гастов: &a69/69'
       - ' '
       - '&8 ✔ &7Нажмите, чтобы получить награду.'
   completed:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
-    name: '&bМиссия "Фермер 13"'
+    name: '&bМиссия "Ад 9"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax10 &7Тыква'
+      - '&b  - &ax69 &7Гаст'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &a$200'
+      - '&b  - &ax3 &7blaze_rod'
+      - '&b  - &a$6900'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Выращено тыкв: &a10/10'
+      - '&b  - &7Убито гастов: &a69/69'
       - ' '
       - '&a ✔ &7Миссия выполнена, награда получена.'

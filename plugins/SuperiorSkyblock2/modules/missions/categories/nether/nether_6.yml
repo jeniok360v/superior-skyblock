@@ -14,13 +14,13 @@ rewards:
       type: BLAZE_ROD
       amount: 2
   commands:
-    - 'eco give %player% 3000'
-    - 'is admin msg %player% &bСвинозомби |'
-    - 'is admin msg %player% &bСвинозомби | &7Вы успешно завершили миссию &a"Свинозомби 3"&r&7!'
-    - 'is admin msg %player% &bСвинозомби |'
+    - 'eco give %player% 2500'
+    - 'is admin msg %player% &bАд |'
+    - 'is admin msg %player% &bАд | &7Вы успешно завершили миссию &a"Ад 6"&r&7!'
+    - 'is admin msg %player% &bАд |'
 
 required-missions:
-  - 'pigman_2'
+  - 'nether_5'
 
 required-entities:
   '1':
@@ -36,7 +36,7 @@ icons:
   not-completed:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWVkODBiZjk5ZGZiMDc1MTkyYjAyYTVkZDZiZjkxZWRkZDRjYjFmNDgxODkyMzIxMjExZmUyMTQyZDlkZjIyYyJ9fX0='
-    name: '&bМиссия "Свинозомби 3"'
+    name: '&bМиссия "Ад 6"'
     lore:
       - ' '
       - '&b * &7Требования:'
@@ -45,7 +45,7 @@ icons:
       - ' '
       - '&b * &7Награды:'
       - '&b  - &ax2 &7blaze_rod'
-      - '&b  - &a$3000'
+      - '&b  - &a$2500'
       - ' '
       - '&b * &7Прогресс: &a{0}%'
       - '&b  - &7Убито свинозомби: &a{value_zombified_piglin}/250'
@@ -55,7 +55,7 @@ icons:
   can-complete:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
-    name: '&bМиссия "Свинозомби 3"'
+    name: '&bМиссия "Ад 6"'
     lore:
       - ' '
       - '&b * &7Требования:'
@@ -64,7 +64,7 @@ icons:
       - ' '
       - '&b * &7Награды:'
       - '&b  - &ax2 &7blaze_rod'
-      - '&b  - &a$3000'
+      - '&b  - &a$2500'
       - ' '
       - '&b * &7Прогресс: &a100%'
       - '&b  - &7Убито свинозомби: &a250/250'
@@ -74,7 +74,7 @@ icons:
   completed:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
-    name: '&bМиссия "Свинозомби 3"'
+    name: '&bМиссия "Ад 6"'
     lore:
       - ' '
       - '&b * &7Требования:'
@@ -83,7 +83,7 @@ icons:
       - ' '
       - '&b * &7Награды:'
       - '&b  - &ax2 &7blaze_rod'
-      - '&b  - &a$3000'
+      - '&b  - &a$2500'
       - ' '
       - '&b * &7Прогресс: &a100%'
       - '&b  - &7Убито свинозомби: &a250/250'

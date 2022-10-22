@@ -127,7 +127,7 @@ MissionPack farmerPack
                 }, // Mission
                 {
                     {},
-                    "FarmingMissions", defaultVisibleOptions,
+                    "FarmingMissions", defaultOptions,
                     {},
                     {{{"pumpkin", "Тыква", 10, "Выращено тыкв"}}, {}, {}},
                     {200, {},
@@ -201,6 +201,18 @@ MissionPack farmerPack
                     {{{"melon", "Арбузы", 600, "Вырастить арбузы"},
                     {"pumpkin", "Тыква", 600, "Выращено тыкв"}}, {}, {}},
                     {6000, {},
+                    {}
+                    }
+                }, // Mission
+                {
+                    {},
+                    "FarmingMissions", defaultRepeatableOptions, {},
+                    {{{"melon", "Арбузы", 600, "Вырастить арбузы"},
+                    {"pumpkin", "Тыква", 600, "Выращено тыкв"},
+                    {"carrots", "Морковь", 1000, "Вырастить морковки"},
+                    {"potatoes", "Картошка", 1000, "Вырастить картошки"},
+                    {"wheat", "Пшеница", 800, "Вырастить пшеницы"}}, {}, {}},
+                    {2000, {},
                     {}
                     }
                 }, // Mission
