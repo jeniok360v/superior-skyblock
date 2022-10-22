@@ -106,12 +106,12 @@ MissionPack pigmanPack
                 }, // Mission
                 {
                     {},
-                    "KillsMissions", defaultOptions, {},
+                    "KillsMissions", defaultRepeatableOptions, {},
                     {{{"zombified_piglin", "Свинозомби", 600, "Убито свинозомби"}, 
                     {"ghast", "Гаст", 50, "Убито гастов"}}, {}, {}},
                     {1000, {},
                     {
-                        {"blaze_rod", "Стержень ифрита", 1, "Получено стрежней"}
+                        {"blaze_rod", "Стержень ифрита", 1, "Получено стержней"}
                     },
                     }
                 }, // Mission
