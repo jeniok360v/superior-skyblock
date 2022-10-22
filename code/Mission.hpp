@@ -54,6 +54,15 @@ const std::unordered_map<std::string, std::string> defaultNaturalBlocksOptions {
     {"only-natural-blocks", "true"},
 };
 
+const std::unordered_map<std::string, std::string> defaultRepeatableOptions {
+    {"auto-reward", "false"}, 
+    {"reset-after-finish", "true"}, 
+    {"disband-reset", "true"},
+    {"only-show-if-required-completed", "true"},
+    {"island", "true"},
+    {"reset-amount", "10000"},
+};
+
 struct MissionAssociations
 {
     // int level; //?

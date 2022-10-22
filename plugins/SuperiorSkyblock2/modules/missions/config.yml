@@ -21,7 +21,7 @@ categories:
     slot: 21
 
   beginner:
-    name: 'Beginner'
+    name: 'Начальные миссии'
     slot: 22
 
   nether:
@@ -29,5 +29,5 @@ categories:
     slot: 23
 
   farmer:
-    name: 'Farmer'
+    name: 'Фермерские миссии'
     slot: 24

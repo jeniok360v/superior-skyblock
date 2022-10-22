@@ -199,7 +199,16 @@ void Mission::printGoalFarmingMissions(std::ofstream& ofs)
 
 void Mission::printGoalFishingMissions(std::ofstream& ofs)
 {
-    
+    ofs << "required-caughts:" << std::endl;
+    for(int i = 0; i < goal.requiredItems.size(); i++)//  auto& item : goal.requiredItems)
+    {
+        std::string itemPrint = goal.requiredItems.at(i).itemName;
+        std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
+        ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
+        ofs << "    types:" << std::endl;
+        ofs << "      - '" + itemPrint + "'" << std::endl;
+        ofs << "    amount: " + std::to_string(goal.requiredItems.at(i).itemAmount) << std::endl;
+    } 
 }
 
 void Mission::printGoalIslandMissions(std::ofstream& ofs)
