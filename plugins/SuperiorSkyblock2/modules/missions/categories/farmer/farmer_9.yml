@@ -10,67 +10,76 @@ island: true
 
 rewards:
   commands:
-    - 'eco give %player% 800'
-    - 'is admin msg %player% &bПшеница |'
-    - 'is admin msg %player% &bПшеница | &7Вы успешно завершили миссию &a"Пшеница 3"&r&7!'
-    - 'is admin msg %player% &bПшеница |'
+    - 'eco give %player% 1600'
+    - 'is admin msg %player% &bФермер |'
+    - 'is admin msg %player% &bФермер | &7Вы успешно завершили миссию &a"Фермер 9"&r&7!'
+    - 'is admin msg %player% &bФермер |'
 
 required-missions:
-  - 'wheat_1'
-  - 'wheat_2'
+  - 'farmer_8'
 
 required-plants:
   '1':
     types:
-      - 'WHEAT'
-    amount: 5
+      - 'CARROTS'
+    amount: 200
+  '2':
+    types:
+      - 'POTATOES'
+    amount: 200
 
 icons:
   not-completed:
     type: PLAYER_HEAD
-    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGM4NTZiZDViMGY1ZmQyMDU2M2JmNjhiMWZlM2E1ODcyM2QzYWY5Y2FlZjg1OTIyMWM3ZWNmYTk2NDJmZjE5YiJ9fX0='
-    name: '&bМиссия "Пшеница 3"'
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGEzODkwYWE4Yzc2ZjE3N2NiYWU3ZGMwOTY2MTQ5YTJlMGZiMWMxZWZlYjI4M2RlYjdkZWFhMDlmZDBmYjYifX19'
+    name: '&bМиссия "Фермер 9"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax5 &7Пшеница'
+      - '&b  - &ax200 &7Морковь'
+      - '&b  - &ax200 &7Картошка'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &a$800'
+      - '&b  - &a$1600'
       - ' '
       - '&b * &7Прогресс: &a{0}%'
-      - '&b  - &7Вырастить пшеницы: &a{value_wheat}/5'
+      - '&b  - &7Вырастить морковки: &a{value_carrots}/200'
+      - '&b  - &7Вырастить картошки: &a{value_potatoes}/200'
       - ' '
       - '&c ✘ &7Миссия не завершена'
   can-complete:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
-    name: '&bМиссия "Пшеница 3"'
+    name: '&bМиссия "Фермер 9"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax5 &7Пшеница'
+      - '&b  - &ax200 &7Морковь'
+      - '&b  - &ax200 &7Картошка'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &a$800'
+      - '&b  - &a$1600'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Вырастить пшеницы: &a5/5'
+      - '&b  - &7Вырастить морковки: &a200/200'
+      - '&b  - &7Вырастить картошки: &a200/200'
       - ' '
       - '&8 ✔ &7Нажмите, чтобы получить награду.'
   completed:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
-    name: '&bМиссия "Пшеница 3"'
+    name: '&bМиссия "Фермер 9"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax5 &7Пшеница'
+      - '&b  - &ax200 &7Морковь'
+      - '&b  - &ax200 &7Картошка'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &a$800'
+      - '&b  - &a$1600'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Вырастить пшеницы: &a5/5'
+      - '&b  - &7Вырастить морковки: &a200/200'
+      - '&b  - &7Вырастить картошки: &a200/200'
       - ' '
       - '&a ✔ &7Миссия выполнена, награда получена.'

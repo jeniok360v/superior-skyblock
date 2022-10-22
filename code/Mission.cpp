@@ -75,10 +75,7 @@ void Mission::printRequiredMissions(std::ofstream& ofs, int missionNumber, std::
         ofs << "required-missions:" << std::endl;
         if(associations.previousRequired && missionNumber > 1)
         {
-            for(int i = 1; i < missionNumber; i++)
-            {
-                ofs << "  - '" + groupTag + "_" + std::to_string(i) + "'" << std::endl;
-            }
+            ofs << "  - '" + groupTag + "_" + std::to_string(missionNumber-1) + "'" << std::endl;
         }
         if(!associations.additionalRequirements.empty())
         {

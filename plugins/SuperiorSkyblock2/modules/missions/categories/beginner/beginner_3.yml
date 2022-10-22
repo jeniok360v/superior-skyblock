@@ -18,7 +18,6 @@ rewards:
     - 'is admin msg %player% &bНачало |'
 
 required-missions:
-  - 'beginner_1'
   - 'beginner_2'
 
 required-blocks:
