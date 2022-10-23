@@ -1,6 +1,6 @@
 # https://wiki.bg-software.com/superiorskyblock/overview/missions
 
-mission-file: BlocksMissions
+mission-file: KillsMissions
 
 disband-reset: true
 auto-reward: false
@@ -22,33 +22,28 @@ rewards:
       amount: 1
   commands:
     - 'eco give %player% 300'
-    - 'is admin msg %player% &bГрибное начало |'
-    - 'is admin msg %player% &bГрибное начало | &7Вы успешно завершили миссию &a"Грибное начало 6"&r&7!'
-    - 'is admin msg %player% &bГрибное начало |'
+    - 'is admin msg %player% &bПустынное начало |'
+    - 'is admin msg %player% &bПустынное начало | &7Вы успешно завершили миссию &a"Пустынное начало 9"&r&7!'
+    - 'is admin msg %player% &bПустынное начало |'
 
 required-missions:
-  - 'startMushroom_5'
+  - 'startDesert_8'
 
-required-blocks:
+required-entities:
   '1':
     types:
-      - 'RED_MUSHROOM_BLOCK'
-    amount: 150
-  '2':
-    types:
-      - 'BROWN_MUSHROOM_BLOCK'
-    amount: 150
+      - 'PHANTOM'
+    amount: 2
 
 icons:
   not-completed:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0='
-    name: '&bМиссия "Грибное начало 6"'
+    name: '&bМиссия "Пустынное начало 9"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax150 &7Красный грибной блок'
-      - '&b  - &ax150 &7Коричневый грибной блок'
+      - '&b  - &ax2 &7Фантом'
       - ' '
       - '&b * &7Награды:'
       - '&b  - &ax3 &7birch_sapling'
@@ -57,19 +52,17 @@ icons:
       - '&b  - &a$300'
       - ' '
       - '&b * &7Прогресс: &a{0}%'
-      - '&b  - &7Сломано блоков красного гриба: &a{value_red_mushroom_block}/150'
-      - '&b  - &7Сломано блоков коричневого гриба: &a{value_brown_mushroom_block}/150'
+      - '&b  - &7Убито фантомов: &a{value_phantom}/2'
       - ' '
       - '&c ✘ &7Миссия не завершена'
   can-complete:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
-    name: '&bМиссия "Грибное начало 6"'
+    name: '&bМиссия "Пустынное начало 9"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax150 &7Красный грибной блок'
-      - '&b  - &ax150 &7Коричневый грибной блок'
+      - '&b  - &ax2 &7Фантом'
       - ' '
       - '&b * &7Награды:'
       - '&b  - &ax3 &7birch_sapling'
@@ -78,19 +71,17 @@ icons:
       - '&b  - &a$300'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Сломано блоков красного гриба: &a150/150'
-      - '&b  - &7Сломано блоков коричневого гриба: &a150/150'
+      - '&b  - &7Убито фантомов: &a2/2'
       - ' '
       - '&8 ✔ &7Нажмите, чтобы получить награду.'
   completed:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
-    name: '&bМиссия "Грибное начало 6"'
+    name: '&bМиссия "Пустынное начало 9"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax150 &7Красный грибной блок'
-      - '&b  - &ax150 &7Коричневый грибной блок'
+      - '&b  - &ax2 &7Фантом'
       - ' '
       - '&b * &7Награды:'
       - '&b  - &ax3 &7birch_sapling'
@@ -99,7 +90,6 @@ icons:
       - '&b  - &a$300'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Сломано блоков красного гриба: &a150/150'
-      - '&b  - &7Сломано блоков коричневого гриба: &a150/150'
+      - '&b  - &7Убито фантомов: &a2/2'
       - ' '
       - '&a ✔ &7Миссия выполнена, награда получена.'

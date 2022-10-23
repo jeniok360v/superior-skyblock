@@ -51,6 +51,7 @@ MissionPack startTropicalPack
                     {
                         {"birch_sapling", "Саженцы берёзы", 3, "Получено саженцев"},
                         {"dirt", "Земля", 10, "Получено земли"},
+                        {"water_bucket", "Ведро воды", 1, "Получено вёдер"},
                     },
                     }
                 }, // Mission

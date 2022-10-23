@@ -12,22 +12,26 @@ enabled: true
 # A tutorial about configuring missions can be found here:
 # https://wiki.bg-software.com/superiorskyblock/missions
 categories:
-  miner:
-    name: 'Miner'
-    slot: 20
+  startTropical:
+    name: 'Начало'
+    slot: 9
 
-  slayer:
-    name: 'Slayer'
-    slot: 21
+  startMushroom:
+    name: 'Грибное начало'
+    slot: 10
 
-  beginner:
-    name: 'Начальные миссии'
-    slot: 22
+  startDesert:
+    name: 'Пустынное начало'
+    slot: 11
 
-  nether:
-    name: 'Миссии ада'
-    slot: 23
+  cobblestone:
+    name: 'Булыжник'
+    slot: 12
 
   farmer:
-    name: 'Фермерские миссии'
-    slot: 24
+    name: 'Фермер'
+    slot: 13
+
+  pigman:
+    name: 'Свинозомби'
+    slot: 27

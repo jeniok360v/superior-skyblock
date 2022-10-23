@@ -3,6 +3,7 @@
 #include "MissionPack.hpp"
 
 const std::string startMushroom1 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0=";
+const std::string startMushroom2 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjU1MzI2ZDI4ODBiNDg4MTVkZDAwYWMxNzRjOGVlOTMwNWRmYmU0YjZhYjVkMWExNjZiNTIyMzNjMWQzZGQ5NCJ9fX0=";
 
 MissionPack startMushroomPack
 {
@@ -81,6 +82,7 @@ MissionPack startMushroomPack
                     {
                         {"birch_sapling", "Саженцы берёзы", 3, "Получено саженцев"},
                         {"grass_block", "Дёрн", 10, "Получено дёрна"},
+                        {"water_bucket", "Ведро воды", 1, "Получено вёдер"},
                     },
                     }
                 }, // Mission 
