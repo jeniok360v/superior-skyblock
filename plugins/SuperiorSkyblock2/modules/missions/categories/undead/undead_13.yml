@@ -1,0 +1,106 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: KillsMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+island: true
+weight: 13
+
+rewards:
+  commands:
+    - 'eco give %player% 4000'
+    - 'is admin msg %player% &bНечисть |'
+    - 'is admin msg %player% &bНечисть | &7Вы успешно завершили миссию &a"Нечисть XIII"&r&7!'
+    - 'is admin msg %player% &bНечисть |'
+
+required-missions:
+  - 'undead_12'
+
+required-entities:
+  '1':
+    types:
+      - 'ZOMBIE'
+    amount: 250
+  '2':
+    types:
+      - 'WITCH'
+    amount: 10
+  '3':
+    types:
+      - 'SPIDER'
+    amount: 80
+  '4':
+    types:
+      - 'PHANTOM'
+    amount: 20
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjhlNjYyMzljNmYzYzk3YjhiYWE1MGIzMmVmZDYzYzYxZTk0ZThlZGU2MDY2NGU3YjllZGM0ZWZkNjRmMzk2MyJ9fX0='
+    name: '&bМиссия "Нечисть XIII"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax250 &7Зомби'
+      - '&b  - &ax10 &7Ведьм'
+      - '&b  - &ax80 &7Пауков'
+      - '&b  - &ax20 &7Фантомов'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$4000'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Зомби убито: &a{value_zombie}/250'
+      - '&b  - &7Ведьм убито: &a{value_witch}/10'
+      - '&b  - &7Пауков убито: &a{value_spider}/80'
+      - '&b  - &7Фантомов убито: &a{value_phantom}/20'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
+    name: '&bМиссия "Нечисть XIII"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax250 &7Зомби'
+      - '&b  - &ax10 &7Ведьм'
+      - '&b  - &ax80 &7Пауков'
+      - '&b  - &ax20 &7Фантомов'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$4000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Зомби убито: &a250/250'
+      - '&b  - &7Ведьм убито: &a10/10'
+      - '&b  - &7Пауков убито: &a80/80'
+      - '&b  - &7Фантомов убито: &a20/20'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Нечисть XIII"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax250 &7Зомби'
+      - '&b  - &ax10 &7Ведьм'
+      - '&b  - &ax80 &7Пауков'
+      - '&b  - &ax20 &7Фантомов'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$4000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Зомби убито: &a250/250'
+      - '&b  - &7Ведьм убито: &a10/10'
+      - '&b  - &7Пауков убито: &a80/80'
+      - '&b  - &7Фантомов убито: &a20/20'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

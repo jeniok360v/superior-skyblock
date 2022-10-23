@@ -48,43 +48,6 @@ MissionPack beginnerPack
             }
         }, // MissionGroup
         {
-            "killer", "Нечисть", "PLAYER_HEAD", zombie1,
-            {
-                {
-                    {},
-                    "KillsMissions", defaultOptions, {},
-                    {{{"zombie", "Зомби", 5, "Зомби убито"}}, {}, {}},
-                    {200, {},
-                    {},
-                    }
-                }, // Mission
-                {
-                    {},
-                    "KillsMissions", defaultOptions, {},
-                    {{{"zombie", "Зомби", 8, "Зомби убито"}, 
-                    {"skeleton", "Скелет", 10, "Скелетов убито"}, 
-                    {"creeper", "Крипер", 15, "Криперов убито"}, 
-                    {"spider", "Паук", 8, "Пауков убито"}}, {}, {}},
-                    {500, {},
-                    {},
-                    }
-                }, // Mission
-                {
-                    {},
-                    "KillsMissions", defaultOptions, {},
-                    {{{"zombie", "Зомби", 15, "Зомби убито"}, 
-                    {"enderman", "Эндермен", 1, "Эндерменов убито"}, 
-                    {"phantom", "Фантом", 3, "Фантомов убито"}, 
-                    {"skeleton", "Скелет", 25, "Скелетов убито"}, 
-                    {"creeper", "Крипер", 25, "Криперов убито"}, 
-                    {"spider", "Паук", 20, "Пауков убито"}}, {}, {}},
-                    {1000, {},
-                    {},
-                    }
-                }, // Mission
-            }
-        }, // MissionGroup
-        {
             "fisher", "Рыбалка", "PLAYER_HEAD", fish1,
             {
                 {

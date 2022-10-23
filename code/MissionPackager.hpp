@@ -5,6 +5,7 @@
 #include "missionpacks/cobblestone.hpp"
 #include "missionpacks/farmer.hpp"
 #include "missionpacks/autumn.hpp"
+#include "missionpacks/undead.hpp"
 #include "missionpacks/pigman.hpp"
 
 class MissionPackager
@@ -18,6 +19,7 @@ public:
         allMissionPacks.insert(std::make_pair("cobblestone", cobblestonePack));
         allMissionPacks.insert(std::make_pair("farmer", farmerPack));
         allMissionPacks.insert(std::make_pair("autumn", autumnPack));
+        allMissionPacks.insert(std::make_pair("undead", undeadPack));
         allMissionPacks.insert(std::make_pair("pigman", pigmanPack));
     }
     std::map<std::string, MissionPack> allMissionPacks;

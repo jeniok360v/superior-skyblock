@@ -2,13 +2,9 @@
 
 добыть бедрок ?
 
-убить x эндерменов, награда рамка портала
-
 Постучать х раз в колокол
 
-повторяемые миссии
-
-Sweet Berry Bush - beginner
+эндермиты -> рамки портала
 
 \superior-skyblock\plugins\SuperiorSkyblock2\menus\missions-category.yml
 

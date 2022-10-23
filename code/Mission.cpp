@@ -2,6 +2,23 @@
 #include <fstream>
 #include <iostream>
 
+std::string to_roman(int n)
+{
+    std::string str_romans[] = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+    int values[] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+    std::string result = "";
+
+    for (auto i = 0; i < 13; ++i)
+    {
+        while(n - values[i] >= 0)
+        {
+            result += str_romans[i];
+            n -= values[i];
+        }
+    }
+    return result;
+}
+
 void Mission::printWikiLink(std::ofstream& ofs)
 {
     ofs << "# https://wiki.bg-software.com/superiorskyblock/overview/missions" << std::endl << std::endl;
@@ -30,7 +47,7 @@ void Mission::printReward(std::ofstream& ofs, int missionNumber, std::string gro
     printRewardMoney(ofs);
     printRewardAdditionalCommands(ofs);
     ofs << "    - 'is admin msg %player% &b" + groupName + " |'" << std::endl;
-    ofs << "    - 'is admin msg %player% &b" + groupName + " | &7Вы успешно завершили миссию &a\"" + groupName + " " + std::to_string(missionNumber) + "\"&r&7!'" << std::endl;
+    ofs << "    - 'is admin msg %player% &b" + groupName + " | &7Вы успешно завершили миссию &a\"" + groupName + " " + to_roman(missionNumber) + "\"&r&7!'" << std::endl;
     ofs << "    - 'is admin msg %player% &b" + groupName + " |'" << std::endl << std::endl;
 }
 
@@ -276,7 +293,7 @@ void Mission::printLoreHeader(std::ofstream& ofs, int missionNumber, std::string
     {
         ofs << "    skull: '" + skull + "'" << std::endl;
     }
-    ofs << "    name: '&bМиссия \"" + groupName + " " + std::to_string(missionNumber) + "\"'" << std::endl;
+    ofs << "    name: '&bМиссия \"" + groupName + " " + to_roman(missionNumber) + "\"'" << std::endl;
     ofs << "    lore:" << std::endl;
     if(!missionDescription.empty())
     {

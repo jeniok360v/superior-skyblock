@@ -1,0 +1,106 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: KillsMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+island: true
+weight: 18
+
+rewards:
+  commands:
+    - 'eco give %player% 5000'
+    - 'is admin msg %player% &bНечисть |'
+    - 'is admin msg %player% &bНечисть | &7Вы успешно завершили миссию &a"Нечисть XVIII"&r&7!'
+    - 'is admin msg %player% &bНечисть |'
+
+required-missions:
+  - 'undead_17'
+
+required-entities:
+  '1':
+    types:
+      - 'ZOMBIE'
+    amount: 500
+  '2':
+    types:
+      - 'SKELETON'
+    amount: 400
+  '3':
+    types:
+      - 'WITCH'
+    amount: 20
+  '4':
+    types:
+      - 'SPIDER'
+    amount: 200
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjhlNjYyMzljNmYzYzk3YjhiYWE1MGIzMmVmZDYzYzYxZTk0ZThlZGU2MDY2NGU3YjllZGM0ZWZkNjRmMzk2MyJ9fX0='
+    name: '&bМиссия "Нечисть XVIII"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax500 &7Зомби'
+      - '&b  - &ax400 &7Скелетов'
+      - '&b  - &ax20 &7Ведьм'
+      - '&b  - &ax200 &7Пауков'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$5000'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Зомби убито: &a{value_zombie}/500'
+      - '&b  - &7Скелетов убито: &a{value_skeleton}/400'
+      - '&b  - &7Ведьм убито: &a{value_witch}/20'
+      - '&b  - &7Пауков убито: &a{value_spider}/200'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
+    name: '&bМиссия "Нечисть XVIII"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax500 &7Зомби'
+      - '&b  - &ax400 &7Скелетов'
+      - '&b  - &ax20 &7Ведьм'
+      - '&b  - &ax200 &7Пауков'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$5000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Зомби убито: &a500/500'
+      - '&b  - &7Скелетов убито: &a400/400'
+      - '&b  - &7Ведьм убито: &a20/20'
+      - '&b  - &7Пауков убито: &a200/200'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Нечисть XVIII"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax500 &7Зомби'
+      - '&b  - &ax400 &7Скелетов'
+      - '&b  - &ax20 &7Ведьм'
+      - '&b  - &ax200 &7Пауков'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$5000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Зомби убито: &a500/500'
+      - '&b  - &7Скелетов убито: &a400/400'
+      - '&b  - &7Ведьм убито: &a20/20'
+      - '&b  - &7Пауков убито: &a200/200'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

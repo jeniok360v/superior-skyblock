@@ -36,6 +36,10 @@ categories:
     name: 'Осень'
     slot: 14
 
+  undead:
+    name: 'Нечисть'
+    slot: 15
+
   pigman:
     name: 'Свинозомби'
     slot: 27
