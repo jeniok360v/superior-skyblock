@@ -12,12 +12,13 @@ void Mission::printMissionType(std::ofstream& ofs)
     ofs << "mission-file: " << missionType << std::endl << std::endl;
 }
 
-void Mission::printOptions(std::ofstream& ofs, std::unordered_map<std::string, std::string> const &options)
+void Mission::printOptions(std::ofstream& ofs, std::unordered_map<std::string, std::string> const &options, int missionNumber)
 {
     for (auto const &option: options)
     {
         ofs << option.first << ": " << option.second << std::endl;
     }
+    ofs << "weight: " << std::to_string(missionNumber) << std::endl;
     ofs << std::endl;
 }
 

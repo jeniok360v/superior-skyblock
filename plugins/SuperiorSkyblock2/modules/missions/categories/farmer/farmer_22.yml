@@ -8,6 +8,7 @@ reset-after-finish: true
 only-show-if-required-completed: true
 island: true
 reset-amount: 10000
+weight: 22
 
 rewards:
   commands:

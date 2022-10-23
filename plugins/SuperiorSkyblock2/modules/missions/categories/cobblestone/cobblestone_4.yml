@@ -8,6 +8,7 @@ reset-after-finish: true
 only-show-if-required-completed: true
 only-natural-blocks: true
 island: true
+weight: 4
 
 rewards:
   commands:

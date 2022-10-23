@@ -129,7 +129,7 @@ public:
 
     void printWikiLink(std::ofstream& ofs);
     void printMissionType(std::ofstream& ofs);
-    void printOptions(std::ofstream& ofs, std::unordered_map<std::string, std::string> const &options);
+    void printOptions(std::ofstream& ofs, std::unordered_map<std::string, std::string> const &options, int missionNumber);
 
     void printReward(std::ofstream& ofs, int missionNumber, std::string groupName);
     void printRewardItems(std::ofstream& ofs);
@@ -163,7 +163,7 @@ public:
     {
         printWikiLink(ofs);
         printMissionType(ofs);
-        printOptions(ofs, options);
+        printOptions(ofs, options, missionNumber);
         printReward(ofs, missionNumber, groupName);
         printRequiredMissions(ofs, missionNumber, groupTag);
         printGoal(ofs);

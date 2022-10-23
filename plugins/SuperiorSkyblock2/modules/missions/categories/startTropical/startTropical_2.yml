@@ -7,6 +7,7 @@ auto-reward: false
 reset-after-finish: true
 only-show-if-required-completed: true
 island: true
+weight: 2
 
 rewards:
   items:
