@@ -6,6 +6,10 @@
 #include "missionpacks/farmer.hpp"
 #include "missionpacks/autumn.hpp"
 #include "missionpacks/undead.hpp"
+
+#include "missionpacks/grove.hpp"
+#include "missionpacks/forest.hpp"
+
 #include "missionpacks/pigman.hpp"
 
 class MissionPackager
@@ -20,6 +24,10 @@ public:
         allMissionPacks.insert(std::make_pair("farmer", farmerPack));
         allMissionPacks.insert(std::make_pair("autumn", autumnPack));
         allMissionPacks.insert(std::make_pair("undead", undeadPack));
+
+        allMissionPacks.insert(std::make_pair("grove", grovePack));
+        allMissionPacks.insert(std::make_pair("forest", forestPack));
+
         allMissionPacks.insert(std::make_pair("pigman", pigmanPack));
     }
     std::map<std::string, MissionPack> allMissionPacks;

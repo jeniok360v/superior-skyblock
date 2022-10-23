@@ -5,13 +5,13 @@
 ##                                                  ##
 ######################################################
 
-title: '&lMissions'
+title: '&lmissions'
 previous-menu: true
 
 pattern:
   - '$ $ $ $ $ $ $ $ $'
-  - 'J K L M N O P * *'
-  - '* * * * * * * * *'
+  - 'J K L M N O P Q R'
+  - 'S T * * * * * * *'
   - '1 2 3 4 5 6 7 8 9'
   - '* * * * * * * * *'
   - '$ $ $ $ $ $ $ $ $'
@@ -22,86 +22,116 @@ items:
     name: '&f'
   'J':
     type: DIAMOND_PICKAXE
-    name: '&eMiner Missions'
+    name: '&eНачало'
     lore:
       - '&7Click to start your adventure as a Miner.'
     flags:
       - HIDE_ATTRIBUTES
   'K':
     type: ZOMBIE_HEAD
-    name: '&eSlayer Missions'
+    name: '&eГрибное начало'
     lore:
       - '&7Click to start your adventure as a Slayer.'
   'L':
     type: WHEAT
-    name: '&eFarmer Missions'
+    name: '&eПустынное начало'
     lore:
       - '&7Click to start your adventure as a Farmer.'
   'M':
     type: NETHERRACK
-    name: '&eМиссии ада'
+    name: '&eБулыжник'
     lore:
       - '&7Click to start your adventure as a Fisherman.'
   'N':
     type: MAP
-    name: '&eExplorer Missions'
+    name: '&eФермер'
     lore:
       - '&7Click to start your adventure as an Explorer.'
   'O':
     type: MAP
-    name: '&eExplorer Missions'
+    name: '&eОсень'
     lore:
       - '&7Click to start your adventure as an Explorer.'
   'P':
     type: MAP
-    name: '&eExplorer Missions'
+    name: '&eНечисть'
     lore:
       - '&7Click to start your adventure as an Explorer.'
+  # 'Q':
+    # type: NETHERRACK
+    # name: '&eМиссии ада'
+    # lore:
+      # - '&7Click to start your adventure as a Fisherman.'
+  # 'R':
+    # type: MAP
+    # name: '&eExplorer Missions'
+    # lore:
+      # - '&7Click to start your adventure as an Explorer.'
+  'S':
+    type: MAP
+    name: '&eРоща'
+    lore:
+      - '&7Click to start your adventure as an Explorer.'
+  'T':
+    type: MAP
+    name: '&eЛес'
+    lore:
+      - '&7Click to start your adventure as an Explorer.'
+
+
+
+
+
+
+
+
+
+
   '1':
     type: MAP
-    name: '&eExplorer Missions'
+    name: '&eСвинозомби'
     lore:
       - '&7Click to start your adventure as an Explorer.'
-  '2':
-    type: MAP
-    name: '&eExplorer Missions'
-    lore:
-      - '&7Click to start your adventure as an Explorer.'
-  '3':
-    type: MAP
-    name: '&eExplorer Missions'
-    lore:
-      - '&7Click to start your adventure as an Explorer.'
-  '4':
-    type: MAP
-    name: '&eExplorer Missions'
-    lore:
-      - '&7Click to start your adventure as an Explorer.'
-  '5':
-    type: MAP
-    name: '&eExplorer Missions'
-    lore:
-      - '&7Click to start your adventure as an Explorer.'
-  '6':
-    type: MAP
-    name: '&eExplorer Missions'
-    lore:
-      - '&7Click to start your adventure as an Explorer.'
-  '7':
-    type: MAP
-    name: '&eExplorer Missions'
-    lore:
-      - '&7Click to start your adventure as an Explorer.'
-  '8':
-    type: MAP
-    name: '&eExplorer Missions'
-    lore:
-      - '&7Click to start your adventure as an Explorer.'
-  '9':
-    type: MAP
-    name: '&eExplorer Missions'
-    lore:
-      - '&7Click to start your adventure as an Explorer.'
+  # '2':
+    # type: MAP
+    # name: '&eExplorer Missions'
+    # lore:
+      # - '&7Click to start your adventure as an Explorer.'
+  # '3':
+    # type: MAP
+    # name: '&eExplorer Missions'
+    # lore:
+      # - '&7Click to start your adventure as an Explorer.'
+  # '4':
+    # type: MAP
+    # name: '&eExplorer Missions'
+    # lore:
+      # - '&7Click to start your adventure as an Explorer.'
+  # '5':
+    # type: MAP
+    # name: '&eExplorer Missions'
+    # lore:
+      # - '&7Click to start your adventure as an Explorer.'
+  # '6':
+    # type: MAP
+    # name: '&eExplorer Missions'
+    # lore:
+      # - '&7Click to start your adventure as an Explorer.'
+  # '7':
+    # type: MAP
+    # name: '&eExplorer Missions'
+    # lore:
+      # - '&7Click to start your adventure as an Explorer.'
+  # '8':
+    # type: MAP
+    # name: '&eExplorer Missions'
+    # lore:
+      # - '&7Click to start your adventure as an Explorer.'
+  # '9':
+    # type: MAP
+    # name: '&eExplorer Missions'
+    # lore:
+      # - '&7Click to start your adventure as an Explorer.'
 
 sounds:
   'A':
@@ -156,6 +186,24 @@ sounds:
     type: BLOCK_CHEST_OPEN
     volume: 0.8
     pitch: 1
+  'Q':
+    type: BLOCK_CHEST_OPEN
+    volume: 0.8
+    pitch: 1
+  'R':
+    type: BLOCK_CHEST_OPEN
+    volume: 0.8
+    pitch: 1
+  'S':
+    type: BLOCK_CHEST_OPEN
+    volume: 0.8
+    pitch: 1
+  'T':
+    type: BLOCK_CHEST_OPEN
+    volume: 0.8
+    pitch: 1
+
+
   '1':
     type: BLOCK_CHEST_OPEN
     volume: 0.8

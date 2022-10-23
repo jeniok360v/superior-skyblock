@@ -14,6 +14,9 @@ rewards:
     '1':
       type: CARROT
       amount: 3
+    '2':
+      type: DIRT
+      amount: 15
   commands:
     - 'eco give %player% 500'
     - 'is admin msg %player% &bФермер |'
@@ -33,7 +36,7 @@ icons:
   not-completed:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGEzODkwYWE4Yzc2ZjE3N2NiYWU3ZGMwOTY2MTQ5YTJlMGZiMWMxZWZlYjI4M2RlYjdkZWFhMDlmZDBmYjYifX19'
-    name: '&bМиссия "Фермер II"'
+    name: '&bМиссия "Фермер II" &4(TEST)'
     lore:
       - ' '
       - '&b * &7Требования:'
@@ -41,6 +44,7 @@ icons:
       - ' '
       - '&b * &7Награды:'
       - '&b  - &ax3 &7Морковь'
+      - '&b  - &ax15 &7Земля'
       - '&b  - &a$500'
       - ' '
       - '&b * &7Прогресс: &a{0}%'
@@ -50,7 +54,7 @@ icons:
   can-complete:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
-    name: '&bМиссия "Фермер II"'
+    name: '&bМиссия "Фермер II" &4(TEST)'
     lore:
       - ' '
       - '&b * &7Требования:'
@@ -58,6 +62,7 @@ icons:
       - ' '
       - '&b * &7Награды:'
       - '&b  - &ax3 &7Морковь'
+      - '&b  - &ax15 &7Земля'
       - '&b  - &a$500'
       - ' '
       - '&b * &7Прогресс: &a100%'
@@ -67,7 +72,7 @@ icons:
   completed:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
-    name: '&bМиссия "Фермер II"'
+    name: '&bМиссия "Фермер II" &4(TEST)'
     lore:
       - ' '
       - '&b * &7Требования:'
@@ -75,6 +80,7 @@ icons:
       - ' '
       - '&b * &7Награды:'
       - '&b  - &ax3 &7Морковь'
+      - '&b  - &ax15 &7Земля'
       - '&b  - &a$500'
       - ' '
       - '&b * &7Прогресс: &a100%'

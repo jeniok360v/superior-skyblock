@@ -1,0 +1,81 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: BlocksMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+only-natural-blocks: true
+island: true
+weight: 1
+
+rewards:
+  items:
+    '1':
+      type: BIRCH_SAPLING
+      amount: 2
+  commands:
+    - 'eco give %player% 250'
+    - 'is admin msg %player% &bРоща |'
+    - 'is admin msg %player% &bРоща | &7Вы успешно завершили миссию &a"Роща I"&r&7!'
+    - 'is admin msg %player% &bРоща |'
+
+required-blocks:
+  '1':
+    types:
+      - 'BIRCH_LOG'
+    amount: 5
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThlMTNiZmYzNmUxNmZjYmQ1MzZjODNkMjlkMDk3NzhkOGI5NWFlNWIxNmUzYmQwYzg2MjY1NjVkYTY1ZjM4NyJ9fX0='
+    name: '&bМиссия "Роща I"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax5 &7Берёзовые брёвна'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax2 &7Саженцы берёзы'
+      - '&b  - &a$250'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Срублено берёзы: &a{value_birch_log}/5'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
+    name: '&bМиссия "Роща I"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax5 &7Берёзовые брёвна'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax2 &7Саженцы берёзы'
+      - '&b  - &a$250'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Срублено берёзы: &a5/5'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Роща I"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax5 &7Берёзовые брёвна'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax2 &7Саженцы берёзы'
+      - '&b  - &a$250'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Срублено берёзы: &a5/5'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

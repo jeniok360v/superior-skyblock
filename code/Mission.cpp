@@ -244,21 +244,21 @@ void Mission::printGoalMissionsMultiType(std::ofstream& ofs, bool isTest)
     }
 }
 
-void Mission::printLore(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull)
+void Mission::printLore(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, bool isTest)
 {
     ofs << "icons:" << std::endl;
     ofs << "  not-completed:" << std::endl;
-    printLoreSegment(ofs, missionNumber, groupName, icon, skull, "not completed");
+    printLoreSegment(ofs, missionNumber, groupName, icon, skull, "not completed", isTest);
     ofs << "  can-complete:" << std::endl;
-    printLoreSegment(ofs, missionNumber, groupName, icon, headChest, "can complete");
+    printLoreSegment(ofs, missionNumber, groupName, icon, headChest, "can complete", isTest);
     ofs << "  completed:" << std::endl;
-    printLoreSegment(ofs, missionNumber, groupName, icon, headCompleted, "completed");
+    printLoreSegment(ofs, missionNumber, groupName, icon, headCompleted, "completed", isTest);
     
 }
 
-void Mission::printLoreSegment(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, std::string completness)
+void Mission::printLoreSegment(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, std::string completness, bool isTest)
 {
-    printLoreHeader(ofs, missionNumber, groupName, icon, skull);
+    printLoreHeader(ofs, missionNumber, groupName, icon, skull, isTest);
     printLoreRequirements(ofs);
     printLoreReward(ofs);
     printLoreProgress(ofs, completness);
@@ -266,14 +266,21 @@ void Mission::printLoreSegment(std::ofstream& ofs, int missionNumber, std::strin
     printLoreFooter(ofs, completness);
 }
 
-void Mission::printLoreHeader(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull)
+void Mission::printLoreHeader(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, bool isTest)
 {
     ofs << "    type: " + icon << std::endl;
     if(icon == "PLAYER_HEAD")
     {
         ofs << "    skull: '" + skull + "'" << std::endl;
     }
-    ofs << "    name: '&bМиссия \"" + groupName + " " + to_roman(missionNumber) + "\"'" << std::endl;
+
+    ofs << "    name: '&bМиссия \"" + groupName + " " + to_roman(missionNumber) + "\"";
+    if(isTest)
+    {
+        ofs << " &4(TEST)";
+    }
+    ofs << "'" << std::endl;
+
     ofs << "    lore:" << std::endl;
     if(!missionDescription.empty())
     {

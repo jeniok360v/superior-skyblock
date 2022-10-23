@@ -3,13 +3,14 @@
 #include "MissionPack.hpp"
 
 const std::string startDesert1 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDY0YjZiNjA2MmFjMzU4ZDMzM2YzNDIyNmYwYzlkZjhmMjg2ZjcxMjdlN2NiZGEzODZiOGFjOWU2NjJjMTcyMiJ9fX0=";
+const std::string startDesert2 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDkxYWMzMTNkN2UwODZkNmNjOTRhODQzNWY2NDNmMTcxOWYxYjNiMzc4YjA0ZWIxYzQyNzJlNWMzNjZkMGZjMiJ9fX0=";
 
 MissionPack startDesertPack
 {
     "startDesert",
     {
         {
-            "startDesert", "Пустынное начало", "PLAYER_HEAD", startDesert1,
+            "startDesert", "Пустынное начало", "PLAYER_HEAD", startDesert2,
             {
                 {
                     {},

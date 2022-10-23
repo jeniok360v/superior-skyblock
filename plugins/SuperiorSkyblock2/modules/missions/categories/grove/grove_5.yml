@@ -1,0 +1,94 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: BlocksMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+only-natural-blocks: true
+island: true
+weight: 5
+
+rewards:
+  items:
+    '1':
+      type: DIRT
+      amount: 15
+  commands:
+    - 'eco give %player% 2500'
+    - 'is admin msg %player% &bРоща |'
+    - 'is admin msg %player% &bРоща | &7Вы успешно завершили миссию &a"Роща V"&r&7!'
+    - 'is admin msg %player% &bРоща |'
+
+required-missions:
+  - 'grove_4'
+
+required-blocks:
+  '1':
+    types:
+      - 'OAK_LOG'
+    amount: 120
+  '2':
+    types:
+      - 'BIRCH_LOG'
+    amount: 200
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThlMTNiZmYzNmUxNmZjYmQ1MzZjODNkMjlkMDk3NzhkOGI5NWFlNWIxNmUzYmQwYzg2MjY1NjVkYTY1ZjM4NyJ9fX0='
+    name: '&bМиссия "Роща V"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax120 &7Дубовые брёвна'
+      - '&b  - &ax200 &7Берёзовые брёвна'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax15 &7Земля'
+      - '&b  - &a$2500'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Срублено дуба: &a{value_oak_log}/120'
+      - '&b  - &7Срублено берёзы: &a{value_birch_log}/200'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
+    name: '&bМиссия "Роща V"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax120 &7Дубовые брёвна'
+      - '&b  - &ax200 &7Берёзовые брёвна'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax15 &7Земля'
+      - '&b  - &a$2500'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Срублено дуба: &a120/120'
+      - '&b  - &7Срублено берёзы: &a200/200'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Роща V"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax120 &7Дубовые брёвна'
+      - '&b  - &ax200 &7Берёзовые брёвна'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax15 &7Земля'
+      - '&b  - &a$2500'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Срублено дуба: &a120/120'
+      - '&b  - &7Срублено берёзы: &a200/200'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

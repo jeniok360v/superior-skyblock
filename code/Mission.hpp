@@ -149,9 +149,9 @@ public:
     void printGoalStatisticsMissions(std::ofstream& ofs, bool isTest);
     void printGoalMissionsMultiType(std::ofstream& ofs, bool isTest);
 
-    void printLore(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull);
-    void printLoreSegment(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, std::string completness);
-    void printLoreHeader(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull);
+    void printLore(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, bool isTest);
+    void printLoreSegment(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, std::string completness, bool isTest);
+    void printLoreHeader(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, bool isTest);
     void printLoreRequirements(std::ofstream& ofs);
     void printLoreReward(std::ofstream& ofs);
     void printLoreProgress(std::ofstream& ofs, std::string completness);
@@ -166,7 +166,7 @@ public:
         printReward(ofs, missionNumber, groupName);
         printRequiredMissions(ofs, missionNumber, groupTag);
         printGoal(ofs, isTest);
-        printLore(ofs, missionNumber, groupName, icon, skull);
+        printLore(ofs, missionNumber, groupName, icon, skull, isTest);
     }
 };
 

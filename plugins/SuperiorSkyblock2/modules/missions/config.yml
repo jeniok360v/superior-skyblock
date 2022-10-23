@@ -40,6 +40,14 @@ categories:
     name: 'Нечисть'
     slot: 15
 
+  grove:
+    name: 'Роща'
+    slot: 18
+
+  forest:
+    name: 'Лес'
+    slot: 19
+
   pigman:
     name: 'Свинозомби'
     slot: 27
