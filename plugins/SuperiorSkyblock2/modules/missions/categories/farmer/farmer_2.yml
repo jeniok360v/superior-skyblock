@@ -9,6 +9,10 @@ only-show-if-required-completed: true
 island: true
 
 rewards:
+  items:
+    '1':
+      type: CARROT
+      amount: 3
   commands:
     - 'eco give %player% 500'
     - 'is admin msg %player% &bФермер |'
@@ -35,6 +39,7 @@ icons:
       - '&b  - &ax50 &7Пшеница'
       - ' '
       - '&b * &7Награды:'
+      - '&b  - &ax3 &7Морковь'
       - '&b  - &a$500'
       - ' '
       - '&b * &7Прогресс: &a{0}%'
@@ -51,6 +56,7 @@ icons:
       - '&b  - &ax50 &7Пшеница'
       - ' '
       - '&b * &7Награды:'
+      - '&b  - &ax3 &7Морковь'
       - '&b  - &a$500'
       - ' '
       - '&b * &7Прогресс: &a100%'
@@ -67,6 +73,7 @@ icons:
       - '&b  - &ax50 &7Пшеница'
       - ' '
       - '&b * &7Награды:'
+      - '&b  - &ax3 &7Морковь'
       - '&b  - &a$500'
       - ' '
       - '&b * &7Прогресс: &a100%'

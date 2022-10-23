@@ -32,6 +32,10 @@ categories:
     name: 'Фермер'
     slot: 13
 
+  autumn:
+    name: 'Осень'
+    slot: 14
+
   pigman:
     name: 'Свинозомби'
     slot: 27

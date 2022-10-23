@@ -36,7 +36,9 @@ MissionPack farmerPack
                     "FarmingMissions", defaultOptions, {},
                     {{{"wheat", "Пшеница", 50, "Вырастить пшеницы"}}, {}, {}},
                     {500, {},
-                    {}
+                    {
+                        {"carrot", "Морковь", 3, "Получено морковки"}
+                    }
                     }
                 }, // Mission
                 {
@@ -60,7 +62,9 @@ MissionPack farmerPack
                     "FarmingMissions", defaultOptions, {},
                     {{{"carrots", "Морковь", 100, "Вырастить морковки"}}, {}, {}},
                     {500, {},
-                    {}
+                    {
+                        {"potatoes", "Картошка", 20, "Получено картошки"}
+                    }
                     }
                 }, // Mission
                 {

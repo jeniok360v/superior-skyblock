@@ -23,37 +23,6 @@ MissionPack beginnerPack
     "beginner",
     {
         {
-            "beginner", "Начало", "PLAYER_HEAD", headBeginner,
-            {
-                {
-                    {},
-                    "CraftingMissions", defaultOptions, {},
-                    {{{"wooden_pickaxe", "Деревянная кирка", 1, "Деревянная кирка, скрафчено"}}, {}, {}},
-                    {200, {},
-                    {},
-                    }
-                }, // Mission
-                {
-                    {"Постройте генератор и добудьте из него булыжник"},
-                    "BlocksMissions", defaultNaturalBlocksOptions, {},
-                    {{{"cobblestone", "Булыжник", 3/*90*/, "Добыто булыжника"}}, {}, {}},
-                    {300, {},
-                    {
-                        {"hopper", "Воронка", 1, "Получено воронок"}
-                    },
-                    }
-                }, // Mission                
-                {
-                    {},
-                    "BlocksMissions", defaultNaturalBlocksOptions, {},
-                    {{{"cobblestone", "Булыжник", 3/*200*/, "Добыто булыжника"}}, {}, {}},
-                    {500, {{"is admin rankup %player% generator-rates", "Улучшение генератора булыжника"}},
-                    {},
-                    }
-                }, // Mission
-            }
-        }, // MissionGroup
-        {
             "birch", "Берёзовая роща", "PLAYER_HEAD", birch2,
             {
                 {
@@ -74,39 +43,6 @@ MissionPack beginnerPack
                     {
                         {"birch_sapling", "Саженцы берёзы", 2, "Получено саженцев берёзы"}
                     }
-                    }
-                }, // Mission
-            }
-        }, // MissionGroup
-        {
-            "food", "Пора подумать о еде", "PLAYER_HEAD", food1,
-            {
-                {
-                    {},
-                    "CraftingMissions", defaultOptions, {},
-                    {{{"stone_hoe", "Каменная мотыга", 1, "Каменная мотыга, скрафчено"}}, {}, {}},
-                    {300, {},
-                    {
-                        {"wheat_seeds", "Семена пшеницы", 10, "Получено семян"}
-                    },
-                    }
-                }, // Mission
-                {
-                    {"Испеките немного хлеба"},
-                    "CraftingMissions", defaultOptions, {},
-                    {{{"bread", "Хлеб", 15, "Сделано хлеба"}}, {}, {}},
-                    {500, {},
-                    {
-                        {"beetroot_seeds", "Семена свеклы", 15, "Получено семян"}
-                    },
-                    }
-                }, // Mission
-                {
-                    {},
-                    "FarmingMissions", defaultOptions, {},
-                    {{{"beetroots", "Свекла", 60, "Выращено свеклы"}}, {}, {}},
-                    {900, {},
-                    {},
                     }
                 }, // Mission
             }

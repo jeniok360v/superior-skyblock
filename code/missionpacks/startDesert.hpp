@@ -2,7 +2,7 @@
 
 #include "MissionPack.hpp"
 
-const std::string startDesert1 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0=";
+const std::string startDesert1 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDY0YjZiNjA2MmFjMzU4ZDMzM2YzNDIyNmYwYzlkZjhmMjg2ZjcxMjdlN2NiZGEzODZiOGFjOWU2NjJjMTcyMiJ9fX0=";
 
 MissionPack startDesertPack
 {
@@ -13,22 +13,22 @@ MissionPack startDesertPack
             {
                 {
                     {},
-                    "ItemsMissions", defaultOptions, {},
-                    {{{"cactus", "Кактус", 3, "Соберано кактусов"} }, {}, {}},
+                    "BlocksMissions", defaultNaturalBlocksOptions, {},
+                    {{{"sand", "Песок", 10, "Собрано песка"} }, {}, {}},
                     {50, {},
                     {
-                        {"dead_bush", "Сухой куст", 20, "Получено сухих кустов"}
+                        {"dead_bush", "Сухой куст", 20, "Получено сухих кустов"},
+                        {"rotten_flesh", "Гнилая плоть", 20, "Получено гнилой плоти"}
                     },
                     }
                 }, // Mission 
                 {
                     {},
-                    "BlocksMissions", defaultNaturalBlocksOptions, {},
-                    {{{"sand", "Песок", 10, "Собрано песка"} }, {}, {}},
+                    "ItemsMissions", defaultOptions, {},
+                    {{{"cactus", "Кактус", 3, "Соберано кактусов"} }, {}, {}},
                     {50, {},
                     {
                         {"birch_planks", "Берёзовые доски", 7, "Получено берёзовых досок"},
-                        {"rotten_flesh", "Гнилая плоть", 20, "Получено гнилой плоти"}
                     },
                     }
                 }, // Mission 

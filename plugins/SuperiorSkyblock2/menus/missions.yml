@@ -10,9 +10,9 @@ previous-menu: true
 
 pattern:
   - '$ $ $ $ $ $ $ $ $'
-  - 'A B C D E * * * *'
+  - 'J K L M N O P * *'
   - '* * * * * * * * *'
-  - 'F * * * * * * * *'
+  - '1 * * * * * * * *'
   - '* * * * * * * * *'
   - '$ $ $ $ $ $ $ $ $'
 
@@ -20,34 +20,44 @@ items:
   '$':
     type: BLACK_STAINED_GLASS_PANE
     name: '&f'
-  'A':
+  'J':
     type: DIAMOND_PICKAXE
     name: '&eMiner Missions'
     lore:
       - '&7Click to start your adventure as a Miner.'
     flags:
       - HIDE_ATTRIBUTES
-  'B':
+  'K':
     type: ZOMBIE_HEAD
     name: '&eSlayer Missions'
     lore:
       - '&7Click to start your adventure as a Slayer.'
-  'C':
+  'L':
     type: WHEAT
     name: '&eFarmer Missions'
     lore:
       - '&7Click to start your adventure as a Farmer.'
-  'D':
+  'M':
     type: NETHERRACK
     name: '&eМиссии ада'
     lore:
       - '&7Click to start your adventure as a Fisherman.'
-  'E':
+  'N':
     type: MAP
     name: '&eExplorer Missions'
     lore:
       - '&7Click to start your adventure as an Explorer.'
-  'F':
+  'O':
+    type: MAP
+    name: '&eExplorer Missions'
+    lore:
+      - '&7Click to start your adventure as an Explorer.'
+  'P':
+    type: MAP
+    name: '&eExplorer Missions'
+    lore:
+      - '&7Click to start your adventure as an Explorer.'
+  '1':
     type: MAP
     name: '&eExplorer Missions'
     lore:
@@ -75,6 +85,42 @@ sounds:
     volume: 0.8
     pitch: 1
   'F':
+    type: BLOCK_CHEST_OPEN
+    volume: 0.8
+    pitch: 1
+  'J':
+    type: BLOCK_CHEST_OPEN
+    volume: 0.8
+    pitch: 1
+  'K':
+    type: BLOCK_CHEST_OPEN
+    volume: 0.8
+    pitch: 1
+  'L':
+    type: BLOCK_CHEST_OPEN
+    volume: 0.8
+    pitch: 1
+  'M':
+    type: BLOCK_CHEST_OPEN
+    volume: 0.8
+    pitch: 1
+  'N':
+    type: BLOCK_CHEST_OPEN
+    volume: 0.8
+    pitch: 1
+  'O':
+    type: BLOCK_CHEST_OPEN
+    volume: 0.8
+    pitch: 1
+  'P':
+    type: BLOCK_CHEST_OPEN
+    volume: 0.8
+    pitch: 1
+  '1':
+    type: BLOCK_CHEST_OPEN
+    volume: 0.8
+    pitch: 1
+  '2':
     type: BLOCK_CHEST_OPEN
     volume: 0.8
     pitch: 1

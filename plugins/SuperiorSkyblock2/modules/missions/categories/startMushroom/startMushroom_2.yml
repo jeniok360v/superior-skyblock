@@ -13,7 +13,7 @@ rewards:
   items:
     '1':
       type: BONE_MEAL
-      amount: 20
+      amount: 8
     '2':
       type: CRAFTING_TABLE
       amount: 1
@@ -42,7 +42,7 @@ required-blocks:
 icons:
   not-completed:
     type: PLAYER_HEAD
-    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0='
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjU1MzI2ZDI4ODBiNDg4MTVkZDAwYWMxNzRjOGVlOTMwNWRmYmU0YjZhYjVkMWExNjZiNTIyMzNjMWQzZGQ5NCJ9fX0='
     name: '&bМиссия "Грибное начало 2"'
     lore:
       - ' '
@@ -51,9 +51,9 @@ icons:
       - '&b  - &ax32 &7Красный грибной блок'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &ax20 &7bone_meal'
-      - '&b  - &ax1 &7crafting_table'
-      - '&b  - &ax5 &7bowl'
+      - '&b  - &ax8 &7Костная мука'
+      - '&b  - &ax1 &7Верстак'
+      - '&b  - &ax5 &7Миска'
       - '&b  - &a$200'
       - ' '
       - '&b * &7Прогресс: &a{0}%'
@@ -72,9 +72,9 @@ icons:
       - '&b  - &ax32 &7Красный грибной блок'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &ax20 &7bone_meal'
-      - '&b  - &ax1 &7crafting_table'
-      - '&b  - &ax5 &7bowl'
+      - '&b  - &ax8 &7Костная мука'
+      - '&b  - &ax1 &7Верстак'
+      - '&b  - &ax5 &7Миска'
       - '&b  - &a$200'
       - ' '
       - '&b * &7Прогресс: &a100%'
@@ -93,9 +93,9 @@ icons:
       - '&b  - &ax32 &7Красный грибной блок'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &ax20 &7bone_meal'
-      - '&b  - &ax1 &7crafting_table'
-      - '&b  - &ax5 &7bowl'
+      - '&b  - &ax8 &7Костная мука'
+      - '&b  - &ax1 &7Верстак'
+      - '&b  - &ax5 &7Миска'
       - '&b  - &a$200'
       - ' '
       - '&b * &7Прогресс: &a100%'

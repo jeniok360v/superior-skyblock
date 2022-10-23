@@ -2,7 +2,7 @@
 
 #include "MissionPack.hpp"
 
-const std::string startMushroom1 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0=";
+const std::string startMushroom1 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2JlYTM0ZDA4OWVlNjY2OTE3NjU5Y2ZkOWZlYWIxNDY4ZTcwMzdiYzUxZmJiMzM2ZWNmYTA4N2UwYjc4MTAzNiJ9fX0=";
 const std::string startMushroom2 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjU1MzI2ZDI4ODBiNDg4MTVkZDAwYWMxNzRjOGVlOTMwNWRmYmU0YjZhYjVkMWExNjZiNTIyMzNjMWQzZGQ5NCJ9fX0=";
 
 MissionPack startMushroomPack
@@ -10,13 +10,14 @@ MissionPack startMushroomPack
     "startMushroom",
     {
         {
-            "startMushroom", "Грибное начало", "PLAYER_HEAD", startMushroom1,
+            "startMushroom", "Грибное начало", "PLAYER_HEAD", startMushroom2,
             {
                 {
                     {},
                     "BlocksMissions", defaultNaturalBlocksOptions, {},
-                    {{{"mushroom_stem", "Грибная ножка", 5, "Сломано грибных ножек"},
-                    {"brown_mushroom_block", "Коричневый грибной блок", 20, "Сломано блоков коричневого гриба"}, }, {}, {}},
+                    {{{"mushroom_stem", "Грибная ножка", 4, "Сломано грибных ножек"},
+                    {"mycelium", "Блок мицелия", 1, "Сломано блоков мицелия"},
+                    {"brown_mushroom_block", "Коричневый грибной блок", 36, "Сломано блоков коричневого гриба"}, }, {}, {}},
                     {200, {},
                     {
                         {"bone_meal", "Костная мука", 10, "Получено муки"}
@@ -30,7 +31,7 @@ MissionPack startMushroomPack
                     {"red_mushroom_block", "Красный грибной блок", 32, "Сломано блоков красного гриба"}, }, {}, {}},
                     {200, {},
                     {
-                        {"bone_meal", "Костная мука", 20, "Получено муки"},
+                        {"bone_meal", "Костная мука", 8, "Получено муки"},
                         {"crafting_table", "Верстак", 1, "Получено верстак"},
                         {"bowl", "Миска", 5, "Получено мисок"},
                     },
@@ -55,7 +56,7 @@ MissionPack startMushroomPack
                     {{{"stone_axe", "Каменный топор", 1, "Каменный топор, скрафчено"}}, {}, {}},
                     {100, {},
                     {
-                        {"bone_meal", "Костная мука", 30, "Получено муки"}
+                        {"bone_meal", "Костная мука", 10, "Получено муки"}
                     },
                     }
                 }, // Mission
@@ -67,8 +68,8 @@ MissionPack startMushroomPack
                     {"brown_mushroom_block", "Коричневый грибной блок", 50, "Сломано блоков коричневого гриба"}}, {}, {}},
                     {200, {},
                     {
-                        {"bone_meal", "Костная мука", 50, "Получено муки"},
-                        {"stick", "Палки", 10, "Получено палок"},
+                        {"bone_meal", "Костная мука", 15, "Получено муки"},
+                        {"stick", "Палки", 16, "Получено палок"},
                         {"dirt", "Земля", 20, "Получено земли"},
                     },
                     }
