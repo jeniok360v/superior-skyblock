@@ -1,0 +1,97 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: FarmingMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+island: true
+reset-amount: 10000
+weight: 12
+
+rewards:
+  commands:
+    - 'eco give %player% 1800'
+    - 'is admin msg %player% &bОсенний сезон |'
+    - 'is admin msg %player% &bОсенний сезон | &7Вы успешно завершили миссию &a"Осенний сезон XII"&r&7!'
+    - 'is admin msg %player% &bОсенний сезон |'
+
+required-missions:
+  - 'autumn_11'
+
+required-plants:
+  '1':
+    types:
+      - 'SWEET_BERRY_BUSH'
+    amount: 3
+  '2':
+    types:
+      - 'BEETROOTS'
+    amount: 3
+  '3':
+    types:
+      - 'SUGAR_CANE'
+    amount: 3
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTUyZTg0NmVmZmUwZDFlOWVlNzkwZWMyN2NlODk2ZWZkOTk0OTEyMTI2ZGE1ZjIxOThiNDc0ZDZhMWM5OTQ1NSJ9fX0='
+    name: '&bМиссия "Осенний сезон XII"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax2000 &7Брусника'
+      - '&b  - &ax600 &7Свекла'
+      - '&b  - &ax1000 &7Тростник'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$1800'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Выращено брусники: &a{value_sweet_berry_bush}/2000'
+      - '&b  - &7Выращено свеклы: &a{value_beetroots}/600'
+      - '&b  - &7Выращено тростника: &a{value_sugar_cane}/1000'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
+    name: '&bМиссия "Осенний сезон XII"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax2000 &7Брусника'
+      - '&b  - &ax600 &7Свекла'
+      - '&b  - &ax1000 &7Тростник'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$1800'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Выращено брусники: &a2000/2000'
+      - '&b  - &7Выращено свеклы: &a600/600'
+      - '&b  - &7Выращено тростника: &a1000/1000'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Осенний сезон XII"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax2000 &7Брусника'
+      - '&b  - &ax600 &7Свекла'
+      - '&b  - &ax1000 &7Тростник'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$1800'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Выращено брусники: &a2000/2000'
+      - '&b  - &7Выращено свеклы: &a600/600'
+      - '&b  - &7Выращено тростника: &a1000/1000'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

@@ -106,41 +106,41 @@ void Mission::printRequiredMissions(std::ofstream& ofs, int missionNumber, std::
     }    
 }
 
-void Mission::printGoal(std::ofstream& ofs)
+void Mission::printGoal(std::ofstream& ofs, bool isTest)
 {
     // BlocksMissions -> 0
     int type = std::distance(MissionType.cbegin(), std::find(MissionType.cbegin(), MissionType.cend(), missionType));
     switch(type)
     {
         case 0:
-            printGoalBlocksMissions(ofs);
+            printGoalBlocksMissions(ofs, isTest);
             break;
         case 1:
-            printGoalBrewingMissions(ofs);
+            printGoalBrewingMissions(ofs, isTest);
             break;
         case 2:
-            printGoalCraftingMissions(ofs);
+            printGoalCraftingMissions(ofs, isTest);
             break;
         case 3:
-            printGoalEnchantingMissions(ofs);
+            printGoalEnchantingMissions(ofs, isTest);
             break;
         case 4:
-            printGoalFarmingMissions(ofs);
+            printGoalFarmingMissions(ofs, isTest);
             break;
         case 5:
-            printGoalFishingMissions(ofs);
+            printGoalFishingMissions(ofs, isTest);
             break;
         case 6:
-            printGoalIslandMissions(ofs);
+            printGoalIslandMissions(ofs, isTest);
             break;
         case 7:
-            printGoalItemsMissions(ofs);
+            printGoalItemsMissions(ofs, isTest);
             break;
         case 8:
-            printGoalKillsMissions(ofs);
+            printGoalKillsMissions(ofs, isTest);
             break;
         case 9:
-            printGoalStatisticsMissions(ofs);
+            printGoalStatisticsMissions(ofs, isTest);
             break;
         default:
             std::cout << "Unknown mission type, ERROR!" << std::endl;
@@ -148,21 +148,13 @@ void Mission::printGoal(std::ofstream& ofs)
     ofs << std::endl;
 }
 
-void Mission::printGoalBlocksMissions(std::ofstream& ofs)
+void Mission::printGoalBlocksMissions(std::ofstream& ofs, bool isTest)
 {
     ofs << "required-blocks:" << std::endl;
-    for(int i = 0; i < goal.requiredItems.size(); i++)
-    {
-        std::string itemPrint = goal.requiredItems.at(i).itemName;
-        std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
-        ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
-        ofs << "    types:" << std::endl;
-        ofs << "      - '" + itemPrint + "'" << std::endl;
-        ofs << "    amount: " + std::to_string(goal.requiredItems.at(i).itemAmount) << std::endl;
-    }        
+    printGoalMissionsMultiType(ofs, isTest);
 }
 
-void Mission::printGoalBrewingMissions(std::ofstream& ofs)
+void Mission::printGoalBrewingMissions(std::ofstream& ofs, bool isTest)
 {
     ofs << "required-potions:" << std::endl;
     for(int i = 0; i < goal.potions.size(); i++)
@@ -180,7 +172,7 @@ void Mission::printGoalBrewingMissions(std::ofstream& ofs)
     }
 }
 
-void Mission::printGoalCraftingMissions(std::ofstream& ofs)
+void Mission::printGoalCraftingMissions(std::ofstream& ofs, bool isTest)
 {
     ofs << "craftings:" << std::endl;
     for(int i = 0; i < goal.requiredItems.size(); i++)
@@ -193,75 +185,63 @@ void Mission::printGoalCraftingMissions(std::ofstream& ofs)
     }
 }
 
-void Mission::printGoalEnchantingMissions(std::ofstream& ofs)
+void Mission::printGoalEnchantingMissions(std::ofstream& ofs, bool isTest)
 {
     
 }
 
-void Mission::printGoalFarmingMissions(std::ofstream& ofs)
+void Mission::printGoalFarmingMissions(std::ofstream& ofs, bool isTest)
 {
     ofs << "required-plants:" << std::endl;
-    for(int i = 0; i < goal.requiredItems.size(); i++)//  auto& item : goal.requiredItems)
-    {
-        std::string itemPrint = goal.requiredItems.at(i).itemName;
-        std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
-        ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
-        ofs << "    types:" << std::endl;
-        ofs << "      - '" + itemPrint + "'" << std::endl;
-        ofs << "    amount: " + std::to_string(goal.requiredItems.at(i).itemAmount) << std::endl;
-    }        
+    printGoalMissionsMultiType(ofs, isTest);    
 }
 
-void Mission::printGoalFishingMissions(std::ofstream& ofs)
+void Mission::printGoalFishingMissions(std::ofstream& ofs, bool isTest)
 {
     ofs << "required-caughts:" << std::endl;
-    for(int i = 0; i < goal.requiredItems.size(); i++)//  auto& item : goal.requiredItems)
-    {
-        std::string itemPrint = goal.requiredItems.at(i).itemName;
-        std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
-        ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
-        ofs << "    types:" << std::endl;
-        ofs << "      - '" + itemPrint + "'" << std::endl;
-        ofs << "    amount: " + std::to_string(goal.requiredItems.at(i).itemAmount) << std::endl;
-    } 
+    printGoalMissionsMultiType(ofs, isTest);
 }
 
-void Mission::printGoalIslandMissions(std::ofstream& ofs)
+void Mission::printGoalIslandMissions(std::ofstream& ofs, bool isTest)
 {
     
 }
 
-void Mission::printGoalItemsMissions(std::ofstream& ofs)
+void Mission::printGoalItemsMissions(std::ofstream& ofs, bool isTest)
 {
     ofs << "required-items:" << std::endl;
-    for(int i = 0; i < goal.requiredItems.size(); i++)//  auto& item : goal.requiredItems)
-    {
-        std::string itemPrint = goal.requiredItems.at(i).itemName;
-        std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
-        ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
-        ofs << "    types:" << std::endl;
-        ofs << "      - '" + itemPrint + "'" << std::endl;
-        ofs << "    amount: " + std::to_string(goal.requiredItems.at(i).itemAmount) << std::endl;
-    } 
+    printGoalMissionsMultiType(ofs, isTest);
 }
 
-void Mission::printGoalKillsMissions(std::ofstream& ofs)
+void Mission::printGoalKillsMissions(std::ofstream& ofs, bool isTest)
 {
     ofs << "required-entities:" << std::endl;
-    for(int i = 0; i < goal.requiredItems.size(); i++)//  auto& item : goal.requiredItems)
+    printGoalMissionsMultiType(ofs, isTest);
+}
+
+void Mission::printGoalStatisticsMissions(std::ofstream& ofs, bool isTest)
+{
+    
+}
+
+void Mission::printGoalMissionsMultiType(std::ofstream& ofs, bool isTest)
+{
+    for(int i = 0; i < goal.requiredItems.size(); i++)
     {
         std::string itemPrint = goal.requiredItems.at(i).itemName;
         std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
         ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
         ofs << "    types:" << std::endl;
         ofs << "      - '" + itemPrint + "'" << std::endl;
-        ofs << "    amount: " + std::to_string(goal.requiredItems.at(i).itemAmount) << std::endl;
-    } 
-}
-
-void Mission::printGoalStatisticsMissions(std::ofstream& ofs)
-{
-    
+        if(isTest)
+        {
+            ofs << "    amount: 3" << std::endl;
+        }
+        else
+        {
+            ofs << "    amount: " + std::to_string(goal.requiredItems.at(i).itemAmount) << std::endl;
+        }
+    }
 }
 
 void Mission::printLore(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull)

@@ -1,0 +1,82 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: CraftingMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+island: true
+weight: 11
+
+rewards:
+  items:
+    '1':
+      type: MELON
+      amount: 3
+  commands:
+    - 'eco give %player% 200'
+    - 'is admin msg %player% &bФермер |'
+    - 'is admin msg %player% &bФермер | &7Вы успешно завершили миссию &a"Фермер XI"&r&7!'
+    - 'is admin msg %player% &bФермер |'
+
+required-missions:
+  - 'farmer_10'
+
+craftings:
+  '1':
+    type: 'IRON_HOE'
+    amount: 1
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGEzODkwYWE4Yzc2ZjE3N2NiYWU3ZGMwOTY2MTQ5YTJlMGZiMWMxZWZlYjI4M2RlYjdkZWFhMDlmZDBmYjYifX19'
+    name: '&bМиссия "Фермер XI"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax1 &7Железная мотыга'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax3 &7Арбуз'
+      - '&b  - &a$200'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Железная мотыга, скрафчено: &a{value_iron_hoe}/1'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
+    name: '&bМиссия "Фермер XI"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax1 &7Железная мотыга'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax3 &7Арбуз'
+      - '&b  - &a$200'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Железная мотыга, скрафчено: &a1/1'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Фермер XI"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax1 &7Железная мотыга'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax3 &7Арбуз'
+      - '&b  - &a$200'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Железная мотыга, скрафчено: &a1/1'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

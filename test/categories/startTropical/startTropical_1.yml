@@ -1,0 +1,81 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: BlocksMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+only-natural-blocks: true
+island: true
+weight: 1
+
+rewards:
+  items:
+    '1':
+      type: JUNGLE_SAPLING
+      amount: 4
+  commands:
+    - 'eco give %player% 200'
+    - 'is admin msg %player% &bНачало |'
+    - 'is admin msg %player% &bНачало | &7Вы успешно завершили миссию &a"Начало I"&r&7!'
+    - 'is admin msg %player% &bНачало |'
+
+required-blocks:
+  '1':
+    types:
+      - 'JUNGLE_WOOD'
+    amount: 3
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0='
+    name: '&bМиссия "Начало I"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax5 &7Тропическое дерево'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax4 &7Саженец тропического дерева'
+      - '&b  - &a$200'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Добыто тропического дерева: &a{value_jungle_wood}/5'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
+    name: '&bМиссия "Начало I"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax5 &7Тропическое дерево'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax4 &7Саженец тропического дерева'
+      - '&b  - &a$200'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Добыто тропического дерева: &a5/5'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Начало I"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax5 &7Тропическое дерево'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax4 &7Саженец тропического дерева'
+      - '&b  - &a$200'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Добыто тропического дерева: &a5/5'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

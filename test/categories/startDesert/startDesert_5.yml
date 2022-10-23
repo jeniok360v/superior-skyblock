@@ -1,0 +1,94 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: CraftingMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+island: true
+weight: 5
+
+rewards:
+  items:
+    '1':
+      type: DIRT
+      amount: 20
+    '2':
+      type: SWEET_BERRIES
+      amount: 20
+    '3':
+      type: DEAD_BUSH
+      amount: 5
+  commands:
+    - 'eco give %player% 50'
+    - 'is admin msg %player% &bПустынное начало |'
+    - 'is admin msg %player% &bПустынное начало | &7Вы успешно завершили миссию &a"Пустынное начало V"&r&7!'
+    - 'is admin msg %player% &bПустынное начало |'
+
+required-missions:
+  - 'startDesert_4'
+
+craftings:
+  '1':
+    type: 'STONE_HOE'
+    amount: 1
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDY0YjZiNjA2MmFjMzU4ZDMzM2YzNDIyNmYwYzlkZjhmMjg2ZjcxMjdlN2NiZGEzODZiOGFjOWU2NjJjMTcyMiJ9fX0='
+    name: '&bМиссия "Пустынное начало V"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax1 &7Каменная мотыга'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax20 &7Земля'
+      - '&b  - &ax20 &7Ягоды'
+      - '&b  - &ax5 &7Сухой куст'
+      - '&b  - &a$50'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Каменная мотыга, скрафчено: &a{value_stone_hoe}/1'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
+    name: '&bМиссия "Пустынное начало V"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax1 &7Каменная мотыга'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax20 &7Земля'
+      - '&b  - &ax20 &7Ягоды'
+      - '&b  - &ax5 &7Сухой куст'
+      - '&b  - &a$50'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Каменная мотыга, скрафчено: &a1/1'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Пустынное начало V"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax1 &7Каменная мотыга'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax20 &7Земля'
+      - '&b  - &ax20 &7Ягоды'
+      - '&b  - &ax5 &7Сухой куст'
+      - '&b  - &a$50'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Каменная мотыга, скрафчено: &a1/1'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

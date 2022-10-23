@@ -10,6 +10,14 @@ code/*
 code/missionpacks/*
 !code/missionpacks/*
 
+!test/
+test/*
+!test/categories/
+test/categories/*
+!test/categories/*/
+test/categories/*/*
+!test/categories/*/*
+
 !plugins/
 plugins/*
 !plugins/SuperiorSkyblock2/

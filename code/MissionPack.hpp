@@ -20,11 +20,11 @@ public:
         fs::create_directories(directory);
     }
     
-    void printPack()
+    void printPack(std::string missionsDir, bool isTest)
     {
         for (auto& missionGroup : missionGroups)
         {
-            missionGroup.printGroup(packTag);
+            missionGroup.printGroup(packTag, missionsDir, isTest);
         }
     }
 };

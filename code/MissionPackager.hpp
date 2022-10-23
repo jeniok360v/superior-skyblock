@@ -24,12 +24,12 @@ public:
     }
     std::map<std::string, MissionPack> allMissionPacks;
     
-    void printAllMissions()
+    void printAllMissions(std::string missionsDir, bool isTest)
     {
         for (auto& [key, pack] : allMissionPacks)
         {
             pack.makePackDirectory(missionsDir + pack.packTag);
-            pack.printPack();
+            pack.printPack(missionsDir, isTest);
         }
     }
 };

@@ -1,0 +1,117 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: KillsMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+island: true
+reset-amount: 10000
+weight: 21
+
+rewards:
+  commands:
+    - 'eco give %player% 1200'
+    - 'is admin msg %player% &bНечисть |'
+    - 'is admin msg %player% &bНечисть | &7Вы успешно завершили миссию &a"Нечисть XXI"&r&7!'
+    - 'is admin msg %player% &bНечисть |'
+
+required-missions:
+  - 'undead_20'
+
+required-entities:
+  '1':
+    types:
+      - 'ZOMBIE'
+    amount: 3
+  '2':
+    types:
+      - 'SKELETON'
+    amount: 3
+  '3':
+    types:
+      - 'CREEPER'
+    amount: 3
+  '4':
+    types:
+      - 'SPIDER'
+    amount: 3
+  '5':
+    types:
+      - 'WITCH'
+    amount: 3
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjhlNjYyMzljNmYzYzk3YjhiYWE1MGIzMmVmZDYzYzYxZTk0ZThlZGU2MDY2NGU3YjllZGM0ZWZkNjRmMzk2MyJ9fX0='
+    name: '&bМиссия "Нечисть XXI"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax600 &7Зомби'
+      - '&b  - &ax500 &7Скелетов'
+      - '&b  - &ax400 &7Криперов'
+      - '&b  - &ax200 &7Пауков'
+      - '&b  - &ax10 &7Ведьм'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$1200'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Зомби убито: &a{value_zombie}/600'
+      - '&b  - &7Скелетов убито: &a{value_skeleton}/500'
+      - '&b  - &7Криперов убито: &a{value_creeper}/400'
+      - '&b  - &7Пауков убито: &a{value_spider}/200'
+      - '&b  - &7Ведьм убито: &a{value_witch}/10'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
+    name: '&bМиссия "Нечисть XXI"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax600 &7Зомби'
+      - '&b  - &ax500 &7Скелетов'
+      - '&b  - &ax400 &7Криперов'
+      - '&b  - &ax200 &7Пауков'
+      - '&b  - &ax10 &7Ведьм'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$1200'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Зомби убито: &a600/600'
+      - '&b  - &7Скелетов убито: &a500/500'
+      - '&b  - &7Криперов убито: &a400/400'
+      - '&b  - &7Пауков убито: &a200/200'
+      - '&b  - &7Ведьм убито: &a10/10'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Нечисть XXI"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax600 &7Зомби'
+      - '&b  - &ax500 &7Скелетов'
+      - '&b  - &ax400 &7Криперов'
+      - '&b  - &ax200 &7Пауков'
+      - '&b  - &ax10 &7Ведьм'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$1200'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Зомби убито: &a600/600'
+      - '&b  - &7Скелетов убито: &a500/500'
+      - '&b  - &7Криперов убито: &a400/400'
+      - '&b  - &7Пауков убито: &a200/200'
+      - '&b  - &7Ведьм убито: &a10/10'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

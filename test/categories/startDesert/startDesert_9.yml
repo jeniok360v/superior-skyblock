@@ -1,0 +1,96 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: KillsMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+only-natural-blocks: true
+island: true
+weight: 9
+
+rewards:
+  items:
+    '1':
+      type: BIRCH_SAPLING
+      amount: 3
+    '2':
+      type: GRASS_BLOCK
+      amount: 10
+    '3':
+      type: WATER_BUCKET
+      amount: 1
+  commands:
+    - 'eco give %player% 100'
+    - 'is admin msg %player% &bПустынное начало |'
+    - 'is admin msg %player% &bПустынное начало | &7Вы успешно завершили миссию &a"Пустынное начало IX"&r&7!'
+    - 'is admin msg %player% &bПустынное начало |'
+
+required-missions:
+  - 'startDesert_8'
+
+required-entities:
+  '1':
+    types:
+      - 'PHANTOM'
+    amount: 3
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDY0YjZiNjA2MmFjMzU4ZDMzM2YzNDIyNmYwYzlkZjhmMjg2ZjcxMjdlN2NiZGEzODZiOGFjOWU2NjJjMTcyMiJ9fX0='
+    name: '&bМиссия "Пустынное начало IX"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax2 &7Фантом'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax3 &7Саженцы берёзы'
+      - '&b  - &ax10 &7Дёрн'
+      - '&b  - &ax1 &7Ведро воды'
+      - '&b  - &a$100'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Убито фантомов: &a{value_phantom}/2'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
+    name: '&bМиссия "Пустынное начало IX"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax2 &7Фантом'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax3 &7Саженцы берёзы'
+      - '&b  - &ax10 &7Дёрн'
+      - '&b  - &ax1 &7Ведро воды'
+      - '&b  - &a$100'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Убито фантомов: &a2/2'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Пустынное начало IX"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax2 &7Фантом'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax3 &7Саженцы берёзы'
+      - '&b  - &ax10 &7Дёрн'
+      - '&b  - &ax1 &7Ведро воды'
+      - '&b  - &a$100'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Убито фантомов: &a2/2'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

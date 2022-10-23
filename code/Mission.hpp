@@ -8,8 +8,6 @@
 #include <map>
 #include <unordered_map>
 
-const std::string missionsDir = "../plugins/SuperiorSkyblock2/modules/missions/categories/"; //extern
-
 const std::string headChest = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0=";
 const std::string headCompleted = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0=";
 // const std::string headCompleted = "";
@@ -138,17 +136,18 @@ public:
 
     void printRequiredMissions(std::ofstream& ofs, int missionNumber, std::string groupTag);
 
-    void printGoal(std::ofstream& ofs);
-    void printGoalBlocksMissions(std::ofstream& ofs);
-    void printGoalBrewingMissions(std::ofstream& ofs);
-    void printGoalCraftingMissions(std::ofstream& ofs);
-    void printGoalEnchantingMissions(std::ofstream& ofs);
-    void printGoalFarmingMissions(std::ofstream& ofs);
-    void printGoalFishingMissions(std::ofstream& ofs);
-    void printGoalIslandMissions(std::ofstream& ofs);
-    void printGoalItemsMissions(std::ofstream& ofs);
-    void printGoalKillsMissions(std::ofstream& ofs);
-    void printGoalStatisticsMissions(std::ofstream& ofs);
+    void printGoal(std::ofstream& ofs, bool isTest);
+    void printGoalBlocksMissions(std::ofstream& ofs, bool isTest);
+    void printGoalBrewingMissions(std::ofstream& ofs, bool isTest);
+    void printGoalCraftingMissions(std::ofstream& ofs, bool isTest);
+    void printGoalEnchantingMissions(std::ofstream& ofs, bool isTest);
+    void printGoalFarmingMissions(std::ofstream& ofs, bool isTest);
+    void printGoalFishingMissions(std::ofstream& ofs, bool isTest);
+    void printGoalIslandMissions(std::ofstream& ofs, bool isTest);
+    void printGoalItemsMissions(std::ofstream& ofs, bool isTest);
+    void printGoalKillsMissions(std::ofstream& ofs, bool isTest);
+    void printGoalStatisticsMissions(std::ofstream& ofs, bool isTest);
+    void printGoalMissionsMultiType(std::ofstream& ofs, bool isTest);
 
     void printLore(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull);
     void printLoreSegment(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, std::string completness);
@@ -159,14 +158,14 @@ public:
     void printLorePrerequisite(std::ofstream& ofs);
     void printLoreFooter(std::ofstream& ofs, std::string completness);
 
-    void printMission(std::ofstream& ofs, int missionNumber, std::string groupTag, std::string groupName, std::string icon, std::string skull)
+    void printMission(std::ofstream& ofs, int missionNumber, std::string groupTag, std::string groupName, std::string icon, std::string skull, bool isTest)
     {
         printWikiLink(ofs);
         printMissionType(ofs);
         printOptions(ofs, options, missionNumber);
         printReward(ofs, missionNumber, groupName);
         printRequiredMissions(ofs, missionNumber, groupTag);
-        printGoal(ofs);
+        printGoal(ofs, isTest);
         printLore(ofs, missionNumber, groupName, icon, skull);
     }
 };
