@@ -1,0 +1,95 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: FishingMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+island: true
+weight: 5
+
+rewards:
+  items:
+    '1':
+      type: BUBBLE_CORAL_BLOCK
+      amount: 10
+    '2':
+      type: SEA_PICKLE
+      amount: 50
+    '3':
+      type: SPONGE
+      amount: 5
+  commands:
+    - 'eco give %player% 1500'
+    - 'is admin msg %player% &bРыбалка |'
+    - 'is admin msg %player% &bРыбалка | &7Вы успешно завершили миссию &a"Рыбалка V"&r&7!'
+    - 'is admin msg %player% &bРыбалка |'
+
+required-missions:
+  - 'fish_4'
+
+required-caughts:
+  '1':
+    types:
+      - 'LILY_PAD'
+    amount: 3
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzc0MGZhMWZhOTA5MmUzNjhlNjc5OGY5YmNmZThjODMxOGUwMzk5NmEyMDJiZWFlOTE5ZTVjYjkwMDAzOWQ0YyJ9fX0='
+    name: '&bМиссия "Рыбалка V" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax1 &7Кувшинка'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax10 &7Пузырчатого коралла'
+      - '&b  - &ax50 &7Морских огурцов'
+      - '&b  - &ax5 &7Губок'
+      - '&b  - &a$1500'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Выловлено кувшинок: &a{value_lily_pad}/1'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
+    name: '&bМиссия "Рыбалка V" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax1 &7Кувшинка'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax10 &7Пузырчатого коралла'
+      - '&b  - &ax50 &7Морских огурцов'
+      - '&b  - &ax5 &7Губок'
+      - '&b  - &a$1500'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Выловлено кувшинок: &a1/1'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Рыбалка V" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax1 &7Кувшинка'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax10 &7Пузырчатого коралла'
+      - '&b  - &ax50 &7Морских огурцов'
+      - '&b  - &ax5 &7Губок'
+      - '&b  - &a$1500'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Выловлено кувшинок: &a1/1'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

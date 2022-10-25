@@ -1,16 +1,7 @@
-######################################################
-##                                                  ##
-##                SuperiorSkyblock 2                ##
-##                Developed by Ome_R                ##
-##                                                  ##
-######################################################
+# https://wiki.bg-software.com/superiorskyblock/missions
 
-# Should missions be enabled on your server?
 enabled: true
 
-# Settings related to mission categories.
-# A tutorial about configuring missions can be found here:
-# https://wiki.bg-software.com/superiorskyblock/missions
 categories:
   startTropical:
     name: Начало

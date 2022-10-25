@@ -110,7 +110,7 @@ public:
         ofs << "  '$':" << std::endl;
         ofs << "    type: BLACK_STAINED_GLASS_PANE" << std::endl;
         ofs << "    name: '&f'" << std::endl;
-        for(int i = 0; i < menuPattern.size(); i++)// c : menuPattern)
+        for(int i = 0; i < menuPattern.size(); i++)
         {
             std::string c = menuPattern.at(i);
             if(c != "*" && c != "$")
@@ -126,7 +126,7 @@ public:
         ofs << std::endl;
 
         ofs << "sounds:" << std::endl;
-        for(int i = 0; i < menuPattern.size(); i++)// c : menuPattern)
+        for(int i = 0; i < menuPattern.size(); i++)
         {
             std::string c = menuPattern.at(i);
             if(c != "*" && c != "$")

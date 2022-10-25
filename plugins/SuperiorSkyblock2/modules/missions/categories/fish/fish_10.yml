@@ -1,0 +1,119 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: FishingMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+island: true
+weight: 10
+
+rewards:
+  items:
+    '1':
+      type: BUBBLE_CORAL_BLOCK
+      amount: 20
+    '2':
+      type: FIRE_CORAL_BLOCK
+      amount: 20
+  commands:
+    - 'eco give %player% 5000'
+    - 'is admin msg %player% &bРыбалка |'
+    - 'is admin msg %player% &bРыбалка | &7Вы успешно завершили миссию &a"Рыбалка X"&r&7!'
+    - 'is admin msg %player% &bРыбалка |'
+
+required-missions:
+  - 'fish_9'
+
+required-caughts:
+  '1':
+    types:
+      - 'LEATHER'
+    amount: 2
+  '2':
+    types:
+      - 'ROTTEN_FLESH'
+    amount: 2
+  '3':
+    types:
+      - 'BONE'
+    amount: 2
+  '4':
+    types:
+      - 'STRING'
+    amount: 1
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzc0MGZhMWZhOTA5MmUzNjhlNjc5OGY5YmNmZThjODMxOGUwMzk5NmEyMDJiZWFlOTE5ZTVjYjkwMDAzOWQ0YyJ9fX0='
+    name: '&bМиссия "Рыбалка X"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax2 &7Кожи'
+      - '&b  - &ax2 &7Гнилых плоти'
+      - '&b  - &ax2 &7Кости'
+      - '&b  - &ax1 &7Нить'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax20 &7Пузырчатого коралла'
+      - '&b  - &ax20 &7Огненного коралла'
+      - '&b  - &a$5000'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Выловлено кожи: &a{value_leather}/2'
+      - '&b  - &7Выловлено гнилой плоти: &a{value_rotten_flesh}/2'
+      - '&b  - &7Выловлено костей: &a{value_bone}/2'
+      - '&b  - &7Выловлено нитей: &a{value_string}/1'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
+    name: '&bМиссия "Рыбалка X"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax2 &7Кожи'
+      - '&b  - &ax2 &7Гнилых плоти'
+      - '&b  - &ax2 &7Кости'
+      - '&b  - &ax1 &7Нить'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax20 &7Пузырчатого коралла'
+      - '&b  - &ax20 &7Огненного коралла'
+      - '&b  - &a$5000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Выловлено кожи: &a2/2'
+      - '&b  - &7Выловлено гнилой плоти: &a2/2'
+      - '&b  - &7Выловлено костей: &a2/2'
+      - '&b  - &7Выловлено нитей: &a1/1'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Рыбалка X"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax2 &7Кожи'
+      - '&b  - &ax2 &7Гнилых плоти'
+      - '&b  - &ax2 &7Кости'
+      - '&b  - &ax1 &7Нить'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax20 &7Пузырчатого коралла'
+      - '&b  - &ax20 &7Огненного коралла'
+      - '&b  - &a$5000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Выловлено кожи: &a2/2'
+      - '&b  - &7Выловлено гнилой плоти: &a2/2'
+      - '&b  - &7Выловлено костей: &a2/2'
+      - '&b  - &7Выловлено нитей: &a1/1'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

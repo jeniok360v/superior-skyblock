@@ -21,7 +21,7 @@ MissionPack farmerPack
     "farmer",
     {
         {
-            "farmer", "Фермер", "PLAYER_HEAD", carrots1,
+            "farmer", "Фермер", "PLAYER_HEAD", melon3,
             {
                 {
                     {},
