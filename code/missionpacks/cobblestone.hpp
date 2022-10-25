@@ -14,7 +14,7 @@ MissionPack cobblestonePack
                 {
                     {"Постройте генератор и добудьте из него булыжник"},
                     "BlocksMissions", defaultNaturalBlocksOptions, {},
-                    {{{"cobblestone", "Булыжник", 20, "Добыто булыжника"}}, {}, {}},
+                    {{{"cobblestone", "Булыжника", 20, "Добыто булыжника"}}, {}, {}},
                     {200, {},
                     {
                         {"hopper", "Воронка", 1, "Получено воронок"}
@@ -24,7 +24,7 @@ MissionPack cobblestonePack
                 {
                     {},
                     "BlocksMissions", defaultNaturalBlocksOptions, {},
-                    {{{"cobblestone", "Булыжник", 40, "Добыто булыжника"}}, {}, {}},
+                    {{{"cobblestone", "Булыжника", 40, "Добыто булыжника"}}, {}, {}},
                     {300, {},
                     {},
                     }
@@ -32,7 +32,7 @@ MissionPack cobblestonePack
                 {
                     {},
                     "BlocksMissions", defaultNaturalBlocksOptions, {},
-                    {{{"cobblestone", "Булыжник", 200, "Добыто булыжника"}}, {}, {}},
+                    {{{"cobblestone", "Булыжника", 200, "Добыто булыжника"}}, {}, {}},
                     {500, {{"is admin rankup %player% generator-rates", "Улучшение генератора булыжника"}},
                     {},
                     }
@@ -40,7 +40,7 @@ MissionPack cobblestonePack
                 {
                     {},
                     "BlocksMissions", defaultNaturalBlocksOptions, {},
-                    {{{"cobblestone", "Булыжник", 250, "Добыто булыжника"}}, {}, {}},
+                    {{{"cobblestone", "Булыжника", 250, "Добыто булыжника"}}, {}, {}},
                     {500, {},
                     {},
                     }
@@ -48,15 +48,7 @@ MissionPack cobblestonePack
                 {
                     {},
                     "BlocksMissions", defaultNaturalBlocksOptions, {},
-                    {{{"cobblestone", "Булыжник", 500, "Добыто булыжника"}}, {}, {}},
-                    {800, {},
-                    {},
-                    }
-                }, // Mission
-                {
-                    {},
-                    "BlocksMissions", defaultNaturalBlocksOptions, {},
-                    {{{"cobblestone", "Булыжник", 600, "Добыто булыжника"}}, {}, {}},
+                    {{{"cobblestone", "Булыжника", 500, "Добыто булыжника"}}, {}, {}},
                     {1000, {},
                     {},
                     }
@@ -64,24 +56,32 @@ MissionPack cobblestonePack
                 {
                     {},
                     "BlocksMissions", defaultNaturalBlocksOptions, {},
-                    {{{"cobblestone", "Булыжник", 800, "Добыто булыжника"}}, {}, {}},
-                    {1000, {{"is admin rankup %player% generator-rates", "Улучшение генератора булыжника"}},
-                    {},
-                    }
-                }, // Mission
-                {
-                    {},
-                    "BlocksMissions", defaultNaturalBlocksOptions, {},
-                    {{{"cobblestone", "Булыжник", 1000, "Добыто булыжника"}}, {}, {}},
+                    {{{"cobblestone", "Булыжника", 600, "Добыто булыжника"}}, {}, {}},
                     {1500, {},
                     {},
                     }
                 }, // Mission
                 {
                     {},
+                    "BlocksMissions", defaultNaturalBlocksOptions, {},
+                    {{{"cobblestone", "Булыжника", 800, "Добыто булыжника"}}, {}, {}},
+                    {2000, {{"is admin rankup %player% generator-rates", "Улучшение генератора булыжника"}},
+                    {},
+                    }
+                }, // Mission
+                {
+                    {},
+                    "BlocksMissions", defaultNaturalBlocksOptions, {},
+                    {{{"cobblestone", "Булыжника", 1000, "Добыто булыжника"}}, {}, {}},
+                    {2500, {},
+                    {},
+                    }
+                }, // Mission
+                {
+                    {},
                     "BlocksMissions", defaultRepeatableOptions, {},
-                    {{{"cobblestone", "Булыжник", 5000, "Добыто булыжника"}}, {}, {}},
-                    {500, {},
+                    {{{"cobblestone", "Булыжника", 5000, "Добыто булыжника"}}, {}, {}},
+                    {1000, {},
                     {},
                     }
                 }, // Mission
