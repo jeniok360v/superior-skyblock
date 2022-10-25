@@ -13,41 +13,35 @@ enabled: true
 # https://wiki.bg-software.com/superiorskyblock/missions
 categories:
   startTropical:
-    name: 'Начало'
+    name: Начало
     slot: 9
-
   startMushroom:
-    name: 'Грибное начало'
+    name: Грибное начало
     slot: 10
-
   startDesert:
-    name: 'Пустынное начало'
+    name: Пустынное начало
     slot: 11
-
   cobblestone:
-    name: 'Булыжник'
+    name: Булыжник
     slot: 12
-
   farmer:
-    name: 'Фермер'
+    name: Фермер
     slot: 13
-
   autumn:
-    name: 'Осень'
+    name: Осенний сезон
     slot: 14
-
-  undead:
-    name: 'Нечисть'
+  fish:
+    name: Рыбалка
     slot: 15
-
+  undead:
+    name: Нечисть
+    slot: 16
   grove:
-    name: 'Роща'
+    name: Роща
     slot: 18
-
   forest:
-    name: 'Лес'
+    name: Лес
     slot: 19
-
   pigman:
-    name: 'Свинозомби'
+    name: Адские создания
     slot: 27
