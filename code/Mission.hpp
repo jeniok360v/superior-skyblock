@@ -148,6 +148,7 @@ public:
     void printGoalKillsMissions(std::ofstream& ofs, bool isTest);
     void printGoalStatisticsMissions(std::ofstream& ofs, bool isTest);
     void printGoalMissionsMultiType(std::ofstream& ofs, bool isTest);
+    void printGoalAmount(std::ofstream& ofs, bool isTest, int amount);
 
     void printLore(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, bool isTest);
     void printLoreSegment(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, std::string completness, bool isTest);

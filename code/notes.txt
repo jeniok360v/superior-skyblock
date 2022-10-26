@@ -9,13 +9,15 @@
 
 светящиеся ягоды и другие цветы из этого биома
 
+аметистовые блоки (для добычы кристаллов)
+
 \superior-skyblock\plugins\SuperiorSkyblock2\menus\missions-category.yml
 
 https://minecraft.fandom.com/wiki/Statistics
 
 raid_win
 traded_with_villager
-
+boat_one_cm
 
 
 

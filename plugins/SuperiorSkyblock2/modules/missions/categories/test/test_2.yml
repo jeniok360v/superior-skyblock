@@ -1,83 +1,83 @@
 # https://wiki.bg-software.com/superiorskyblock/overview/missions
 
-mission-file: KillsMissions
+mission-file: StatisticsMissions
 
 disband-reset: true
 auto-reward: false
 reset-after-finish: true
 only-show-if-required-completed: true
 island: true
-weight: 5
+reset-amount: 10000
+weight: 2
 
 rewards:
   items:
     '1':
       type: BLAZE_ROD
-      amount: 4
+      amount: 3
   commands:
-    - 'eco give %player% 1500'
-    - 'is admin msg %player% &bАдские создания |'
-    - 'is admin msg %player% &bАдские создания | &7Вы успешно завершили миссию &a"Адские создания V"&r&7!'
-    - 'is admin msg %player% &bАдские создания |'
+    - 'eco give %player% 1000'
+    - 'is admin msg %player% &bТестовые миссии |'
+    - 'is admin msg %player% &bТестовые миссии | &7Вы успешно завершили миссию &a"Тестовые миссии II"&r&7!'
+    - 'is admin msg %player% &bТестовые миссии |'
 
 required-missions:
-  - 'pigman_4'
+  - 'test_1'
 
-required-entities:
   '1':
-    types:
-      - 'GHAST'
-    amount: 13
+    statistics:
+      - 'BELL_RING'
+    amount: 10
 
 icons:
   not-completed:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWVkODBiZjk5ZGZiMDc1MTkyYjAyYTVkZDZiZjkxZWRkZDRjYjFmNDgxODkyMzIxMjExZmUyMTQyZDlkZjIyYyJ9fX0='
-    name: '&bМиссия "Адские создания V"'
+    name: '&bМиссия "Тестовые миссии II"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax13 &7Гастов'
+      - '&b  - &ax10 &7Раз постучать в колокол'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &ax4 &7Стерженей ифрита'
-      - '&b  - &a$1500'
+      - '&b  - &ax3 &7Стерженя ифрита'
+      - '&b  - &a$1000'
       - ' '
       - '&b * &7Прогресс: &a{0}%'
-      - '&b  - &7Убито гастов: &a{value_ghast}/13'
+      - '&b  - &7Сделано ударов в колокол: &a{value_bell_ring}/10'
       - ' '
       - '&c ✘ &7Миссия не завершена'
   can-complete:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZkN2ZkYjUwZjE0YzczMWM3MjdiMGUwZDE4OWI2YTg3NDMxOWZjMGQ3OWM4YTA5OWFjZmM3N2M3YjJkOTE5NiJ9fX0='
-    name: '&bМиссия "Адские создания V"'
+    name: '&bМиссия "Тестовые миссии II"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax13 &7Гастов'
+      - '&b  - &ax10 &7Раз постучать в колокол'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &ax4 &7Стерженей ифрита'
-      - '&b  - &a$1500'
+      - '&b  - &ax3 &7Стерженя ифрита'
+      - '&b  - &a$1000'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Убито гастов: &a13/13'
+      - '&b  - &7Сделано ударов в колокол: &a10/10'
       - ' '
       - '&8 ✔ &7Нажмите, чтобы получить награду.'
   completed:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
-    name: '&bМиссия "Адские создания V"'
+    name: '&bМиссия "Тестовые миссии II"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax13 &7Гастов'
+      - '&b  - &ax10 &7Раз постучать в колокол'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &ax4 &7Стерженей ифрита'
-      - '&b  - &a$1500'
+      - '&b  - &ax3 &7Стерженя ифрита'
+      - '&b  - &a$1000'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Убито гастов: &a13/13'
+      - '&b  - &7Сделано ударов в колокол: &a10/10'
       - ' '
       - '&a ✔ &7Миссия выполнена, награда получена.'

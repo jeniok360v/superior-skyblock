@@ -36,3 +36,6 @@ categories:
   pigman:
     name: Адские создания
     slot: 27
+  test:
+    name: Тестовые миссии
+    slot: 44

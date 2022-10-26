@@ -23,7 +23,7 @@ rewards:
 craftings:
   '1':
     type: 'WOODEN_HOE'
-    amount: 1
+    amount: 3
 
 icons:
   not-completed:

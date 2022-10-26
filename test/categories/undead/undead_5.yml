@@ -22,7 +22,7 @@ required-missions:
 craftings:
   '1':
     type: 'WHITE_BED'
-    amount: 1
+    amount: 3
 
 icons:
   not-completed:

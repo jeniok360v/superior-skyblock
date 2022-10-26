@@ -29,7 +29,7 @@ required-missions:
 craftings:
   '1':
     type: 'WOODEN_PICKAXE'
-    amount: 1
+    amount: 3
 
 icons:
   not-completed:

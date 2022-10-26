@@ -24,7 +24,7 @@ rewards:
 craftings:
   '1':
     type: 'GOLDEN_APPLE'
-    amount: 20
+    amount: 3
 
 icons:
   not-completed:

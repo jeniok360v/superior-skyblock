@@ -1,6 +1,6 @@
 # https://wiki.bg-software.com/superiorskyblock/overview/missions
 
-mission-file: FarmingMissions
+mission-file: CraftingMissions
 
 disband-reset: true
 auto-reward: false
@@ -10,21 +10,20 @@ island: true
 weight: 1
 
 rewards:
-  items:
-    '1':
-      type: SOUL_SAND
-      amount: 30
   commands:
-    - 'eco give %player% 300'
+    - 'eco give %player% 1500'
+    - 'is admin unlockworld %player% nether true'
     - 'is admin msg %player% &bАдские создания |'
     - 'is admin msg %player% &bАдские создания | &7Вы успешно завершили миссию &a"Адские создания I"&r&7!'
     - 'is admin msg %player% &bАдские создания |'
 
-required-plants:
+craftings:
   '1':
-    types:
-      - 'NETHER_WART'
-    amount: 9
+    type: 'DIAMOND_SWORD'
+    amount: 1
+  '2':
+    type: 'DIAMOND_PICKAXE'
+    amount: 1
 
 icons:
   not-completed:
@@ -34,14 +33,16 @@ icons:
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax9 &7Адского нароста'
+      - '&b  - &ax1 &7Алмазный меч'
+      - '&b  - &ax1 &7Алмазная кирка'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &ax30 &7Песка душ'
-      - '&b  - &a$300'
+      - '&b  - &7Доступ в нижний мир'
+      - '&b  - &a$1500'
       - ' '
       - '&b * &7Прогресс: &a{0}%'
-      - '&b  - &7Собрано адского нароста: &a{value_nether_wart}/9'
+      - '&b  - &7Алмазный меч, скрафчено: &a{value_diamond_sword}/1'
+      - '&b  - &7Алмазная кирка, скрафчено: &a{value_diamond_pickaxe}/1'
       - ' '
       - '&c ✘ &7Миссия не завершена'
   can-complete:
@@ -51,14 +52,16 @@ icons:
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax9 &7Адского нароста'
+      - '&b  - &ax1 &7Алмазный меч'
+      - '&b  - &ax1 &7Алмазная кирка'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &ax30 &7Песка душ'
-      - '&b  - &a$300'
+      - '&b  - &7Доступ в нижний мир'
+      - '&b  - &a$1500'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Собрано адского нароста: &a9/9'
+      - '&b  - &7Алмазный меч, скрафчено: &a1/1'
+      - '&b  - &7Алмазная кирка, скрафчено: &a1/1'
       - ' '
       - '&8 ✔ &7Нажмите, чтобы получить награду.'
   completed:
@@ -68,13 +71,15 @@ icons:
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax9 &7Адского нароста'
+      - '&b  - &ax1 &7Алмазный меч'
+      - '&b  - &ax1 &7Алмазная кирка'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &ax30 &7Песка душ'
-      - '&b  - &a$300'
+      - '&b  - &7Доступ в нижний мир'
+      - '&b  - &a$1500'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Собрано адского нароста: &a9/9'
+      - '&b  - &7Алмазный меч, скрафчено: &a1/1'
+      - '&b  - &7Алмазная кирка, скрафчено: &a1/1'
       - ' '
       - '&a ✔ &7Миссия выполнена, награда получена.'

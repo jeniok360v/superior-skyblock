@@ -29,7 +29,7 @@ required-missions:
 craftings:
   '1':
     type: 'BREAD'
-    amount: 15
+    amount: 3
 
 icons:
   not-completed:

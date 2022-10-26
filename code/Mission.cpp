@@ -168,7 +168,7 @@ void Mission::printGoalBrewingMissions(std::ofstream& ofs, bool isTest)
         ofs << "        upgraded: " + goal.potions.at(i).upgraded << std::endl;
         ofs << "        extended: " + goal.potions.at(i).extended << std::endl;
         ofs << "        splash: " + goal.potions.at(i).splash << std::endl;
-        ofs << "    amount: " + std::to_string(goal.potions.at(i).amount) << std::endl;
+        printGoalAmount(ofs, isTest, goal.potions.at(i).amount);
     }
 }
 
@@ -181,13 +181,13 @@ void Mission::printGoalCraftingMissions(std::ofstream& ofs, bool isTest)
         std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
         ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
         ofs << "    type: '" + itemPrint + "'" << std::endl;
-        ofs << "    amount: " + std::to_string(goal.requiredItems.at(i).itemAmount) << std::endl;
+        printGoalAmount(ofs, isTest, goal.requiredItems.at(i).itemAmount);
     }
 }
 
 void Mission::printGoalEnchantingMissions(std::ofstream& ofs, bool isTest)
 {
-    
+    //enchants
 }
 
 void Mission::printGoalFarmingMissions(std::ofstream& ofs, bool isTest)
@@ -204,7 +204,7 @@ void Mission::printGoalFishingMissions(std::ofstream& ofs, bool isTest)
 
 void Mission::printGoalIslandMissions(std::ofstream& ofs, bool isTest)
 {
-    
+    // events?
 }
 
 void Mission::printGoalItemsMissions(std::ofstream& ofs, bool isTest)
@@ -219,9 +219,20 @@ void Mission::printGoalKillsMissions(std::ofstream& ofs, bool isTest)
     printGoalMissionsMultiType(ofs, isTest);
 }
 
+// bad missions: 
+//  not resetable
+//  gather stats from whole server activity, not only skyblock
 void Mission::printGoalStatisticsMissions(std::ofstream& ofs, bool isTest)
 {
-    
+    for(int i = 0; i < goal.requiredItems.size(); i++)
+    {
+        std::string itemPrint = goal.requiredItems.at(i).itemName;
+        std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
+        ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
+        ofs << "    statistics:" << std::endl;
+        ofs << "      - '" + itemPrint + "'" << std::endl;
+        printGoalAmount(ofs, isTest, goal.requiredItems.at(i).itemAmount);
+    }
 }
 
 void Mission::printGoalMissionsMultiType(std::ofstream& ofs, bool isTest)
@@ -233,14 +244,19 @@ void Mission::printGoalMissionsMultiType(std::ofstream& ofs, bool isTest)
         ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
         ofs << "    types:" << std::endl;
         ofs << "      - '" + itemPrint + "'" << std::endl;
-        if(isTest)
-        {
-            ofs << "    amount: 3" << std::endl;
-        }
-        else
-        {
-            ofs << "    amount: " + std::to_string(goal.requiredItems.at(i).itemAmount) << std::endl;
-        }
+        printGoalAmount(ofs, isTest, goal.requiredItems.at(i).itemAmount);
+    }
+}
+
+void Mission::printGoalAmount(std::ofstream& ofs, bool isTest, int amount)
+{
+    if(isTest)
+    {
+        ofs << "    amount: 3" << std::endl;
+    }
+    else
+    {
+        ofs << "    amount: " + std::to_string(amount) << std::endl;
     }
 }
 

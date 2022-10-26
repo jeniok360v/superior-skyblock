@@ -26,7 +26,7 @@ required-missions:
 craftings:
   '1':
     type: 'STONE_AXE'
-    amount: 1
+    amount: 3
 
 icons:
   not-completed:

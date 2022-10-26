@@ -3,15 +3,18 @@ previous-menu: true
 
 pattern:
   - '$ $ $ $ $ $ $ $ $'
-  - 'j k l m n o p q *'
-  - 's t * * * * * * *'
-  - 'A * * * * * * * *'
-  - '* * * * * * * * *'
+  - 'j k l m n o p q %'
+  - 's t % % % % % % %'
+  - 'A % % % % % % % %'
+  - '% % % % % % % % R'
   - '$ $ $ $ $ $ $ $ $'
 
 items:
   '$':
     type: BLACK_STAINED_GLASS_PANE
+    name: '&f'
+  '%':
+    type: LIME_STAINED_GLASS_PANE
     name: '&f'
   'j':
     type: PLAYER_HEAD
@@ -79,6 +82,12 @@ items:
     name: '&eАдские создания'
     lore:
       - '&7Нажмите, чтобы начать миссии'
+  'R':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWVkODBiZjk5ZGZiMDc1MTkyYjAyYTVkZDZiZjkxZWRkZDRjYjFmNDgxODkyMzIxMjExZmUyMTQyZDlkZjIyYyJ9fX0='
+    name: '&eТестовые миссии'
+    lore:
+      - '&7Нажмите, чтобы начать миссии'
 
 sounds:
   'j':
@@ -122,6 +131,10 @@ sounds:
     volume: 0.6
     pitch: 1
   'A':
+    type: BLOCK_CHEST_OPEN
+    volume: 0.6
+    pitch: 1
+  'R':
     type: BLOCK_CHEST_OPEN
     volume: 0.6
     pitch: 1

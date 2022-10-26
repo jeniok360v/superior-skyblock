@@ -13,8 +13,10 @@
 
 #include "missionpacks/pigman.hpp"
 
-std::vector<std::string> menuPattern(54, "*");
-// std::fill(menuPattern.begin(), menuPattern.end(), "*");
+#include "missionpacks/test.hpp"
+
+std::vector<std::string> menuPattern(54, "%");
+// std::fill(menuPattern.begin(), menuPattern.end(), "*");   // (*) means empty
 
 std::vector<std::string> patternFiller = {
     "a", "b", "c", "d", "e", "f", "g", "h", "i",
@@ -25,10 +27,26 @@ std::vector<std::string> patternFiller = {
     "S", "T", "U", "V", "W", "X", "Y", "Z", "1"
 };
 
+/*
+// +----+----+----+----+----+----+----+----+----+
+// | 0  | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  |
+// +----+----+----+----+----+----+----+----+----+
+// | 9  | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 |
+// +----+----+----+----+----+----+----+----+----+
+// | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 |
+// +----+----+----+----+----+----+----+----+----+
+// | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 |
+// +----+----+----+----+----+----+----+----+----+
+// | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44 |
+// +----+----+----+----+----+----+----+----+----+
+// | 45 | 46 | 47 | 48 | 49 | 50 | 51 | 52 | 53 |
+// +----+----+----+----+----+----+----+----+----+
+*/
+
 class MissionPackager
 {
 public:
-    MissionPackager() 
+    MissionPackager()
     {
         allMissionPacks.insert(std::make_pair(9, startTropicalPack));
         allMissionPacks.insert(std::make_pair(10, startMushroomPack));
@@ -43,6 +61,8 @@ public:
         allMissionPacks.insert(std::make_pair(19, forestPack));
 
         allMissionPacks.insert(std::make_pair(27, pigmanPack));
+
+        allMissionPacks.insert(std::make_pair(44, testPack));
     }
     std::map<int, MissionPack> allMissionPacks;
     
@@ -110,10 +130,13 @@ public:
         ofs << "  '$':" << std::endl;
         ofs << "    type: BLACK_STAINED_GLASS_PANE" << std::endl;
         ofs << "    name: '&f'" << std::endl;
+        ofs << "  '%':" << std::endl;
+        ofs << "    type: LIME_STAINED_GLASS_PANE" << std::endl;
+        ofs << "    name: '&f'" << std::endl;
         for(int i = 0; i < menuPattern.size(); i++)
         {
             std::string c = menuPattern.at(i);
-            if(c != "*" && c != "$")
+            if(c != "*" && c != "$" && c != "%")
             {
                 ofs << "  '" + c + "':" << std::endl;
                 ofs << "    type: PLAYER_HEAD" << std::endl;
@@ -129,7 +152,7 @@ public:
         for(int i = 0; i < menuPattern.size(); i++)
         {
             std::string c = menuPattern.at(i);
-            if(c != "*" && c != "$")
+            if(c != "*" && c != "$" && c != "%")
             {
                 ofs << "  '" + c + "':" << std::endl;
                 ofs << "    type: BLOCK_CHEST_OPEN" << std::endl;
