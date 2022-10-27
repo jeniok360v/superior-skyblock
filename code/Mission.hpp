@@ -76,6 +76,14 @@ struct Item
     std::string itemDescription;
 };
 
+struct Event
+{
+    std::string russianItemName;
+    std::string event;
+    std::string successCheck;
+    std::string description;
+};
+
 struct Potion
 {
     std::string potionName;
@@ -87,12 +95,15 @@ struct Potion
     std::string descriptions;
 };
 
-struct Event
+struct Enchant
 {
+    std::string item;
     std::string russianItemName;
-    std::string event;
-    std::string successCheck;
-    std::string description;
+    int amount;
+    std::string enchant;
+    std::string russianEnchantName;
+    int level;
+    std::string descriptions;
 };
 
 struct Goal
@@ -100,6 +111,7 @@ struct Goal
     std::vector<Item> requiredItems;
     std::vector<Event> events;
     std::vector<Potion> potions;
+    std::vector<Enchant> enchants;
 };
 
 struct Command

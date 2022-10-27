@@ -21,9 +21,7 @@ rewards:
     - 'is admin msg %player% &bТестовые миссии | &7Вы успешно завершили миссию &a"Тестовые миссии II"&r&7!'
     - 'is admin msg %player% &bТестовые миссии |'
 
-required-missions:
-  - 'test_1'
-
+required-statistics:
   '1':
     statistics:
       - 'BELL_RING'

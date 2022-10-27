@@ -179,6 +179,7 @@ void Mission::printGoalCraftingMissions(std::ofstream& ofs, bool isTest)
     {
         std::string itemPrint = goal.requiredItems.at(i).itemName;
         std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
+
         ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
         ofs << "    type: '" + itemPrint + "'" << std::endl;
         printGoalAmount(ofs, isTest, goal.requiredItems.at(i).itemAmount);
@@ -187,7 +188,21 @@ void Mission::printGoalCraftingMissions(std::ofstream& ofs, bool isTest)
 
 void Mission::printGoalEnchantingMissions(std::ofstream& ofs, bool isTest)
 {
-    //enchants
+    ofs << "required-enchants:" << std::endl;
+    for(int i = 0; i < goal.enchants.size(); i++)
+    {
+        std::string itemPrint = goal.enchants.at(i).item;
+        std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
+        std::string enchantPrint = goal.enchants.at(i).enchant;
+        std::transform(enchantPrint.begin(), enchantPrint.end(),enchantPrint.begin(), ::toupper);
+
+        ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
+        ofs << "    types:" << std::endl;
+        ofs << "      - '" + itemPrint + "'" << std::endl;
+        ofs << "    enchants:" << std::endl;
+        ofs << "      " + enchantPrint + ": " + std::to_string(goal.enchants.at(i).level) << std::endl;
+        printGoalAmount(ofs, isTest, goal.enchants.at(i).amount);
+    }
 }
 
 void Mission::printGoalFarmingMissions(std::ofstream& ofs, bool isTest)
@@ -224,6 +239,7 @@ void Mission::printGoalKillsMissions(std::ofstream& ofs, bool isTest)
 //  gather stats from whole server activity, not only skyblock
 void Mission::printGoalStatisticsMissions(std::ofstream& ofs, bool isTest)
 {
+    ofs << "required-statistics:" << std::endl;
     for(int i = 0; i < goal.requiredItems.size(); i++)
     {
         std::string itemPrint = goal.requiredItems.at(i).itemName;
@@ -324,6 +340,10 @@ void Mission::printLoreRequirements(std::ofstream& ofs)
     {
         ofs << "      - '&b  - &ax" + std::to_string(potion.amount) + " &7" + potion.russianItemName + "'" << std::endl;
     }
+    for(auto& enchant : goal.enchants)
+    {
+        ofs << "      - '&b  - &7" + enchant.russianItemName + " (" + enchant.russianEnchantName + " " + to_roman(enchant.level) + ")'" << std::endl;
+    }
     ofs << "      - ' '" << std::endl;
 }
 
@@ -361,6 +381,10 @@ void Mission::printLoreProgress(std::ofstream& ofs, std::string completness)
         if(missionType == "ItemsMissions")
         {
             ofs << "      - '&b * &7&nПримечание:&r&7 предметы должны быть в инвентаре'" << std::endl;
+        }
+        else if(missionType == "EnchantingMissions")
+        {
+            ofs << "      - '&b * &7&nПримечание:&r&7 Можно испольовать стол и наковальню'" << std::endl;
         }
         else
         {
