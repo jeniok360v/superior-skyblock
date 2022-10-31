@@ -111,7 +111,7 @@ public:
     void printGoalMissionsMultiTypeWithString(std::ofstream& ofs, bool isTest, std::string type);
     void printGoalAmount(std::ofstream& ofs, bool isTest, int amount);
 
-    void printLore(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, bool isTest);
+    void printLore(std::ofstream& ofs, int missionNumber, int groupSize, std::string groupName, std::string icon, std::string skull, bool isTest);
     void printLoreSegment(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, std::string completness, bool isTest);
     void printLoreHeader(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, bool isTest);
     void printLoreRequirements(std::ofstream& ofs);
@@ -119,8 +119,9 @@ public:
     void printLoreProgress(std::ofstream& ofs, std::string completness);
     void printLorePrerequisite(std::ofstream& ofs);
     void printLoreFooter(std::ofstream& ofs, std::string completness);
+    int getChestLevel(int missionNumber, int groupSize, int chestsAmount);
 
-    void printMission(std::ofstream& ofs, int missionNumber, std::string groupTag, std::string groupName, std::string icon, std::string skull, bool isTest)
+    void printMission(std::ofstream& ofs, int missionNumber, int groupSize, std::string groupTag, std::string groupName, std::string icon, std::string skull, bool isTest)
     {
         printWikiLink(ofs);
         printMissionType(ofs);
@@ -128,7 +129,7 @@ public:
         printReward(ofs, missionNumber, groupName);
         printRequiredMissions(ofs, missionNumber, groupTag);
         printGoal(ofs, isTest);
-        printLore(ofs, missionNumber, groupName, icon, skull, isTest);
+        printLore(ofs, missionNumber, groupSize, groupName, icon, skull, isTest);
     }
 };
 

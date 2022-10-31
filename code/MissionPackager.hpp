@@ -62,7 +62,7 @@ public:
 
         allMissionPacks.insert(std::make_pair(27, pigmanPack));
 
-        allMissionPacks.insert(std::make_pair(44, testPack));
+        // allMissionPacks.insert(std::make_pair(44, testPack));
     }
     std::map<int, MissionPack> allMissionPacks;
     

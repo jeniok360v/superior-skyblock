@@ -273,16 +273,25 @@ void Mission::printGoalAmount(std::ofstream& ofs, bool isTest, int amount)
     }
 }
 
-void Mission::printLore(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, bool isTest)
+void Mission::printLore(std::ofstream& ofs, int missionNumber, int groupSize, std::string groupName, std::string icon, std::string skull, bool isTest)
 {
+    std::string leveledChest = headLeveledChest.at(getChestLevel(missionNumber, groupSize, headLeveledChest.size()));
     ofs << "icons:" << std::endl;
     ofs << "  not-completed:" << std::endl;
     printLoreSegment(ofs, missionNumber, groupName, icon, skull, "not completed", isTest);
     ofs << "  can-complete:" << std::endl;
-    printLoreSegment(ofs, missionNumber, groupName, icon, headChest, "can complete", isTest);
+    printLoreSegment(ofs, missionNumber, groupName, icon, leveledChest, "can complete", isTest); // headChest
     ofs << "  completed:" << std::endl;
     printLoreSegment(ofs, missionNumber, groupName, icon, headCompleted, "completed", isTest);
-    
+}
+
+int Mission::getChestLevel(int missionNumber, int groupSize, int chestsAmount)
+{
+    if(groupSize < chestsAmount)
+    {
+        return missionNumber;
+    }
+    return (missionNumber*chestsAmount)/groupSize;
 }
 
 void Mission::printLoreSegment(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, std::string completness, bool isTest)

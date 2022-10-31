@@ -14,10 +14,11 @@ public:
 
     void printGroup(std::string packTag, std::string missionsDir, bool isTest)
     {
-        for (int i = 0; i < missions.size(); i++)
+        int size = missions.size();
+        for (int i = 0; i < size; i++)
         {
             std::ofstream ofs(missionsDir + packTag + "/" + groupTag + "_" + std::to_string(i+1) + ".yml");
-            missions.at(i).printMission(ofs, i+1, groupTag, groupName, groupIcon, headTag, isTest);
+            missions.at(i).printMission(ofs, i+1, size+1, groupTag, groupName, groupIcon, headTag, isTest);
             ofs.close();
         }
     }
