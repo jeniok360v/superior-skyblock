@@ -240,12 +240,17 @@ void Mission::printGoalKillsMissions(std::ofstream& ofs, bool isTest)
 void Mission::printGoalStatisticsMissions(std::ofstream& ofs, bool isTest)
 {
     ofs << "required-statistics:" << std::endl;
+    printGoalMissionsMultiTypeWithString(ofs, isTest, "statistics");
+}
+
+void Mission::printGoalMissionsMultiTypeWithString(std::ofstream& ofs, bool isTest, std::string type)
+{
     for(int i = 0; i < goal.items.size(); i++)
     {
         std::string itemPrint = goal.items.at(i).itemName;
         std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
         ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
-        ofs << "    statistics:" << std::endl;
+        ofs << "    " + type + ":" << std::endl;
         ofs << "      - '" + itemPrint + "'" << std::endl;
         printGoalAmount(ofs, isTest, goal.items.at(i).itemAmount);
     }
@@ -253,15 +258,7 @@ void Mission::printGoalStatisticsMissions(std::ofstream& ofs, bool isTest)
 
 void Mission::printGoalMissionsMultiType(std::ofstream& ofs, bool isTest)
 {
-    for(int i = 0; i < goal.items.size(); i++)
-    {
-        std::string itemPrint = goal.items.at(i).itemName;
-        std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
-        ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
-        ofs << "    types:" << std::endl;
-        ofs << "      - '" + itemPrint + "'" << std::endl;
-        printGoalAmount(ofs, isTest, goal.items.at(i).itemAmount);
-    }
+    printGoalMissionsMultiTypeWithString(ofs, isTest, "types");
 }
 
 void Mission::printGoalAmount(std::ofstream& ofs, bool isTest, int amount)
