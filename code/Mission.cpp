@@ -53,16 +53,16 @@ void Mission::printReward(std::ofstream& ofs, int missionNumber, std::string gro
 
 void Mission::printRewardItems(std::ofstream& ofs)
 {
-    if(!reward.receivedItems.empty())
+    if(!reward.items.empty())
     {
         ofs << "  items:" << std::endl;
-        for (int i = 0; i < reward.receivedItems.size(); i++)
+        for (int i = 0; i < reward.items.size(); i++)
         {
-            std::string itemPrint = reward.receivedItems.at(i).itemName;
+            std::string itemPrint = reward.items.at(i).itemName;
             std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
             ofs << "    '" + std::to_string(i + 1) + "':" << std::endl;
             ofs << "      type: " + itemPrint << std::endl;
-            ofs << "      amount: " + std::to_string(reward.receivedItems.at(i).itemAmount) << std::endl;
+            ofs << "      amount: " + std::to_string(reward.items.at(i).itemAmount) << std::endl;
         }
     }
 }
@@ -175,14 +175,14 @@ void Mission::printGoalBrewingMissions(std::ofstream& ofs, bool isTest)
 void Mission::printGoalCraftingMissions(std::ofstream& ofs, bool isTest)
 {
     ofs << "craftings:" << std::endl;
-    for(int i = 0; i < goal.requiredItems.size(); i++)
+    for(int i = 0; i < goal.items.size(); i++)
     {
-        std::string itemPrint = goal.requiredItems.at(i).itemName;
+        std::string itemPrint = goal.items.at(i).itemName;
         std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
 
         ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
         ofs << "    type: '" + itemPrint + "'" << std::endl;
-        printGoalAmount(ofs, isTest, goal.requiredItems.at(i).itemAmount);
+        printGoalAmount(ofs, isTest, goal.items.at(i).itemAmount);
     }
 }
 
@@ -235,32 +235,32 @@ void Mission::printGoalKillsMissions(std::ofstream& ofs, bool isTest)
 }
 
 // bad missions: 
-//  not resetable
-//  gather stats from whole server activity, not only skyblock
+//   not resetable
+//   gather stats from whole server activity, not only skyblock (?)
 void Mission::printGoalStatisticsMissions(std::ofstream& ofs, bool isTest)
 {
     ofs << "required-statistics:" << std::endl;
-    for(int i = 0; i < goal.requiredItems.size(); i++)
+    for(int i = 0; i < goal.items.size(); i++)
     {
-        std::string itemPrint = goal.requiredItems.at(i).itemName;
+        std::string itemPrint = goal.items.at(i).itemName;
         std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
         ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
         ofs << "    statistics:" << std::endl;
         ofs << "      - '" + itemPrint + "'" << std::endl;
-        printGoalAmount(ofs, isTest, goal.requiredItems.at(i).itemAmount);
+        printGoalAmount(ofs, isTest, goal.items.at(i).itemAmount);
     }
 }
 
 void Mission::printGoalMissionsMultiType(std::ofstream& ofs, bool isTest)
 {
-    for(int i = 0; i < goal.requiredItems.size(); i++)
+    for(int i = 0; i < goal.items.size(); i++)
     {
-        std::string itemPrint = goal.requiredItems.at(i).itemName;
+        std::string itemPrint = goal.items.at(i).itemName;
         std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
         ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
         ofs << "    types:" << std::endl;
         ofs << "      - '" + itemPrint + "'" << std::endl;
-        printGoalAmount(ofs, isTest, goal.requiredItems.at(i).itemAmount);
+        printGoalAmount(ofs, isTest, goal.items.at(i).itemAmount);
     }
 }
 
@@ -328,7 +328,7 @@ void Mission::printLoreHeader(std::ofstream& ofs, int missionNumber, std::string
 void Mission::printLoreRequirements(std::ofstream& ofs)
 {
     ofs << "      - '&b * &7Требования:'" << std::endl;
-    for(auto& item : goal.requiredItems)
+    for(auto& item : goal.items)
     {
         ofs << "      - '&b  - &ax" + std::to_string(item.itemAmount) + " &7" + item.russianItemName + "'" << std::endl;
     }
@@ -350,7 +350,7 @@ void Mission::printLoreRequirements(std::ofstream& ofs)
 void Mission::printLoreReward(std::ofstream& ofs)
 {
     ofs << "      - '&b * &7Награды:'" << std::endl;
-    for(auto& item : reward.receivedItems)
+    for(auto& item : reward.items)
     {
         ofs << "      - '&b  - &ax" + std::to_string(item.itemAmount) + " &7" + item.russianItemName + "'" << std::endl;
     }
@@ -388,7 +388,7 @@ void Mission::printLoreProgress(std::ofstream& ofs, std::string completness)
         }
         else
         {
-            for(auto& item : goal.requiredItems)
+            for(auto& item : goal.items)
             {
                 ofs << "      - '&b  - &7" + item.itemDescription + ": &a{value_" + item.itemName + "}/" + std::to_string(item.itemAmount) + "'" << std::endl;
             }
@@ -402,7 +402,7 @@ void Mission::printLoreProgress(std::ofstream& ofs, std::string completness)
         // }
         // else
         {
-            for(auto& item : goal.requiredItems)
+            for(auto& item : goal.items)
             {
                 ofs << "      - '&b  - &7" + item.itemDescription + ": &a" + std::to_string(item.itemAmount) + "/" + std::to_string(item.itemAmount) + "'" << std::endl;
             }
