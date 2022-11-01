@@ -111,6 +111,9 @@ public:
     void printGoalMissionsMultiTypeWithString(std::ofstream& ofs, bool isTest, std::string type);
     void printGoalAmount(std::ofstream& ofs, bool isTest, int amount);
 
+    int getChestLevel(int missionNumber, int groupSize, int chestsAmount);
+    void printHighlighted(std::ofstream& ofs);
+
     void printLore(std::ofstream& ofs, int missionNumber, int groupSize, std::string groupName, std::string icon, std::string skull, bool isTest);
     void printLoreSegment(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, std::string completness, bool isTest);
     void printLoreHeader(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, bool isTest);
@@ -119,7 +122,6 @@ public:
     void printLoreProgress(std::ofstream& ofs, std::string completness);
     void printLorePrerequisite(std::ofstream& ofs);
     void printLoreFooter(std::ofstream& ofs, std::string completness);
-    int getChestLevel(int missionNumber, int groupSize, int chestsAmount);
 
     void printMission(std::ofstream& ofs, int missionNumber, int groupSize, std::string groupTag, std::string groupName, std::string icon, std::string skull, bool isTest)
     {

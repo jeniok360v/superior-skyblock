@@ -273,6 +273,23 @@ void Mission::printGoalAmount(std::ofstream& ofs, bool isTest, int amount)
     }
 }
 
+int Mission::getChestLevel(int missionNumber, int groupSize, int chestsAmount)
+{
+    if(groupSize < chestsAmount)
+    {
+        return missionNumber;
+    }
+    return (missionNumber*chestsAmount)/groupSize;
+}
+
+void Mission::printHighlighted(std::ofstream& ofs)
+{
+    ofs << "    enchants:" << std::endl;
+    ofs << "      DURABILITY: 1" << std::endl;
+    ofs << "    flags:" << std::endl;
+    ofs << "      - HIDE_ENCHANTS" << std::endl;
+}
+
 void Mission::printLore(std::ofstream& ofs, int missionNumber, int groupSize, std::string groupName, std::string icon, std::string skull, bool isTest)
 {
     std::string leveledChest = headLeveledChest.at(getChestLevel(missionNumber, groupSize, headLeveledChest.size()));
@@ -281,17 +298,9 @@ void Mission::printLore(std::ofstream& ofs, int missionNumber, int groupSize, st
     printLoreSegment(ofs, missionNumber, groupName, icon, skull, "not completed", isTest);
     ofs << "  can-complete:" << std::endl;
     printLoreSegment(ofs, missionNumber, groupName, icon, leveledChest, "can complete", isTest); // headChest
+    printHighlighted(ofs);
     ofs << "  completed:" << std::endl;
     printLoreSegment(ofs, missionNumber, groupName, icon, headCompleted, "completed", isTest);
-}
-
-int Mission::getChestLevel(int missionNumber, int groupSize, int chestsAmount)
-{
-    if(groupSize < chestsAmount)
-    {
-        return missionNumber;
-    }
-    return (missionNumber*chestsAmount)/groupSize;
 }
 
 void Mission::printLoreSegment(std::ofstream& ofs, int missionNumber, std::string groupName, std::string icon, std::string skull, std::string completness, bool isTest)

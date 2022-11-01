@@ -58,6 +58,10 @@ icons:
       - '&b  - &7Выращено морковки: &a1000/1000'
       - ' '
       - '&8 ✔ &7Нажмите, чтобы получить награду.'
+    enchants:
+      DURABILITY: 1
+    flags:
+      - HIDE_ENCHANTS
   completed:
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
