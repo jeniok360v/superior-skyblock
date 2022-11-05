@@ -5,34 +5,34 @@ enabled: true
 categories:
   startTropical:
     name: Начало
-    slot: 9
+    slot: 10
   startMushroom:
     name: Грибное начало
-    slot: 10
+    slot: 11
   startDesert:
     name: Пустынное начало
-    slot: 11
+    slot: 12
   cobblestone:
     name: Булыжник
-    slot: 12
+    slot: 13
   farmer:
     name: Фермер
-    slot: 13
-  autumn:
-    name: Осенний сезон
     slot: 14
-  fish:
-    name: Рыбалка
+  grove:
+    name: Роща
     slot: 15
   undead:
     name: Нечисть
     slot: 16
-  grove:
-    name: Роща
-    slot: 18
+  autumn:
+    name: Осенний сезон
+    slot: 20
+  fish:
+    name: Рыбалка
+    slot: 21
   forest:
     name: Лес
-    slot: 19
+    slot: 22
   pigman:
     name: Адские создания
-    slot: 27
+    slot: 30

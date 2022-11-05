@@ -11,7 +11,6 @@
 
 struct MissionAssociations
 {
-    // int level; //?
     std::vector<std::pair<std::string, std::string>> additionalRequirements;
     bool previousRequired = true;
 };
@@ -134,16 +133,3 @@ public:
         printLore(ofs, missionNumber, groupSize, groupName, icon, skull, isTest);
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-

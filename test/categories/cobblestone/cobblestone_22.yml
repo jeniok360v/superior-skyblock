@@ -1,0 +1,110 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: BlocksMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+island: true
+reset-amount: 10000
+weight: 22
+
+rewards:
+  items:
+    '1':
+      type: SCULK_SHRIEKER
+      amount: 3
+    '2':
+      type: SCULK_SENSOR
+      amount: 5
+    '3':
+      type: SCULK_CATALYST
+      amount: 3
+  commands:
+    - 'eco give %player% 2500'
+    - 'is admin msg %player% &bБулыжник |'
+    - 'is admin msg %player% &bБулыжник | &7Вы успешно завершили миссию &a"Булыжник XXII"&r&7!'
+    - 'is admin msg %player% &bБулыжник |'
+
+required-missions:
+  - 'cobblestone_21'
+
+required-blocks:
+  '1':
+    types:
+      - 'DEEPSLATE_DIAMOND_ORE'
+    amount: 3
+  '2':
+    types:
+      - 'DEEPSLATE_EMERALD_ORE'
+    amount: 3
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjA1MGRlNTcyY2Y4YmYxNDk2YjUyNzg1YWQzNDlkMDJhY2RkYTY0NDc5YjFiZTc1MDkzZTlhMWY3OTI4ZGQyIn19fQ=='
+    name: '&bМиссия "Булыжник XXII" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax100 &7Глубинной алмазной руды'
+      - '&b  - &ax60 &7Глубинной изумрудной руды'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax3 &7Скалковых крикуна'
+      - '&b  - &ax5 &7Акустических датчиков'
+      - '&b  - &ax3 &7Скалк-катализатора'
+      - '&b  - &a$2500'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Добыто глубинной алмазной руды: &a{value_deepslate_diamond_ore}/100'
+      - '&b  - &7Добыто глубинной изумрудной руды: &a{value_deepslate_emerald_ore}/60'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDFjYTdjZWY3YmMyOTI3ZWI5NGQ0YTY5MGE0MTQ4YTIxNDk4MjJlM2E2MGMwNjExYWEyYTNhNjUzM2I3NzE1In19fQ=='
+    name: '&bМиссия "Булыжник XXII" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax100 &7Глубинной алмазной руды'
+      - '&b  - &ax60 &7Глубинной изумрудной руды'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax3 &7Скалковых крикуна'
+      - '&b  - &ax5 &7Акустических датчиков'
+      - '&b  - &ax3 &7Скалк-катализатора'
+      - '&b  - &a$2500'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Добыто глубинной алмазной руды: &a100/100'
+      - '&b  - &7Добыто глубинной изумрудной руды: &a60/60'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+    enchants:
+      DURABILITY: 1
+    flags:
+      - HIDE_ENCHANTS
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Булыжник XXII" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax100 &7Глубинной алмазной руды'
+      - '&b  - &ax60 &7Глубинной изумрудной руды'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax3 &7Скалковых крикуна'
+      - '&b  - &ax5 &7Акустических датчиков'
+      - '&b  - &ax3 &7Скалк-катализатора'
+      - '&b  - &a$2500'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Добыто глубинной алмазной руды: &a100/100'
+      - '&b  - &7Добыто глубинной изумрудной руды: &a60/60'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

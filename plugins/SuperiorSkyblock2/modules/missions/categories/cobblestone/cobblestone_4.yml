@@ -23,8 +23,12 @@ required-missions:
 required-blocks:
   '1':
     types:
-      - 'COBBLESTONE'
-    amount: 250
+      - 'COAL_ORE'
+    amount: 15
+  '2':
+    types:
+      - 'IRON_ORE'
+    amount: 15
 
 icons:
   not-completed:
@@ -34,29 +38,33 @@ icons:
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax250 &7Булыжника'
+      - '&b  - &ax15 &7Угольной руды'
+      - '&b  - &ax15 &7Железной руды'
       - ' '
       - '&b * &7Награды:'
       - '&b  - &a$500'
       - ' '
       - '&b * &7Прогресс: &a{0}%'
-      - '&b  - &7Добыто булыжника: &a{value_cobblestone}/250'
+      - '&b  - &7Добыто угольной руды: &a{value_coal_ore}/15'
+      - '&b  - &7Добыто железной руды: &a{value_iron_ore}/15'
       - ' '
       - '&c ✘ &7Миссия не завершена'
   can-complete:
     type: PLAYER_HEAD
-    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzM3Yjk2YTQ1YThmMGM2ZmQ3ZGZhYjJhODVlMWEzODRkYWNhNGI4MDZlYjg5MmE4N2UyN2Y1MmE5ZjkxYzA4NCJ9fX0='
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzVlNGNiNGZjMTRiYTY5ZDQ5YjJkZDJiMDQxOGQ2NTYyZGZmZGViZDBlYmYwMTY1YzQ0MTZhMDczZTYyZGRmOCJ9fX0='
     name: '&bМиссия "Булыжник IV"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax250 &7Булыжника'
+      - '&b  - &ax15 &7Угольной руды'
+      - '&b  - &ax15 &7Железной руды'
       - ' '
       - '&b * &7Награды:'
       - '&b  - &a$500'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Добыто булыжника: &a250/250'
+      - '&b  - &7Добыто угольной руды: &a15/15'
+      - '&b  - &7Добыто железной руды: &a15/15'
       - ' '
       - '&8 ✔ &7Нажмите, чтобы получить награду.'
     enchants:
@@ -70,12 +78,14 @@ icons:
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax250 &7Булыжника'
+      - '&b  - &ax15 &7Угольной руды'
+      - '&b  - &ax15 &7Железной руды'
       - ' '
       - '&b * &7Награды:'
       - '&b  - &a$500'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Добыто булыжника: &a250/250'
+      - '&b  - &7Добыто угольной руды: &a15/15'
+      - '&b  - &7Добыто железной руды: &a15/15'
       - ' '
       - '&a ✔ &7Миссия выполнена, награда получена.'

@@ -21,7 +21,7 @@ MissionPack farmerPack
     "farmer",
     {
         {
-            "farmer", "Фермер", "PLAYER_HEAD", melon3,
+            "farmer", "Фермер", "PLAYER_HEAD", melon4,
             {
                 {
                     {},
@@ -66,7 +66,7 @@ MissionPack farmerPack
                     {{{"carrots", "Морковки", 100, "Выращено морковки"}}, {}, {}},
                     {500, {},
                     {
-                        {"potatoes", "Картошки", 20, "Получено картошки"}
+                        {"potato", "Картошки", 20, "Получено картошки"}
                     }
                     }
                 }, // Mission

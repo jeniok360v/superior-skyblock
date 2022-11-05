@@ -32,7 +32,7 @@ required-plants:
 icons:
   not-completed:
     type: PLAYER_HEAD
-    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzUxODgzZDZiN2ZhNDJkZDBjZjBkOWNkOTk5NjE1YTg1NDBiYzA3YzZmY2Q1YmU1ZGJlYTU2MTdmZDEzOWZkNCJ9fX0='
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmY4MjdiNWYxMjZjZjU4OGY5MzU1Njc4Y2FlZTMwNTQ0MjZkYTBmYTcxNmRmYTVmMmFlNzk5YmJiMjdiODMifX19'
     name: '&bМиссия "Фермер VII" &4(TEST)'
     lore:
       - ' '

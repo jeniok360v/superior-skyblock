@@ -48,21 +48,21 @@ class MissionPackager
 public:
     MissionPackager()
     {
-        allMissionPacks.insert(std::make_pair(9, startTropicalPack));
-        allMissionPacks.insert(std::make_pair(10, startMushroomPack));
-        allMissionPacks.insert(std::make_pair(11, startDesertPack));
-        allMissionPacks.insert(std::make_pair(12, cobblestonePack));
-        allMissionPacks.insert(std::make_pair(13, farmerPack));
-        allMissionPacks.insert(std::make_pair(14, autumnPack));
-        allMissionPacks.insert(std::make_pair(15, fishPack));
+        allMissionPacks.insert(std::make_pair(10, startTropicalPack));
+        allMissionPacks.insert(std::make_pair(11, startMushroomPack));
+        allMissionPacks.insert(std::make_pair(12, startDesertPack));
+        allMissionPacks.insert(std::make_pair(13, cobblestonePack));
+        allMissionPacks.insert(std::make_pair(14, farmerPack));
+        allMissionPacks.insert(std::make_pair(15, grovePack));
         allMissionPacks.insert(std::make_pair(16, undeadPack));
 
-        allMissionPacks.insert(std::make_pair(18, grovePack));
-        allMissionPacks.insert(std::make_pair(19, forestPack));
+        allMissionPacks.insert(std::make_pair(20, autumnPack));
+        allMissionPacks.insert(std::make_pair(21, fishPack));
+        allMissionPacks.insert(std::make_pair(22, forestPack));
 
-        allMissionPacks.insert(std::make_pair(27, pigmanPack));
+        allMissionPacks.insert(std::make_pair(30, pigmanPack));
 
-        // allMissionPacks.insert(std::make_pair(44, testPack));
+        // allMissionPacks.insert(std::make_pair(43, testPack));
     }
     std::map<int, MissionPack> allMissionPacks;
     
@@ -74,7 +74,7 @@ public:
             pack.printPack(missionsDir, isTest);
         }
     }
-    
+
     void printMissionsConfig(std::string configDir)
     {
         std::ofstream ofs(configDir);
@@ -106,6 +106,14 @@ public:
             menuPattern.at(i) = "$";
         }
         for(int i = 45; i < 54; i++)
+        {
+            menuPattern.at(i) = "$";
+        }
+        for(int i = 0; i < 54; i+=9)
+        {
+            menuPattern.at(i) = "$";
+        }
+        for(int i = 8; i < 54; i+=9)
         {
             menuPattern.at(i) = "$";
         }
@@ -141,7 +149,7 @@ public:
                 ofs << "  '" + c + "':" << std::endl;
                 ofs << "    type: PLAYER_HEAD" << std::endl;
                 ofs << "    skull: '" + allMissionPacks[i].missionGroups.at(0).headTag + "'" << std::endl;
-                ofs << "    name: '&e" + allMissionPacks[i].missionGroups.at(0).groupName + "'" << std::endl;
+                ofs << "    name: '&b" + allMissionPacks[i].missionGroups.at(0).groupName + "'" << std::endl;
                 ofs << "    lore:" << std::endl;
                 ofs << "      - '&7Нажмите, чтобы начать миссии'" << std::endl;
             }

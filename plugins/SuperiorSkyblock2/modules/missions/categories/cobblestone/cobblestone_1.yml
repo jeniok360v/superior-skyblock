@@ -25,7 +25,7 @@ required-blocks:
   '1':
     types:
       - 'COBBLESTONE'
-    amount: 20
+    amount: 10
 
 icons:
   not-completed:
@@ -34,36 +34,36 @@ icons:
     name: '&bМиссия "Булыжник I"'
     lore:
       - ' '
-      - '&b * &7Постройте генератор и добудьте из него булыжник'
+      - '&b * &7Постройте генератор и добудьте из него булыжника'
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax20 &7Булыжника'
+      - '&b  - &ax10 &7Булыжника'
       - ' '
       - '&b * &7Награды:'
       - '&b  - &ax1 &7Воронка'
       - '&b  - &a$200'
       - ' '
       - '&b * &7Прогресс: &a{0}%'
-      - '&b  - &7Добыто булыжника: &a{value_cobblestone}/20'
+      - '&b  - &7Добыто булыжника: &a{value_cobblestone}/10'
       - ' '
       - '&c ✘ &7Миссия не завершена'
   can-complete:
     type: PLAYER_HEAD
-    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzY1OGNjYzczNDU1NTllOTMyMWY0OWVlMWFmNjc1MjJlNzA4ZGNhODkzMmIwYTcyMWNjMzQxMzA3MzFlYjU5OCJ9fX0='
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFhOTEyZTMzMmZjMDAxMGJlYmQwZjkzYTE0ZDhlM2VhNjVkMTMwMTEwMGNlYTNmYzVhZTcxOTkwZDk4NTgwNyJ9fX0='
     name: '&bМиссия "Булыжник I"'
     lore:
       - ' '
-      - '&b * &7Постройте генератор и добудьте из него булыжник'
+      - '&b * &7Постройте генератор и добудьте из него булыжника'
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax20 &7Булыжника'
+      - '&b  - &ax10 &7Булыжника'
       - ' '
       - '&b * &7Награды:'
       - '&b  - &ax1 &7Воронка'
       - '&b  - &a$200'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Добыто булыжника: &a20/20'
+      - '&b  - &7Добыто булыжника: &a10/10'
       - ' '
       - '&8 ✔ &7Нажмите, чтобы получить награду.'
     enchants:
@@ -76,16 +76,16 @@ icons:
     name: '&bМиссия "Булыжник I"'
     lore:
       - ' '
-      - '&b * &7Постройте генератор и добудьте из него булыжник'
+      - '&b * &7Постройте генератор и добудьте из него булыжника'
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax20 &7Булыжника'
+      - '&b  - &ax10 &7Булыжника'
       - ' '
       - '&b * &7Награды:'
       - '&b  - &ax1 &7Воронка'
       - '&b  - &a$200'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Добыто булыжника: &a20/20'
+      - '&b  - &7Добыто булыжника: &a10/10'
       - ' '
       - '&a ✔ &7Миссия выполнена, награда получена.'

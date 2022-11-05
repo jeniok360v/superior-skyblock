@@ -12,8 +12,7 @@ weight: 7
 
 rewards:
   commands:
-    - 'eco give %player% 2000'
-    - 'is admin rankup %player% generator-rates'
+    - 'eco give %player% 1500'
     - 'is admin msg %player% &bБулыжник |'
     - 'is admin msg %player% &bБулыжник | &7Вы успешно завершили миссию &a"Булыжник VII"&r&7!'
     - 'is admin msg %player% &bБулыжник |'
@@ -25,7 +24,11 @@ required-blocks:
   '1':
     types:
       - 'COBBLESTONE'
-    amount: 800
+    amount: 300
+  '2':
+    types:
+      - 'GOLD_ORE'
+    amount: 5
 
 icons:
   not-completed:
@@ -35,31 +38,33 @@ icons:
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax800 &7Булыжника'
+      - '&b  - &ax300 &7Булыжника'
+      - '&b  - &ax5 &7Золотой руды'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &7Улучшение генератора булыжника'
-      - '&b  - &a$2000'
+      - '&b  - &a$1500'
       - ' '
       - '&b * &7Прогресс: &a{0}%'
-      - '&b  - &7Добыто булыжника: &a{value_cobblestone}/800'
+      - '&b  - &7Добыто булыжника: &a{value_cobblestone}/300'
+      - '&b  - &7Добыто золотой руды: &a{value_gold_ore}/5'
       - ' '
       - '&c ✘ &7Миссия не завершена'
   can-complete:
     type: PLAYER_HEAD
-    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzFmN2NkZmVhMmQyMWNkNWY2ZWJiZjQ4NDgxNzYxYzZjYmRmMzZkMDBmZTY0MDgzNjg2ZTlhZWFhM2YxZjIxNyJ9fX0='
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjRiOTUzYjJjMGU5NTI1NzRmMWVkMjljODFlODJlNTNiY2RiMWJhNjgzMjU5YzIwZGFlZWY3ZDU1NGEyYTc5OCJ9fX0='
     name: '&bМиссия "Булыжник VII"'
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax800 &7Булыжника'
+      - '&b  - &ax300 &7Булыжника'
+      - '&b  - &ax5 &7Золотой руды'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &7Улучшение генератора булыжника'
-      - '&b  - &a$2000'
+      - '&b  - &a$1500'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Добыто булыжника: &a800/800'
+      - '&b  - &7Добыто булыжника: &a300/300'
+      - '&b  - &7Добыто золотой руды: &a5/5'
       - ' '
       - '&8 ✔ &7Нажмите, чтобы получить награду.'
     enchants:
@@ -73,13 +78,14 @@ icons:
     lore:
       - ' '
       - '&b * &7Требования:'
-      - '&b  - &ax800 &7Булыжника'
+      - '&b  - &ax300 &7Булыжника'
+      - '&b  - &ax5 &7Золотой руды'
       - ' '
       - '&b * &7Награды:'
-      - '&b  - &7Улучшение генератора булыжника'
-      - '&b  - &a$2000'
+      - '&b  - &a$1500'
       - ' '
       - '&b * &7Прогресс: &a100%'
-      - '&b  - &7Добыто булыжника: &a800/800'
+      - '&b  - &7Добыто булыжника: &a300/300'
+      - '&b  - &7Добыто золотой руды: &a5/5'
       - ' '
       - '&a ✔ &7Миссия выполнена, награда получена.'
