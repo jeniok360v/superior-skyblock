@@ -39,3 +39,6 @@ categories:
   pigman:
     name: Адские создания
     slot: 30
+  enderman:
+    name: Эндермены
+    slot: 32

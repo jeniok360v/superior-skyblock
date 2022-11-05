@@ -1,0 +1,87 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: KillsMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+island: true
+weight: 4
+
+rewards:
+  items:
+    '1':
+      type: END_STONE
+      amount: 200
+  commands:
+    - 'eco give %player% 1500'
+    - 'is admin msg %player% &bЭндермены |'
+    - 'is admin msg %player% &bЭндермены | &7Вы успешно завершили миссию &a"Эндермены IV"&r&7!'
+    - 'is admin msg %player% &bЭндермены |'
+
+required-missions:
+  - 'enderman_3'
+
+required-entities:
+  '1':
+    types:
+      - 'ENDERMAN'
+    amount: 3
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzdmN2I1MWNhNjk2NmJlMmRlY2ZlYjNkNTg1ZDJkNjU0MTkzYjAzY2I4YzEzNjU4YTQzNjliNTkxNGRmZTg2YyJ9fX0='
+    name: '&bМиссия "Эндермены IV" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax200 &7Эндерменов'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax200 &7Эндерняка'
+      - '&b  - &a$1500'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Эндерменов убито: &a{value_enderman}/200'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzM3Yjk2YTQ1YThmMGM2ZmQ3ZGZhYjJhODVlMWEzODRkYWNhNGI4MDZlYjg5MmE4N2UyN2Y1MmE5ZjkxYzA4NCJ9fX0='
+    name: '&bМиссия "Эндермены IV" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax200 &7Эндерменов'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax200 &7Эндерняка'
+      - '&b  - &a$1500'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Эндерменов убито: &a200/200'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+    enchants:
+      DURABILITY: 1
+    flags:
+      - HIDE_ENCHANTS
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Эндермены IV" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax200 &7Эндерменов'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &ax200 &7Эндерняка'
+      - '&b  - &a$1500'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Эндерменов убито: &a200/200'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'
