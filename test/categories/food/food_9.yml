@@ -1,0 +1,79 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: CraftingMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+island: true
+weight: 9
+
+rewards:
+  commands:
+    - 'eco give %player% 5000'
+    - 'is admin msg %player% &bЗвезда Мишлен |'
+    - 'is admin msg %player% &bЗвезда Мишлен | &7Вы успешно завершили миссию &a"Звезда Мишлен IX"&r&7!'
+    - 'is admin msg %player% &bЗвезда Мишлен |'
+
+required-missions:
+  - 'food_8'
+
+craftings:
+  '1':
+    type: 'RABBIT_STEW'
+    amount: 3
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGE3MjE1ODA1ZmJhZGJlMThkNDZjYzFhNjFlZjIxNjI1Y2FmYTJiMjlkOGJlN2VjMjE1NDVhZDQ4YzA4OCJ9fX0='
+    name: '&bМиссия "Звезда Мишлен IX" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax200 &7Тарелок кроличьего рагу'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$5000'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Сделано кроличьего рагу: &a{value_rabbit_stew}/200'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Y2NmY3ZjAzMTI1Y2Y1NDczMzY5NmYzNjMyZjBkOWU2NDcwYmFhYjg0OTg0N2VhNWVhMmQ3OTE1NmFkMGY0MCJ9fX0='
+    name: '&bМиссия "Звезда Мишлен IX" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax200 &7Тарелок кроличьего рагу'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$5000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Сделано кроличьего рагу: &a200/200'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+    enchants:
+      DURABILITY: 1
+    flags:
+      - HIDE_ENCHANTS
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Звезда Мишлен IX" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &ax200 &7Тарелок кроличьего рагу'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$5000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Сделано кроличьего рагу: &a200/200'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

@@ -27,12 +27,15 @@ categories:
   autumn:
     name: Осенний сезон
     slot: 20
+  food:
+    name: Звезда Мишлен
+    slot: 21
   fish:
     name: Рыбалка
-    slot: 21
+    slot: 22
   forest:
     name: Лес
-    slot: 22
+    slot: 23
   pigman:
     name: Адские создания
     slot: 30

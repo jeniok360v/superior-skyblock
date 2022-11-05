@@ -9,10 +9,9 @@ const std::string wheat2 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0
 const std::string wheat3 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzEwZjkwMDA5MzZlYzhlZDUxZDFiZjVhMmMyMWEwNDkzYTQzOTMwYTMzNmE0MTIwZjk1YjhkNzQ4MjMxYTBmNiJ9fX0=";
 const std::string potatoes1 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmNhZTVkMDM3OWZlNzNiOTQwNDIxNzhkODdkOTgyOThkM2NkZTdkYTEyNmIxOGRjY2U0YTNhNmM2NjNmYWZiNyJ9fX0=";
 const std::string potatoes2 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Y0NjI0ZWJmN2Q0MTlhMTFlNDNlZDBjMjAzOGQzMmNkMDlhZDFkN2E2YzZlMjBmNjMzOWNiY2ZlMzg2ZmQxYyJ9fX0=";
-const std::string melon1 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VjNmM2ZTAwYTZhZDA1NWYyNTA1NDZhOGMwZGEwNzBkZjQ2MTNhNWY2NTUxN2E5OTMzYmQ1ZGU5NjlkODQwNiJ9fX0=";
+const std::string melon1 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDU4NjcwNTUxZjdmZjEzYWZhYjIzOTMxOGExMGJhZDIzMjdlZTc0MmUxNTc4MzdlYTE3ODVlZjQ0M2QzYTU3NiJ9fX0=";
 const std::string melon2 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDc5YjdiMjU1ZmM0YzRhMDE1YTIwYWJhZDg3Y2YyYzc0MWViZDYyYzA2MGU4M2E4MWM5OGFkZWYyZWU2NDg5NCJ9fX0=";
-const std::string melon3 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzUxODgzZDZiN2ZhNDJkZDBjZjBkOWNkOTk5NjE1YTg1NDBiYzA3YzZmY2Q1YmU1ZGJlYTU2MTdmZDEzOWZkNCJ9fX0=";
-const std::string melon4 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmY4MjdiNWYxMjZjZjU4OGY5MzU1Njc4Y2FlZTMwNTQ0MjZkYTBmYTcxNmRmYTVmMmFlNzk5YmJiMjdiODMifX19";
+const std::string melon3 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODlmYzljNWI4NzM2ZjM2ZjM0MDVjYmUxMzYzZDQzNGMxNDFjZDIzYWFjMDQxODY0NzZhZjBhMGY3ODc3YWVmNCJ9fX0=";
 const std::string pumpkin1 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzcyNjhiMzdjOWJhZDUyMTVhNjljYzlmYmZhZDc2ZDAyZWVkMTg2YzQ3MWI5ZmY3ZTMxMGQ4MWI1NTRhMTk0ZCJ9fX0=";
 // const std::string pumpkin1 = "";
 
@@ -21,7 +20,7 @@ MissionPack farmerPack
     "farmer",
     {
         {
-            "farmer", "Фермер", "PLAYER_HEAD", melon4,
+            "farmer", "Фермер", "PLAYER_HEAD", melon1,
             {
                 {
                     {},

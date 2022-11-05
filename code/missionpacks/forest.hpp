@@ -61,7 +61,9 @@ MissionPack forestPack
                     "BlocksMissions", defaultNaturalBlocksOptions, {},
                     {{{"jungle_log", "Брёвен тропического дерева", 400, "Срублено тропического дерева"}}},
                     {3000, {},
-                    {}
+                    {
+                        {"cocoa_beans", "Какао", 20, "Получено какао"}
+                    }
                     }
                 }, // Mission
                 {

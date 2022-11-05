@@ -9,6 +9,7 @@
 #include "missionpacks/undead.hpp"
 
 #include "missionpacks/grove.hpp"
+#include "missionpacks/food.hpp"
 #include "missionpacks/forest.hpp"
 
 #include "missionpacks/pigman.hpp"
@@ -57,8 +58,9 @@ public:
         allMissionPacks.insert(std::make_pair(16, undeadPack));
 
         allMissionPacks.insert(std::make_pair(20, autumnPack));
-        allMissionPacks.insert(std::make_pair(21, fishPack));
-        allMissionPacks.insert(std::make_pair(22, forestPack));
+        allMissionPacks.insert(std::make_pair(21, foodPack));
+        allMissionPacks.insert(std::make_pair(22, fishPack));
+        allMissionPacks.insert(std::make_pair(23, forestPack));
 
         allMissionPacks.insert(std::make_pair(30, pigmanPack));
 
