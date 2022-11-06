@@ -1,0 +1,91 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: BlocksMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+only-natural-blocks: true
+island: true
+weight: 9
+
+rewards:
+  commands:
+    - 'eco give %player% 4500'
+    - 'is admin msg %player% &bГенератор базальта |'
+    - 'is admin msg %player% &bГенератор базальта | &7Вы успешно завершили миссию &a"Генератор базальта IX"&r&7!'
+    - 'is admin msg %player% &bГенератор базальта |'
+
+required-missions:
+  - 'netherrack_8'
+
+required-blocks:
+  '1':
+    types:
+      - 'NETHERRACK'
+    amount: 3
+  '2':
+    types:
+      - 'NETHER_QUARTZ_ORE'
+    amount: 3
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWRlMGI0OTY1ZTI1ZTdkYzFjZTIwNGIzNjY1Y2E2YWIxNzBjMGVmMjI2YjM4NWJlMGEyMmJhMDk5MDk4MDA0MSJ9fX0='
+    name: '&bМиссия "Генератор базальта IX" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &a800 &7Адского камня'
+      - '&b  - &a100 &7Кварцевой руды'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$4500'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Добыто адского камня: &a{value_netherrack}/800'
+      - '&b  - &7Добыто кварцевой руды: &a{value_nether_quartz_ore}/100'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGJhNTU2NzFmOTdmZjNiZmM1YmUzMzVhZTkyY2Q5NzQ5YWJkNjE5ZTdhZmMyYTY2NzM1OTdiODBiNzU1Yzc0MSJ9fX0='
+    name: '&bМиссия "Генератор базальта IX" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &a800 &7Адского камня'
+      - '&b  - &a100 &7Кварцевой руды'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$4500'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Добыто адского камня: &a800/800'
+      - '&b  - &7Добыто кварцевой руды: &a100/100'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+    enchants:
+      DURABILITY: 1
+    flags:
+      - HIDE_ENCHANTS
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Генератор базальта IX" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &a800 &7Адского камня'
+      - '&b  - &a100 &7Кварцевой руды'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a$4500'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Добыто адского камня: &a800/800'
+      - '&b  - &7Добыто кварцевой руды: &a100/100'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

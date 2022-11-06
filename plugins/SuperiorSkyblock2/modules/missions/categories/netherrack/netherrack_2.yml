@@ -1,0 +1,93 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: EnchantingMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+island: true
+weight: 2
+
+rewards:
+  items:
+    '1':
+      type: BLUE_ICE
+      amount: 5
+    '2':
+      type: LAVA_BUCKET
+      amount: 3
+  commands:
+    - 'eco give %player% 1000'
+    - 'is admin msg %player% &bГенератор базальта |'
+    - 'is admin msg %player% &bГенератор базальта | &7Вы успешно завершили миссию &a"Генератор базальта II"&r&7!'
+    - 'is admin msg %player% &bГенератор базальта |'
+
+required-missions:
+  - 'netherrack_1'
+
+required-enchants:
+  '1':
+    types:
+      - 'DIAMOND_PICKAXE'
+    enchants:
+      DIG_SPEED: 5
+    amount: 1
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWRlMGI0OTY1ZTI1ZTdkYzFjZTIwNGIzNjY1Y2E2YWIxNzBjMGVmMjI2YjM4NWJlMGEyMmJhMDk5MDk4MDA0MSJ9fX0='
+    name: '&bМиссия "Генератор базальта II"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &7Алмазная кирка (Эффективность V)'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a5 &7Синего льда'
+      - '&b  - &a3 &7Ведра лавы'
+      - '&b  - &a$1000'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b * &7&nПримечание:&r&7 Можно использовать стол и наковальню'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzY1OGNjYzczNDU1NTllOTMyMWY0OWVlMWFmNjc1MjJlNzA4ZGNhODkzMmIwYTcyMWNjMzQxMzA3MzFlYjU5OCJ9fX0='
+    name: '&bМиссия "Генератор базальта II"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &7Алмазная кирка (Эффективность V)'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a5 &7Синего льда'
+      - '&b  - &a3 &7Ведра лавы'
+      - '&b  - &a$1000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+    enchants:
+      DURABILITY: 1
+    flags:
+      - HIDE_ENCHANTS
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Генератор базальта II"'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &7Алмазная кирка (Эффективность V)'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a5 &7Синего льда'
+      - '&b  - &a3 &7Ведра лавы'
+      - '&b  - &a$1000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'

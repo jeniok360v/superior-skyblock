@@ -345,7 +345,7 @@ void Mission::printLoreRequirements(std::ofstream& ofs)
     ofs << "      - '&b * &7Требования:'" << std::endl;
     for(auto& item : goal.items)
     {
-        ofs << "      - '&b  - &ax" + std::to_string(item.itemAmount) + " &7" + item.russianItemName + "'" << std::endl;
+        ofs << "      - '&b  - &a" + std::to_string(item.itemAmount) + " &7" + item.russianItemName + "'" << std::endl;
     }
     for(auto& event : goal.events)
     {
@@ -353,7 +353,7 @@ void Mission::printLoreRequirements(std::ofstream& ofs)
     }
     for(auto& potion : goal.potions)
     {
-        ofs << "      - '&b  - &ax" + std::to_string(potion.amount) + " &7" + potion.russianItemName + "'" << std::endl;
+        ofs << "      - '&b  - &a" + std::to_string(potion.amount) + " &7" + potion.russianItemName + "'" << std::endl;
     }
     for(auto& enchant : goal.enchants)
     {
@@ -367,7 +367,7 @@ void Mission::printLoreReward(std::ofstream& ofs)
     ofs << "      - '&b * &7Награды:'" << std::endl;
     for(auto& item : reward.items)
     {
-        ofs << "      - '&b  - &ax" + std::to_string(item.itemAmount) + " &7" + item.russianItemName + "'" << std::endl;
+        ofs << "      - '&b  - &a" + std::to_string(item.itemAmount) + " &7" + item.russianItemName + "'" << std::endl;
     }
     for(auto& command : reward.commands)
     {
@@ -399,7 +399,7 @@ void Mission::printLoreProgress(std::ofstream& ofs, std::string completness)
         }
         else if(missionType == "EnchantingMissions")
         {
-            ofs << "      - '&b * &7&nПримечание:&r&7 Можно испольовать стол и наковальню'" << std::endl;
+            ofs << "      - '&b * &7&nПримечание:&r&7 Можно использовать стол и наковальню'" << std::endl;
         }
         else
         {

@@ -5,7 +5,7 @@ pattern:
   - '$ $ $ $ $ $ $ $ $'
   - '$ k l m n o p q $'
   - '$ % u v w x % % $'
-  - '$ % % D % F % % $'
+  - '$ % % D E F % % $'
   - '$ % % % % % % % $'
   - '$ $ $ $ $ $ $ $ $'
 
@@ -88,6 +88,12 @@ items:
     name: '&bАдские создания'
     lore:
       - '&7Нажмите, чтобы начать миссии'
+  'E':
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWRlMGI0OTY1ZTI1ZTdkYzFjZTIwNGIzNjY1Y2E2YWIxNzBjMGVmMjI2YjM4NWJlMGEyMmJhMDk5MDk4MDA0MSJ9fX0='
+    name: '&bГенератор базальта'
+    lore:
+      - '&7Нажмите, чтобы начать миссии'
   'F':
     type: PLAYER_HEAD
     skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzdmN2I1MWNhNjk2NmJlMmRlY2ZlYjNkNTg1ZDJkNjU0MTkzYjAzY2I4YzEzNjU4YTQzNjliNTkxNGRmZTg2YyJ9fX0='
@@ -141,6 +147,10 @@ sounds:
     volume: 0.6
     pitch: 1
   'D':
+    type: BLOCK_CHEST_OPEN
+    volume: 0.6
+    pitch: 1
+  'E':
     type: BLOCK_CHEST_OPEN
     volume: 0.6
     pitch: 1

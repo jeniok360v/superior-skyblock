@@ -20,7 +20,7 @@ MissionPack pigmanPack
                     {"diamond_pickaxe", "Алмазная кирка", 1, "Алмазная кирка, скрафчено"}}, {}, {}},
                     {1500, {{"is admin unlockworld %player% nether true", "Доступ в нижний мир"}},
                     {
-                        // {"obsidian", "Обсидиана", 10, "Получено обсидиана"},
+                        {"nether_wart", "Адского нароста", 9, "Получено адского нароста"}
                     },
                     }
                 }, // Mission

@@ -13,6 +13,7 @@
 #include "missionpacks/forest.hpp"
 
 #include "missionpacks/pigman.hpp"
+#include "missionpacks/netherrack.hpp"
 #include "missionpacks/enderman.hpp"
 
 #include "missionpacks/test.hpp"
@@ -62,10 +63,10 @@ public:
         allMissionPacks.insert(std::make_pair(21, foodPack));
         allMissionPacks.insert(std::make_pair(22, fishPack));
         allMissionPacks.insert(std::make_pair(23, forestPack));
-        // allMissionPacks.insert(std::make_pair(23, villagerPack));
+        // allMissionPacks.insert(std::make_pair(24, villagerPack));
 
         allMissionPacks.insert(std::make_pair(30, pigmanPack));
-        // allMissionPacks.insert(std::make_pair(31, netherTreesPack));
+        allMissionPacks.insert(std::make_pair(31, netherrackPack));
         allMissionPacks.insert(std::make_pair(32, endermanPack));
 
         // allMissionPacks.insert(std::make_pair(43, testPack));

@@ -39,6 +39,9 @@ categories:
   pigman:
     name: Адские создания
     slot: 30
+  netherrack:
+    name: Генератор базальта
+    slot: 31
   enderman:
     name: Эндермены
     slot: 32

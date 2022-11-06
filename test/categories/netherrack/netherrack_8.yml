@@ -1,0 +1,94 @@
+# https://wiki.bg-software.com/superiorskyblock/overview/missions
+
+mission-file: BlocksMissions
+
+disband-reset: true
+auto-reward: false
+reset-after-finish: true
+only-show-if-required-completed: true
+only-natural-blocks: true
+island: true
+weight: 8
+
+rewards:
+  items:
+    '1':
+      type: WARPED_NYLIUM
+      amount: 10
+    '2':
+      type: CRIMSON_NYLIUM
+      amount: 10
+  commands:
+    - 'eco give %player% 2000'
+    - 'is admin msg %player% &bГенератор базальта |'
+    - 'is admin msg %player% &bГенератор базальта | &7Вы успешно завершили миссию &a"Генератор базальта VIII"&r&7!'
+    - 'is admin msg %player% &bГенератор базальта |'
+
+required-missions:
+  - 'netherrack_7'
+
+required-blocks:
+  '1':
+    types:
+      - 'NETHERRACK'
+    amount: 3
+
+icons:
+  not-completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWRlMGI0OTY1ZTI1ZTdkYzFjZTIwNGIzNjY1Y2E2YWIxNzBjMGVmMjI2YjM4NWJlMGEyMmJhMDk5MDk4MDA0MSJ9fX0='
+    name: '&bМиссия "Генератор базальта VIII" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &a200 &7Адского камня'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a10 &7Искажённого нилия'
+      - '&b  - &a10 &7Багрового нилия'
+      - '&b  - &a$2000'
+      - ' '
+      - '&b * &7Прогресс: &a{0}%'
+      - '&b  - &7Добыто адского камня: &a{value_netherrack}/200'
+      - ' '
+      - '&c ✘ &7Миссия не завершена'
+  can-complete:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzFmN2NkZmVhMmQyMWNkNWY2ZWJiZjQ4NDgxNzYxYzZjYmRmMzZkMDBmZTY0MDgzNjg2ZTlhZWFhM2YxZjIxNyJ9fX0='
+    name: '&bМиссия "Генератор базальта VIII" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &a200 &7Адского камня'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a10 &7Искажённого нилия'
+      - '&b  - &a10 &7Багрового нилия'
+      - '&b  - &a$2000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Добыто адского камня: &a200/200'
+      - ' '
+      - '&8 ✔ &7Нажмите, чтобы получить награду.'
+    enchants:
+      DURABILITY: 1
+    flags:
+      - HIDE_ENCHANTS
+  completed:
+    type: PLAYER_HEAD
+    skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4ODcyZGM5ZDYzNGQyNzRjNGMwZTgwZGU2MTc2M2MyMmI2Y2JlNDk3NDBlODdlMzY1N2JjMzZkM2VkNGJlYSJ9fX0='
+    name: '&bМиссия "Генератор базальта VIII" &4(TEST)'
+    lore:
+      - ' '
+      - '&b * &7Требования:'
+      - '&b  - &a200 &7Адского камня'
+      - ' '
+      - '&b * &7Награды:'
+      - '&b  - &a10 &7Искажённого нилия'
+      - '&b  - &a10 &7Багрового нилия'
+      - '&b  - &a$2000'
+      - ' '
+      - '&b * &7Прогресс: &a100%'
+      - '&b  - &7Добыто адского камня: &a200/200'
+      - ' '
+      - '&a ✔ &7Миссия выполнена, награда получена.'
