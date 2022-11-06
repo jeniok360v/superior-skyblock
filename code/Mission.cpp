@@ -391,31 +391,28 @@ void Mission::printLoreProgress(std::ofstream& ofs, std::string completness)
         ofs << "      - '&b * &7Прогресс: &a100%'" << std::endl;
     }
 
-    if(completness == "not completed")
+    if(missionType == "ItemsMissions")
     {
-        if(missionType == "ItemsMissions")
-        {
-            ofs << "      - '&b * &7&nПримечание:&r&7 предметы должны быть в инвентаре'" << std::endl;
-        }
-        else if(missionType == "EnchantingMissions")
-        {
-            ofs << "      - '&b * &7&nПримечание:&r&7 Можно использовать стол и наковальню'" << std::endl;
-        }
-        else
+        ofs << "      - '&b * &7&nПримечание:&r&7 Предметы должны быть в инвентаре'" << std::endl;
+    }
+    else if(missionType == "EnchantingMissions")
+    {
+        ofs << "      - '&b * &7&nПримечание:&r&7 Можно использовать стол зачарований либо наковальню'" << std::endl;
+    }
+    else if(missionType == "BrewingMissions")
+    {
+        ofs << "      - '&b * &7&nПримечание:&r&7 Используйте варочную стойку'" << std::endl;
+    }
+    else
+    {
+        if(completness == "not completed")
         {
             for(auto& item : goal.items)
             {
                 ofs << "      - '&b  - &7" + item.itemDescription + ": &a{value_" + item.itemName + "}/" + std::to_string(item.itemAmount) + "'" << std::endl;
             }
         }
-    }
-    else
-    {
-        // if(missionType == "ItemsMissions")
-        // {
-            
-        // }
-        // else
+        else
         {
             for(auto& item : goal.items)
             {

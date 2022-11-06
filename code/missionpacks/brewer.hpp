@@ -2,34 +2,37 @@
 
 #include "MissionPack.hpp"
 
-const std::string farmer_head = "";
+const std::string brewer1 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTI3YjdlY2VjMDIwZDVkYmViMzQyMGFkZjRiZDk1ZjRlNWE1MmI0NzdmNjVmNWJjNTAwMWJhYTE4Y2Y5YjlhNSJ9fX0=";
 
-/*
-    std::vector<std::string> missionDescription;
-    std::string missionType;
-    std::unordered_map<std::string, std::string> options;
-    MissionAssociations associations;
-    Goal goal;
-    Reward reward;
-*/
-
-MissionPack farmerPack
+MissionPack brewerPack
 {
-    "farmer",
+    "brewer",
     {
         {
-            "brewerTag", "варитель", "PLAYER_HEAD", farmer_head,
+            "brewer", "Зельеварение", "PLAYER_HEAD", brewer1,
             {
                 {
                     {},
-                    "BrewingMissions", defaultOptions, {},
-                    {{},{}, {{"speed", "скорость 2", "true", "true", "true", 3, "скорость 2 сплэш"}, {"weakness", "слабость 2", "false", "false", "false", 2, "тупа слабость"}}},
-                    {100, {{"unlockworld", "открыт мир"}},
-                    {
-                        {"carrot", "Морковь", 121, "Вырастить морковки"}, {"potato", "Картошка", 112, "Вырастить картошки"}
-                    }
+                    "CraftingMissions", defaultOptions, {},
+                    {{{"brewing_stand", "Зельеварочная стойка", 1, "Зельеварочная стойка, скрафчено"}}, {}, {}},
+                    {500, {},
+                    {},
                     }
                 }, // Mission
+                {
+                    {},
+                    "BrewingMissions", defaultOptions, {},
+                    {{},{}, {{"weakness", "слабость 2", "false", "false", "false", 2, "тупа слабость"}}},
+                    {100, {},
+                    {}
+                    }
+                }, // Mission
+
+//слабость
+//золотые яблоки
+//поторговаться
+//отогнать рейд
+//вырастить нароста
             }
         }, // MissionGroup
     }
