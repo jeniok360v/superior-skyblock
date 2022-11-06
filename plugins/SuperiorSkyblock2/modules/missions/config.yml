@@ -36,6 +36,9 @@ categories:
   forest:
     name: Лес
     slot: 23
+  brewer:
+    name: Зельеварение
+    slot: 24
   pigman:
     name: Адские создания
     slot: 30

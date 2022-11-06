@@ -13,7 +13,7 @@ MissionPack netherrackPack
             {
                 {
                     {"Постройте генератор базальта"},
-                    "BlocksMissions", defaultNaturalBlocksOptions, {},
+                    "CraftingMissions", defaultOptions, {},
                     {{{"hopper_minecart", "Вагонетки с воронкой", 3, "Скрафчено вагонеток с воронкой"}}, {}, {}},
                     {200, {},
                     {

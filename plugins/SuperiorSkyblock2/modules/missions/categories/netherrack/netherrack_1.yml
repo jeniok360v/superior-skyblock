@@ -1,12 +1,11 @@
 # https://wiki.bg-software.com/superiorskyblock/overview/missions
 
-mission-file: BlocksMissions
+mission-file: CraftingMissions
 
 disband-reset: true
 auto-reward: false
 reset-after-finish: true
 only-show-if-required-completed: true
-only-natural-blocks: true
 island: true
 weight: 1
 
@@ -21,10 +20,9 @@ rewards:
     - 'is admin msg %player% &bГенератор базальта | &7Вы успешно завершили миссию &a"Генератор базальта I"&r&7!'
     - 'is admin msg %player% &bГенератор базальта |'
 
-required-blocks:
+craftings:
   '1':
-    types:
-      - 'HOPPER_MINECART'
+    type: 'HOPPER_MINECART'
     amount: 3
 
 icons:

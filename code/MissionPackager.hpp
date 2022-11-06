@@ -11,6 +11,7 @@
 #include "missionpacks/grove.hpp"
 #include "missionpacks/food.hpp"
 #include "missionpacks/forest.hpp"
+#include "missionpacks/brewer.hpp"
 
 #include "missionpacks/pigman.hpp"
 #include "missionpacks/netherrack.hpp"
@@ -63,7 +64,7 @@ public:
         allMissionPacks.insert(std::make_pair(21, foodPack));
         allMissionPacks.insert(std::make_pair(22, fishPack));
         allMissionPacks.insert(std::make_pair(23, forestPack));
-        // allMissionPacks.insert(std::make_pair(24, villagerPack));
+        allMissionPacks.insert(std::make_pair(24, brewerPack));
 
         allMissionPacks.insert(std::make_pair(30, pigmanPack));
         allMissionPacks.insert(std::make_pair(31, netherrackPack));

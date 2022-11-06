@@ -397,7 +397,8 @@ void Mission::printLoreProgress(std::ofstream& ofs, std::string completness)
     }
     else if(missionType == "EnchantingMissions")
     {
-        ofs << "      - '&b * &7&nПримечание:&r&7 Можно использовать стол зачарований либо наковальню'" << std::endl;
+        ofs << "      - '&b * &7&nПримечание:&r&7 Можно использовать'" << std::endl;
+        ofs << "      - '&b  - &7стол зачарований либо наковальню'" << std::endl;
     }
     else if(missionType == "BrewingMissions")
     {
@@ -427,7 +428,7 @@ void Mission::printLoreProgress(std::ofstream& ofs, std::string completness)
     }
     if(!goal.potions.empty())
     {
-        ofs << "      - '&b * &7&nПримечание:&r&7 счётчик зелий не ведется'" << std::endl;
+        ofs << "      - '&b * &7&nПримечание:&r&7 Счётчик сломался, перезвоните позже'" << std::endl;
     }
     ofs << "      - ' '" << std::endl;
 }

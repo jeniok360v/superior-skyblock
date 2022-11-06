@@ -22,17 +22,54 @@ MissionPack brewerPack
                 {
                     {},
                     "BrewingMissions", defaultOptions, {},
-                    {{},{}, {{"weakness", "слабость 2", "false", "false", "false", 2, "тупа слабость"}}},
-                    {100, {},
+                    {{},{}, {{"weakness", "Взрывных зелья слабости I", "false", "false", "true", 2, "Не определено"}}},
+                    {500, {},
                     {}
                     }
                 }, // Mission
-
-//слабость
-//золотые яблоки
-//поторговаться
-//отогнать рейд
-//вырастить нароста
+                {
+                    {},
+                    "CraftingMissions", defaultOptions, {},
+                    {{{"golden_apple", "Золотое яблоко", 1, "Золотое яблоко, скрафчено"}}, {}, {}},
+                    {200, {},
+                    {},
+                    }
+                }, // Mission
+                {
+                    {},
+                    "StatisticsMissions", defaultOptions, {},
+                    {{{"traded_with_villager", "Сделок с жителями", 50, "Проведено сделок с жителями"}}, {}, {}},
+                    {1500, {},
+                    {},
+                    }
+                }, // Mission
+                {
+                    {},
+                    "BrewingMissions", defaultOptions, {},
+                    {{},{}, {{"INSTANT_HEAL", "Взрывных зелий лечения II", "true", "false", "true", 15, "Не определено"},
+                    {"strength", "Зелий силы II", "true", "false", "false", 5, "Не определено"}}},
+                    {2000, {},
+                    {}
+                    }
+                }, // Mission
+                {
+                    {},
+                    "StatisticsMissions", defaultOptions, {},
+                    {{{"raid_win", "Побеждённых рейдов на деревню", 5, "Побеждено рейдов"}}, {}, {}},
+                    {5000, {},
+                    {},
+                    }
+                }, // Mission
+                {
+                    {},
+                    "FarmingMissions", defaultRepeatableOptions, {},
+                    {{{"nether_wart", "Адского нароста", 1000, "Собрано адского нароста"}}, {}, {}},
+                    {1000, {},
+                    {
+                        {"soul_sand", "Песка душ", 30, "Получено песка душ"}
+                    },
+                    }
+                }, // Mission
             }
         }, // MissionGroup
     }

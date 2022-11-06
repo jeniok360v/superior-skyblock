@@ -16,16 +16,6 @@ MissionPack pigmanPack
             {
                 {
                     {},
-                    "FarmingMissions", defaultOptions, {},
-                    {{{"nether_wart", "Адского нароста", 9, "Собрано адского нароста"}}, {}, {}},
-                    {300, {},
-                    {
-                        {"soul_sand", "Песка душ", 30, "Получено песка душ"}
-                    },
-                    }
-                }, // Mission
-                {
-                    {},
                     "KillsMissions", defaultRepeatableOptions, {},
                     {{{"zombified_piglin", "Свинозомби", 600, "Убито свинозомби"}, 
                     {"ghast", "Гастов", 30, "Убито гастов"}}, {}, {}},

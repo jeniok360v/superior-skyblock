@@ -12,7 +12,7 @@ weight: 6
 rewards:
   items:
     '1':
-      type: CHORUS_PLANT
+      type: CHORUS_FLOWER
       amount: 10
     '2':
       type: END_STONE
