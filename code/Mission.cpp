@@ -157,52 +157,19 @@ void Mission::printGoalBlocksMissions(std::ofstream& ofs, bool isTest)
 void Mission::printGoalBrewingMissions(std::ofstream& ofs, bool isTest)
 {
     ofs << "required-potions:" << std::endl;
-    for(int i = 0; i < goal.potions.size(); i++)
-    {
-        std::string itemPrint = goal.potions.at(i).potionName;
-        std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
-        ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
-        ofs << "    potions:" << std::endl;
-        ofs << "      '1':" << std::endl;
-        ofs << "        type: " + itemPrint << std::endl;
-        ofs << "        upgraded: " + goal.potions.at(i).upgraded << std::endl;
-        ofs << "        extended: " + goal.potions.at(i).extended << std::endl;
-        ofs << "        splash: " + goal.potions.at(i).splash << std::endl;
-        printGoalAmount(ofs, isTest, goal.potions.at(i).amount);
-    }
+    printGoalMissionsBrewingType(ofs, isTest);
 }
 
 void Mission::printGoalCraftingMissions(std::ofstream& ofs, bool isTest)
 {
     ofs << "craftings:" << std::endl;
-    for(int i = 0; i < goal.items.size(); i++)
-    {
-        std::string itemPrint = goal.items.at(i).itemName;
-        std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
-
-        ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
-        ofs << "    type: '" + itemPrint + "'" << std::endl;
-        printGoalAmount(ofs, isTest, goal.items.at(i).itemAmount);
-    }
+    printGoalMissionsOneType(ofs, isTest);
 }
 
 void Mission::printGoalEnchantingMissions(std::ofstream& ofs, bool isTest)
 {
     ofs << "required-enchants:" << std::endl;
-    for(int i = 0; i < goal.enchants.size(); i++)
-    {
-        std::string itemPrint = goal.enchants.at(i).item;
-        std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
-        std::string enchantPrint = goal.enchants.at(i).enchant;
-        std::transform(enchantPrint.begin(), enchantPrint.end(),enchantPrint.begin(), ::toupper);
-
-        ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
-        ofs << "    types:" << std::endl;
-        ofs << "      - '" + itemPrint + "'" << std::endl;
-        ofs << "    enchants:" << std::endl;
-        ofs << "      " + enchantPrint + ": " + std::to_string(goal.enchants.at(i).level) << std::endl;
-        printGoalAmount(ofs, isTest, goal.enchants.at(i).amount);
-    }
+    printGoalMissionsEnchantType(ofs, isTest);
 }
 
 void Mission::printGoalFarmingMissions(std::ofstream& ofs, bool isTest)
@@ -234,9 +201,7 @@ void Mission::printGoalKillsMissions(std::ofstream& ofs, bool isTest)
     printGoalMissionsMultiType(ofs, isTest);
 }
 
-// bad missions: 
-//   not resetable
-//   gather stats from whole server activity, not only skyblock (?)
+// Statistics missions not resetable
 void Mission::printGoalStatisticsMissions(std::ofstream& ofs, bool isTest)
 {
     ofs << "required-statistics:" << std::endl;
@@ -259,6 +224,54 @@ void Mission::printGoalMissionsMultiTypeWithString(std::ofstream& ofs, bool isTe
 void Mission::printGoalMissionsMultiType(std::ofstream& ofs, bool isTest)
 {
     printGoalMissionsMultiTypeWithString(ofs, isTest, "types");
+}
+
+void Mission::printGoalMissionsBrewingType(std::ofstream& ofs, bool isTest)
+{
+    for(int i = 0; i < goal.potions.size(); i++)
+    {
+        std::string itemPrint = goal.potions.at(i).potionName;
+        std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
+        ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
+        ofs << "    potions:" << std::endl;
+        ofs << "      '1':" << std::endl;
+        ofs << "        type: " + itemPrint << std::endl;
+        ofs << "        upgraded: " + goal.potions.at(i).upgraded << std::endl;
+        ofs << "        extended: " + goal.potions.at(i).extended << std::endl;
+        ofs << "        splash: " + goal.potions.at(i).splash << std::endl;
+        printGoalAmount(ofs, isTest, goal.potions.at(i).amount);
+    }
+}
+
+void Mission::printGoalMissionsOneType(std::ofstream& ofs, bool isTest)
+{
+    for(int i = 0; i < goal.items.size(); i++)
+    {
+        std::string itemPrint = goal.items.at(i).itemName;
+        std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
+
+        ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
+        ofs << "    type: '" + itemPrint + "'" << std::endl;
+        printGoalAmount(ofs, isTest, goal.items.at(i).itemAmount);
+    }
+}
+
+void Mission::printGoalMissionsEnchantType(std::ofstream& ofs, bool isTest)
+{
+    for(int i = 0; i < goal.enchants.size(); i++)
+    {
+        std::string itemPrint = goal.enchants.at(i).item;
+        std::transform(itemPrint.begin(), itemPrint.end(),itemPrint.begin(), ::toupper);
+        std::string enchantPrint = goal.enchants.at(i).enchant;
+        std::transform(enchantPrint.begin(), enchantPrint.end(),enchantPrint.begin(), ::toupper);
+
+        ofs << "  '" + std::to_string(i + 1) + "':" << std::endl;
+        ofs << "    types:" << std::endl;
+        ofs << "      - '" + itemPrint + "'" << std::endl;
+        ofs << "    enchants:" << std::endl;
+        ofs << "      " + enchantPrint + ": " + std::to_string(goal.enchants.at(i).level) << std::endl;
+        printGoalAmount(ofs, isTest, goal.enchants.at(i).amount);
+    }
 }
 
 void Mission::printGoalAmount(std::ofstream& ofs, bool isTest, int amount)

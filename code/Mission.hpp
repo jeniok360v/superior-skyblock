@@ -108,6 +108,9 @@ public:
     void printGoalStatisticsMissions(std::ofstream& ofs, bool isTest);
     void printGoalMissionsMultiType(std::ofstream& ofs, bool isTest);
     void printGoalMissionsMultiTypeWithString(std::ofstream& ofs, bool isTest, std::string type);
+    void printGoalMissionsBrewingType(std::ofstream& ofs, bool isTest);
+    void printGoalMissionsOneType(std::ofstream& ofs, bool isTest);
+    void printGoalMissionsEnchantType(std::ofstream& ofs, bool isTest);
     void printGoalAmount(std::ofstream& ofs, bool isTest, int amount);
 
     int getChestLevel(int missionNumber, int groupSize, int chestsAmount);

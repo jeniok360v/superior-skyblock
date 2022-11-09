@@ -11,6 +11,8 @@
 
 Добавить пометку в бесконечные миссии, возможно сделать принятие награды автоматической
 
+генератор края: кальцит, эндстоун, фиолетовые блоки
+
 \superior-skyblock\plugins\SuperiorSkyblock2\menus\missions-category.yml
 
 https://minecraft.fandom.com/wiki/Statistics
